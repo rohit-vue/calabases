@@ -1,0 +1,50 @@
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
+
+:root {
+  --bg-cream: #faf9f6;
+  --bg-gray: #f2eee7;
+  --bg-blue-light: #e7f4f8;
+  --brand-primary: #1a1a1a;
+  --brand-white: #ffffff;
+  --star-gold: #d4af37;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .bg-bg-cream {
+    background-color: var(--bg-cream);
+  }
+
+  .bg-bg-gray {
+    background-color: var(--bg-gray);
+  }
+
+  .bg-bg-blue-light {
+    background-color: var(--bg-blue-light);
+  }
+
+  .bg-brand-white {
+    background-color: var(--brand-white);
+  }
+
+  .text-brand-primary {
+    color: var(--brand-primary);
+  }
+
+  .text-brand-white {
+    color: var(--brand-white);
+  }
+
+  .text-star-gold {
+    color: var(--star-gold);
+  }
+}
