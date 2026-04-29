@@ -1,7 +1,6 @@
-// components/layout/Footer.tsx
 import Link from "next/link";
 
-const accent = "#23CFBE";
+const accent = "#19B5B0";
 
 const servicesLinks = [
   "General Dentistry",
@@ -31,7 +30,7 @@ function LinkColumn({ title, links }: { title: string; links: readonly string[] 
           <li key={label}>
             <Link
               href="#"
-              className="text-[13px] leading-snug text-[#a7acb6] transition-colors duration-200 hover:text-white"
+              className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
             >
               {label}
             </Link>
@@ -44,20 +43,20 @@ function LinkColumn({ title, links }: { title: string; links: readonly string[] 
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D1117] font-sans text-white">
-      <div className="px-4 py-14 sm:px-6 sm:py-16 lg:px-10 lg:py-12">
+    <footer className="bg-[#0A0E1A] font-sans text-white">
+      <div className="px-4 py-14 sm:px-6 sm:py-16 md:px-8 lg:px-24 lg:py-12">
         <div className="mx-auto max-w-[1180px]">
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
-            <div className="space-y-5 lg:pr-4">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+            <div className="col-span-2 space-y-5 lg:col-span-1 lg:pr-4">
               <div className="flex flex-col gap-1">
-                <span className="text-[9px] font-semibold uppercase tracking-[0.35em] text-[#8d929e]">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#FFFFFF80]">
                   CALABASAS
                 </span>
-                <span className="font-fraunces text-[2.2rem] font-normal leading-none tracking-tight text-white sm:text-[2.5rem]">
+                <span className="font-fraunces text-[2.2rem] font-semibold leading-none tracking-[-0.03em] text-white sm:text-[24px]">
                   Smiles
                 </span>
               </div>
-              <p className="max-w-[295px] text-[13px] leading-[1.55] text-[#9fa5b0]">
+              <p className="max-w-[295px] text-[14px] leading-[1.55] text-[#FFFFFF99]">
                 Trusted by Calabasas, Agoura Hills, and Hidden Hills families since 2010.
                 Cosmetic, general, and emergency dental care with a focus on modern
                 techniques and transparent pricing.
@@ -68,14 +67,14 @@ export default function Footer() {
             <LinkColumn title="ABOUT" links={aboutLinks} />
 
             <div className="space-y-5">
-              <h4 className="text-[10px] font-bold uppercase tracking-[0.28em]" style={{ color: accent }}>
+              <h4 className="text-[11px] font-bold uppercase tracking-[0.28em]" style={{ color: accent }}>
                 CONTACT
               </h4>
               <ul className="space-y-3">
                 <li>
                   <Link
                     href="tel:+18185550100"
-                    className="text-[13px] leading-snug text-[#a7acb6] transition-colors duration-200 hover:text-white"
+                    className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     (818) 555-0100
                   </Link>
@@ -83,7 +82,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-[13px] leading-snug text-[#a7acb6] transition-colors duration-200 hover:text-white"
+                    className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Book Appointment
                   </Link>
@@ -91,17 +90,17 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-[13px] leading-snug text-[#a7acb6] transition-colors duration-200 hover:text-white"
+                    className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Dental Emergency
                   </Link>
                 </li>
                 <li className="h-3" aria-hidden="true" />
                 <li>
-                  <span className="text-[13px] leading-snug text-[#a7acb6]">Mon-Fri 8am-6pm</span>
+                  <span className="text-[13px] leading-snug text-[#FFFFFFB2]">Mon-Fri 8am-6pm</span>
                 </li>
                 <li>
-                  <span className="text-[13px] leading-snug text-[#a7acb6]">Sat 9am-3pm</span>
+                  <span className="text-[13px] leading-snug text-[#FFFFFFB2]">Sat 9am-3pm</span>
                 </li>
               </ul>
             </div>
@@ -109,8 +108,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-6 text-[#656c79] sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-10">
+      <div className="border-t border-[#FFFFFF1A]">
+        <div className="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-6 text-[#FFFFFF66] sm:flex-row sm:items-center sm:justify-between sm:px-6 md:px-8 lg:px-24">
           <p className="text-[11px] leading-relaxed">
             © 2026 Calabasas Smiles · Advanced Dentistry · All Rights Reserved
           </p>

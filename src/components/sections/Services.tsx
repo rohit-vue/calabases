@@ -34,42 +34,42 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-[#FAF8F3] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-12">
+    <section className="bg-[#FAF8F3] px-4 py-8 sm:px-6 sm:py-10 md:px-8 lg:px-24 lg:py-10">
       <div className="mx-auto w-full max-w-[1180px]">
-        <h2 className="mb-8 font-fraunces text-[3.9rem] leading-[0.93] tracking-[-0.04em] text-[#121826] sm:mb-9 sm:text-[4.25rem] lg:text-[4.7rem]">
+        <h2 className="mb-7 font-fraunces text-[3.2rem] leading-[0.93] tracking-[-0.04em] text-[#121826] sm:mb-8 sm:text-[3.8rem] lg:text-[62px]">
           Our Services
         </h2>
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-6 sm:gap-3">
+        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-6 sm:gap-2.5">
           {services.map((service, idx) => {
             const isLarge = service.variant === "large";
             const colSpan = isLarge ? "sm:col-span-3" : "sm:col-span-2";
-            const minHeight = isLarge ? "min-h-[236px] sm:min-h-[214px]" : "min-h-[176px] sm:min-h-[124px]";
-            const textPosition = isLarge ? "top-5 left-6 sm:top-5 sm:left-6" : "top-3 left-4 sm:top-3 sm:left-4";
+            const minHeight = isLarge ? "min-h-[210px] sm:min-h-[182px]" : "min-h-[148px] sm:min-h-[140px]";
+            const textPosition = isLarge ? "top-4 left-5 sm:top-4 sm:left-5" : "top-3 left-3 sm:top-3 sm:left-3";
             const titleSize = isLarge
-              ? "text-[2rem] sm:text-[1.1rem]"
-              : "text-[1.55rem] sm:text-[0.95rem]";
-            const descSize = isLarge ? "mt-1 text-[0.82rem] sm:text-[0.72rem]" : "mt-0.5 text-[0.78rem] sm:text-[0.66rem]";
+              ? "text-[1.5rem] sm:text-[1.05rem]"
+              : "text-[1.2rem] sm:text-[0.9rem]";
+            const descSize = isLarge ? "mt-0.5 text-[0.76rem] sm:text-[0.68rem]" : "mt-0.5 text-[0.72rem] sm:text-[0.62rem]";
             const imageClass = isLarge
               ? service.title === "Cosmetic Dentistry"
-                ? "object-contain object-right-bottom scale-[0.9] sm:scale-[0.92]"
-                : "object-contain object-right-bottom scale-[0.88] sm:scale-[0.9]"
+                ? "object-contain object-right-bottom scale-[0.96] sm:scale-[0.98]"
+                : "object-contain object-right-bottom scale-[0.88] sm:scale-[0.92]"
               : service.title === "Invisalign"
-                ? "object-contain object-right scale-[0.9]"
+                ? "object-contain object-right-bottom scale-[0.86]"
                 : service.title === "Restorative"
-                  ? "object-cover object-right-bottom translate-y-[4px]"
+                  ? "object-cover object-right-bottom scale-[1.02] translate-y-[18%]"
                   : service.title === "TMJ & Specialty"
-                    ? "object-contain object-right-bottom scale-[0.92]"
+                    ? "object-contain object-right-bottom scale-[0.95]"
                     : service.title === "Dental Implants" || service.title === "Oral Surgery"
-                      ? "object-contain object-right-bottom scale-[0.92]"
-                      : "object-contain object-bottom object-right scale-[0.9]";
-            const textWidth = isLarge ? "max-w-[58%] sm:max-w-[56%]" : "max-w-[56%] sm:max-w-[54%]";
+                      ? "object-contain object-right-bottom scale-[0.96]"
+                      : "object-contain object-bottom object-right scale-[0.94]";
+            const textWidth = isLarge ? "max-w-[56%] sm:max-w-[54%]" : "max-w-[58%] sm:max-w-[56%]";
 
             return (
               <div
                 key={`${service.title}-${idx}`}
                 className={[
-                  "relative overflow-hidden rounded-[16px] bg-white",
+                  "relative overflow-hidden rounded-[16px] border border-[#ECE8E0] bg-white",
                   minHeight,
                   colSpan,
                 ].join(" ")}
