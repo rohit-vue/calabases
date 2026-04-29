@@ -20,6 +20,10 @@
 }
 
 @layer utilities {
+  .font-helvetica-neue {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
   .bg-bg-cream {
     background-color: var(--bg-cream);
   }
