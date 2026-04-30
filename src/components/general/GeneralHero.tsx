@@ -17,7 +17,7 @@ export default function GeneralHero() {
   return (
     <section className="px-4 pb-10 pt-8 sm:px-12 sm:pb-16 sm:pt-12 lg:px-32 lg:pb-20 lg:pt-14">
       <div className="mx-auto w-full max-w-[1180px]">
-        <p className="mb-6 text-[10px] font-normal uppercase tracking-[0.14em] text-[#5A6578]">
+        <p className="mb-6 text-[11px] font-normal uppercase tracking-[0.14em] text-[#5A6578]">
           Home / Services / General Dentistry
         </p>
 
@@ -59,15 +59,14 @@ export default function GeneralHero() {
             <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <Link
                 href="#"
-                className="w-full rounded-full bg-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-white transition hover:opacity-90 sm:w-auto"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-white transition hover:opacity-90 sm:w-auto sm:justify-start"
               >
-                <span className="inline-flex items-center">
-                  Book Your Appointment <span className="ml-2" aria-hidden="true">→</span>
-                </span>
+                Book Your Appointment
+                <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="#"
-                className="w-full rounded-full border-2 border-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-[#0A0E1A] transition hover:bg-white sm:w-auto"
+                className="flex w-full items-center justify-center rounded-full border-2 border-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-[#0A0E1A] transition hover:bg-white sm:w-auto sm:justify-start"
               >
                 See Gleam Membership
               </Link>

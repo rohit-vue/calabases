@@ -22,7 +22,7 @@ const aboutLinks = [
 function LinkColumn({ title, links }: { title: string; links: readonly string[] }) {
   return (
     <div className="space-y-5">
-      <h4 className="text-[10px] font-bold uppercase tracking-[0.28em]" style={{ color: accent }}>
+      <h4 className="text-[11px] font-bold uppercase tracking-[0.28em]" style={{ color: accent }}>
         {title}
       </h4>
       <ul className="space-y-3">
@@ -30,7 +30,7 @@ function LinkColumn({ title, links }: { title: string; links: readonly string[] 
           <li key={label}>
             <Link
               href="#"
-              className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
+              className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
             >
               {label}
             </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="mx-auto max-w-[1180px]">
           <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
             <div className="col-span-2 space-y-5 lg:col-span-1 lg:pr-4">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-6">
                 <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#FFFFFF80]">
                   CALABASAS
                 </span>
@@ -57,9 +57,10 @@ export default function Footer() {
                 </span>
               </div>
               <p className="max-w-[295px] text-[14px] leading-[1.55] text-[#FFFFFF99]">
-                Trusted by Calabasas, Agoura Hills, and Hidden Hills families since 2010.
-                Cosmetic, general, and emergency dental care with a focus on modern
-                techniques and transparent pricing.
+                Trusted by Calabasas, Agoura Hills, and Hidden
+                Hills families since 2010. Cosmetic, general, and
+                emergency dental care — with a focus on
+                modern techniques and transparent pricing.
               </p>
             </div>
 
@@ -74,7 +75,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="tel:+18185550100"
-                    className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
+                    className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     (818) 555-0100
                   </Link>
@@ -82,7 +83,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
+                    className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Book Appointment
                   </Link>
@@ -90,17 +91,14 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-[13px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
+                    className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Dental Emergency
                   </Link>
                 </li>
-                <li className="h-3" aria-hidden="true" />
+                <li className="h-1" aria-hidden="true" />
                 <li>
-                  <span className="text-[13px] leading-snug text-[#FFFFFFB2]">Mon-Fri 8am-6pm</span>
-                </li>
-                <li>
-                  <span className="text-[13px] leading-snug text-[#FFFFFFB2]">Sat 9am-3pm</span>
+                  <span className="text-[14px] leading-snug text-[#FFFFFFB2]">Mon-Fri 8am-6pm <br />Sat 9am-3pm</span>
                 </li>
               </ul>
             </div>
@@ -109,11 +107,11 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-[#FFFFFF1A]">
-        <div className="mx-auto flex max-w-[1180px] flex-col gap-4 px-4 py-6 text-[#FFFFFF66] sm:flex-row sm:items-center sm:justify-between sm:px-6 md:px-8 lg:px-24">
-          <p className="text-[11px] leading-relaxed">
+        <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-4 py-6 text-center text-[#FFFFFF66] sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left md:px-8 lg:px-24">
+          <p className="text-[13px] leading-relaxed">
             © 2026 Calabasas Smiles · Advanced Dentistry · All Rights Reserved
           </p>
-          <p className="text-[11px] leading-relaxed sm:text-right">
+          <p className="text-[13px] leading-relaxed sm:text-right">
             Calabasas, CA · Agoura Hills · Hidden Hills
           </p>
         </div>

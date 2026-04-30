@@ -82,20 +82,23 @@ export default function FirstVisitTimelineSection() {
           ))}
         </div>
 
-        <div className="mt-3 flex w-full max-w-[1060px] flex-col justify-between gap-6 rounded-[16px] bg-[#0A0E1A] px-6 py-5 sm:flex-row sm:items-center sm:px-8 sm:py-6">
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.22em] text-[#FFFFFF99]">Total Time</p>
-            <p className="mt-1 font-fraunces text-[26px] leading-none text-[#ffffff] sm:text-[26px]">
-              75 - 95 minutes
-            </p>
-          </div>
+        <div className="mt-3 grid max-w-[1060px] grid-cols-[44px_minmax(0,1fr)] gap-5 sm:grid-cols-[60px_minmax(0,1fr)] sm:gap-7">
+          <div aria-hidden className="min-w-0" />
+          <div className="flex w-full min-w-0 flex-col justify-between gap-6 rounded-[16px] bg-[#0A0E1A] px-6 py-5 sm:flex-row sm:items-center sm:px-8 sm:py-6">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.22em] text-[#FFFFFF99]">Total Time</p>
+              <p className="mt-1 font-fraunces text-[26px] leading-none text-[#ffffff] sm:text-[26px]">
+                75 - 95 minutes
+              </p>
+            </div>
 
-          <Link
-            href="#"
-            className="inline-flex h-[48px] items-center rounded-[100px] bg-[#C9A961] px-8 text-[13px] font-medium text-white transition hover:brightness-95"
-          >
-            Book Your First Visit <span className="ml-2" aria-hidden="true">→</span>
-          </Link>
+            <Link
+              href="#"
+              className="inline-flex h-[48px] shrink-0 items-center rounded-[100px] bg-[#C9A961] px-8 text-[13px] font-medium text-white transition hover:brightness-95"
+            >
+              Book Your First Visit <span className="ml-2" aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
