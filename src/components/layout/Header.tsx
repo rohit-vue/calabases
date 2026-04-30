@@ -2,12 +2,15 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isGeneralPage = pathname.startsWith("/general");
   const navLinks = [
-    { label: "General", href: "/general" },
+    { label: isGeneralPage ? "General Dentistry" : "General", href: "/general" },
     { label: "Cosmetic", href: "#" },
     { label: "Implants", href: "#" },
     { label: "Invisalign", href: "#" },
@@ -20,10 +23,10 @@ export default function Header() {
         <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between">
           <Link href="/" className="flex flex-col leading-none">
             <span className="mb-1 text-[9px] font-inter uppercase tracking-[0.24em] text-[#5A6578] sm:text-[10px]">
-              Calabasas
+              {isGeneralPage ? "Advanced" : "Calabasas"}
             </span>
             <span className="font-fraunces text-[20px] font-semibold tracking-[-0.01em] text-[#0A0E1A] sm:text-[22px]">
-              Smiles
+              {isGeneralPage ? "Dentistry" : "Smiles"}
             </span>
           </Link>
 
@@ -42,7 +45,7 @@ export default function Header() {
 
             <Link
               href="#"
-              className="flex h-[44px] min-w-[176px] items-center justify-center rounded-[100px] bg-[#0A0E1A] px-6 text-[12px] font-medium text-white transition hover:opacity-90 xl:min-w-[196px] xl:px-8 xl:text-[13px]"
+              className="flex h-[40px] min-w-[176px] items-center justify-center rounded-[100px] bg-[#0A0E1A] px-6 text-[12px] font-semibold text-white transition hover:opacity-90 xl:min-w-[186px] xl:px-8 xl:text-[13px]"
             >
               Book Appointment
             </Link>

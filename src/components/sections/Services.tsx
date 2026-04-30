@@ -36,8 +36,8 @@ export default function Services() {
   return (
     <section className="bg-[#FAF8F3] px-4 py-8 sm:px-6 sm:py-10 md:px-8 lg:px-24 lg:py-10">
       <div className="mx-auto w-full max-w-[1180px]">
-        <h2 className="mb-7 font-fraunces text-[3.2rem] leading-[0.93] tracking-[-0.04em] text-[#121826] sm:mb-8 sm:text-[3.8rem] lg:text-[62px]">
-          Our Services
+        <h2 className="mb-7 font-fraunces text-[3.2rem] leading-[0.93] tracking-[-0.04em] text-[#000000] sm:mb-8 sm:text-[3.8rem] lg:text-[62px]">
+          Our <span className="italic"> Services </span>
         </h2>
 
         <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-6 sm:gap-2.5">
@@ -48,12 +48,12 @@ export default function Services() {
             const textPosition = isLarge ? "top-4 left-5 sm:top-4 sm:left-5" : "top-3 left-3 sm:top-3 sm:left-3";
             const titleSize = isLarge
               ? "text-[1.5rem] sm:text-[1.05rem]"
-              : "text-[1.2rem] sm:text-[0.9rem]";
-            const descSize = isLarge ? "mt-0.5 text-[0.76rem] sm:text-[0.68rem]" : "mt-0.5 text-[0.72rem] sm:text-[0.62rem]";
+              : "text-[1.2rem] sm:text-[20px]";
+            const descSize = isLarge ? "mt-0.5 text-[0.76rem] sm:text-[13px]" : "mt-0.5 text-[0.72rem] sm:text-[12px]";
             const imageClass = isLarge
               ? service.title === "Cosmetic Dentistry"
-                ? "object-contain object-right-bottom scale-[0.96] sm:scale-[0.98]"
-                : "object-contain object-right-bottom scale-[0.88] sm:scale-[0.92]"
+                ? "object-contain object-right-bottom translate-x-[20%] scale-[0.96] sm:translate-x-0 sm:scale-[0.98]"
+                : "object-contain object-right-bottom translate-y-[12%] scale-[0.88] sm:translate-y-0 sm:scale-[0.92]"
               : service.title === "Invisalign"
                 ? "object-contain object-right-bottom scale-[0.86]"
                 : service.title === "Restorative"
@@ -75,11 +75,11 @@ export default function Services() {
                 ].join(" ")}
               >
                 <div className={`absolute z-10 pr-2 ${textPosition} ${textWidth}`}>
-                  <h3 className={`font-serif font-semibold leading-[1.02] tracking-[-0.03em] text-[#111827] ${titleSize}`}>
+                  <h3 className={`font-fraunces font-semibold leading-[1.02] tracking-[-0.03em] text-[#0A0E1A] ${titleSize}`}>
                     {service.title}
                   </h3>
                   {service.desc ? (
-                    <p className={`leading-relaxed text-[#748096] ${descSize}`}>
+                    <p className={`leading-relaxed text-[#5A6578] ${descSize}`}>
                       ({service.desc})
                     </p>
                   ) : null}

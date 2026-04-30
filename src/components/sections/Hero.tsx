@@ -13,7 +13,7 @@ export default function Hero() {
               <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#5A6578] sm:text-[11px]">
                 Calabasas Smiles
               </p>
-              <h1 className="font-fraunces text-[4.2rem] leading-[0.9] tracking-[-0.04em] text-[#111827] sm:text-[5rem] md:text-[5.2rem] lg:text-[96px]">
+              <h1 className="font-fraunces text-[4.2rem] leading-[0.9] tracking-[-0.07em] text-[#111827] sm:text-[5rem] md:text-[5.2rem] lg:text-[86px]">
                 Calabasas
                 <br /> Dentist
               </h1>
@@ -27,8 +27,8 @@ export default function Hero() {
               <div className="text-center">
                 <p className="font-fraunces text-[3.4rem] leading-none text-[#0A0E1A] sm:text-[50px]">4.9</p>
               </div>
-              <div className="space-y-1">
-                <div className="flex gap-1" aria-label="5 out of 5 stars">
+              <div className="space-y-2">
+                <div className="flex gap-2.5" aria-label="5 out of 5 stars">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-[1.15rem] leading-none text-[#f7a54d]" aria-hidden="true">{"\u2605"}</span>
                   ))}
@@ -40,9 +40,9 @@ export default function Hero() {
           </div>
 
           {/* Book Appointment Card */}
-          <div className="flex flex-col items-start justify-between gap-6 rounded-[30px] bg-[#DCEEFB] px-7 py-7 sm:px-8 sm:py-8 md:flex-row md:items-center md:gap-5 lg:mt-4 lg:px-7 lg:py-7">
+          <div className="flex flex-col items-start justify-between gap-6 rounded-[20px] bg-[#DCEEFB] px-7 py-7 sm:px-8 sm:py-8 md:flex-row md:items-center md:gap-5 lg:mt-4 lg:px-7 lg:py-7">
             <div className="min-w-0">
-              <h3 className="font-fraunces text-[28px] leading-[1] text-[#111827] sm:text-[2.2rem] lg:text-[28px]">
+              <h3 className="font-fraunces text-[28px] leading-[1] text-[#111827] tracking-[-0.05em] sm:text-[2.2rem] lg:text-[28px]">
                 Book Your Visit
               </h3>
               <p className="mt-3 max-w-[360px] text-[13px] leading-[1.35] text-[#1C2333]">
@@ -81,7 +81,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex min-h-[116px] w-[57%] min-w-0 flex-col justify-between rounded-[18px] bg-[#FFFFFF52] px-4 py-3 shadow-[0_12px_28px_rgba(84,58,42,0.14)] backdrop-blur-[10px] md:px-5 lg:w-[224px]">
+            <div className="flex min-h-[116px] w-[57%] min-w-0 flex-col justify-between rounded-[18px] bg-[rgba(220,185,168,0.9)] px-4 py-3 shadow-[0_12px_28px_rgba(84,58,42,0.14)] backdrop-blur-[10px] md:px-5 lg:w-[224px]">
               <div className="min-w-0">
                 <h4 className="font-fraunces max-w-[150px] text-[14px] font-bold leading-[0.95] text-[#fffaf6] md:text-[15px]">
                     Our Unlimited Membership
@@ -115,7 +115,7 @@ export default function Hero() {
               <span className="pb-0.5 text-[12px] font-medium text-[#6b7a90]">/ year</span>
             </div>
           </div>
-          <div className="flex items-end justify-between gap-4 rounded-[22px] bg-[rgba(209,159,136,0.82)] px-5 py-4 shadow-sm backdrop-blur-md">
+          <div className="flex items-end justify-between gap-4 rounded-[22px] bg-[rgba(220,185,168,0.92)] px-5 py-4 shadow-sm backdrop-blur-md">
             <div className="flex min-w-0 flex-1 flex-col">
               <div>
                 <h4 className="font-fraunces max-w-[145px] text-[16px] leading-[0.9] text-white">

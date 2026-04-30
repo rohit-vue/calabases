@@ -5,7 +5,7 @@ export default function CostOfWaitingSection() {
     <section className="bg-[#0A0E1A] px-4 py-12 sm:px-12 sm:py-16 lg:px-32 lg:py-20">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[560px]">
-          <p className="mb-5 text-[9px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">The Reality</p>
+          <p className="mb-5 text-[12px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">The Reality</p>
 
           <h2 className="font-fraunces text-[38px] leading-[0.95] text-[#f1ede4] sm:text-[50px]">
             The Cost of <span className="text-[#c8aa70] font-light tracking-[-0.06em] italic">Waiting.</span>

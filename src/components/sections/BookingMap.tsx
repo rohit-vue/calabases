@@ -7,7 +7,7 @@ export default function BookingMap() {
       <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
         {/* Left Text */}
         <div className="max-w-xl space-y-8 text-center md:text-left">
-          <h2 className="font-serif text-[40px] font-normal tracking-[-0.03em] leading-tight text-[#0A0E1A] sm:text-[50px] lg:text-[70px]">
+          <h2 className="font-serif text-[40px] font-normal tracking-[-0.03em] leading-tight text-[#0A0E1A] sm:text-[50px] lg:text-[62px]">
             Book Online
             <br /> Now
           </h2>
@@ -22,7 +22,7 @@ export default function BookingMap() {
             src="/images/google-map-placeholder.png"
             alt="Map showing the practice location"
             fill
-            className="rounded-3xl object-cover"
+            className="rounded-[20px] object-cover"
           />
         </div>
       </div>
