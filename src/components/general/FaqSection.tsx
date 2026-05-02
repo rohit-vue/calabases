@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 
-const faqs = [
+type FaqItem = {
+  question: string;
+  answer: string;
+};
+
+const defaultFaqs: FaqItem[] = [
   {
     question: "How often should I go to the dentist?",
     answer:
@@ -50,7 +55,11 @@ const faqs = [
   },
 ];
 
-export default function FaqSection() {
+type FaqSectionProps = {
+  faqs?: FaqItem[];
+};
+
+export default function FaqSection({ faqs = defaultFaqs }: FaqSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
