@@ -9,16 +9,37 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const isGeneralPage = pathname.startsWith("/general");
+  const isEmergencyPage = pathname.startsWith("/emergency");
   const navLinks = [
     { label: isGeneralPage ? "General Dentistry" : "General", href: "/general" },
-    { label: "Cosmetic", href: "#" },
-    { label: "Implants", href: "#" },
-    { label: "Invisalign", href: "#" },
+    { label: "Cosmetic", href: "/cosmetic" },
+    { label: "Restorative", href: "/restorative" },
+    { label: "Oral Surgery", href: "/oral-surgery" },
+    { label: "Implants", href: "/implants" },
+    { label: "Invisalign", href: "/invisalign" },
     { label: "Gleam Membership", href: "#" },
+    { label: "Emergency", href: "/emergency" },
   ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#e7e2db] bg-white">
+      {isEmergencyPage ? (
+        <div className="border-b border-[#d3383f] bg-[#E63D46] px-4 py-2 sm:px-6 md:px-8 lg:px-24">
+          <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-4">
+            <div className="flex items-center gap-2 text-white">
+              <span className="inline-block h-2 w-2 rounded-full bg-white" />
+              <p className="text-[12px] font-medium">Dental emergency? We see patients the same day.</p>
+            </div>
+
+            <Link
+              href="tel:+18185550100"
+              className="inline-flex h-8 items-center rounded-full bg-white px-4 text-[12px] font-semibold text-[#E63D46] transition hover:opacity-90"
+            >
+              <span className="mr-1.5">📞</span> Call (818) 555-0100
+            </Link>
+          </div>
+        </div>
+      ) : null}
       <div className="px-4 py-4 sm:px-6 sm:py-5 md:px-8 lg:px-24 lg:py-6">
         <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between">
           <Link href="/" className="flex flex-col leading-none">
