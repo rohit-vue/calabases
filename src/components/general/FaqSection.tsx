@@ -55,22 +55,58 @@ const defaultFaqs: FaqItem[] = [
   },
 ];
 
-type FaqSectionProps = {
+export type FaqSectionProps = {
   faqs?: FaqItem[];
+  /** Section background (solid or CSS gradient) */
+  background?: string;
+  /** Eyebrow + default italic emphasis in the title */
+  accentColor?: string;
+  headingColor?: string;
+  /** Italic phrase in the title; defaults to `accentColor` */
+  headingEmphasisColor?: string;
+  cardBorderColor?: string;
+  cardBackgroundColor?: string;
+  questionColor?: string;
+  answerColor?: string;
+  toggleBackgroundColor?: string;
+  toggleIconColor?: string;
 };
 
-export default function FaqSection({ faqs = defaultFaqs }: FaqSectionProps) {
+export default function FaqSection({
+  faqs = defaultFaqs,
+  background = "#FAF8F3",
+  accentColor = "#C9A961",
+  headingColor = "#0A0E1A",
+  headingEmphasisColor,
+  cardBorderColor = "#e5e1d7",
+  cardBackgroundColor = "#f9f9f8",
+  questionColor = "#0A0E1A",
+  answerColor = "#5A6578",
+  toggleBackgroundColor = "#f4f1e8",
+  toggleIconColor = "#c9ab6c",
+}: FaqSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const emphasisColor = headingEmphasisColor ?? accentColor;
 
   return (
-    <section className="bg-[#FAF8F3] px-4 py-16 sm:px-6 md:px-8 lg:px-80">
+    <section className="px-4 py-16 sm:px-6 md:px-8 lg:px-80" style={{ background }}>
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[860px]">
-          <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">
+          <p
+            className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em]"
+            style={{ color: accentColor }}
+          >
             Frequently Asked
           </p>
-          <h2 className="font-fraunces text-[30px] leading-[0.95] text-[#0A0E1A] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]">
-            Your <span className="italic font-light text-[#C9A961]">questions,</span> answered.
+          <h2
+            className="font-fraunces text-[30px] leading-[0.95] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]"
+            style={{ color: headingColor }}
+          >
+            Your{" "}
+            <span className="font-light italic" style={{ color: emphasisColor }}>
+              questions,
+            </span>{" "}
+            answered.
           </h2>
         </div>
 
@@ -78,17 +114,33 @@ export default function FaqSection({ faqs = defaultFaqs }: FaqSectionProps) {
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={faq.question} className="overflow-hidden rounded-[12px] border border-[#e5e1d7] bg-[#f9f9f8]">
+              <div
+                key={faq.question}
+                className="overflow-hidden rounded-[12px] border"
+                style={{
+                  borderColor: cardBorderColor,
+                  backgroundColor: cardBackgroundColor,
+                }}
+              >
                 <button
                   type="button"
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                   aria-expanded={isOpen}
                 >
-                  <span className="font-fraunces text-[19px] leading-[1.05] text-[#0A0E1A] sm:text-[20px]">
+                  <span
+                    className="font-fraunces text-[19px] leading-[1.05] sm:text-[20px]"
+                    style={{ color: questionColor }}
+                  >
                     {faq.question}
                   </span>
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#f4f1e8] text-[18px] text-[#c9ab6c]">
+                  <span
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[18px]"
+                    style={{
+                      backgroundColor: toggleBackgroundColor,
+                      color: toggleIconColor,
+                    }}
+                  >
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>
@@ -99,7 +151,10 @@ export default function FaqSection({ faqs = defaultFaqs }: FaqSectionProps) {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-5 text-[14px] leading-[1.65] text-[#5A6578] tracking-[-0.02em] sm:px-6">
+                    <p
+                      className="px-5 pb-5 text-[14px] leading-[1.65] tracking-[-0.02em] sm:px-6"
+                      style={{ color: answerColor }}
+                    >
                       {faq.answer}
                     </p>
                   </div>

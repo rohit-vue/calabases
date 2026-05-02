@@ -6,7 +6,7 @@ import RestorativeMaterialsSection from "@/components/restorative/RestorativeMat
 import RestorativeProcessSection from "@/components/restorative/RestorativeProcessSection";
 import RestorativePricingSection from "@/components/restorative/RestorativePricingSection";
 import RestorativeWarrantyCta from "@/components/restorative/RestorativeWarrantyCta";
-import RestorativeTestimonialSection from "@/components/restorative/RestorativeTestimonialSection";
+import TestimonialSection from "@/components/layout/TestimonialSection";
 import FaqSection from "@/components/general/FaqSection";
 import ClosingCta from "@/components/layout/ClosingCta";
 
@@ -69,10 +69,37 @@ export default function RestorativePage() {
       <RestorativeProcessSection />
       <RestorativePricingSection />
       <RestorativeWarrantyCta />
-      <RestorativeTestimonialSection />
-      <FaqSection faqs={restorativeFaqs} />
+      <TestimonialSection
+        label="PATIENT PORTFOLIO · CALABASAS"
+        quote="I had a 20-year-old crown that finally failed. Dr. Kashani replaced it with zirconia — and honestly, it looks better than the real teeth next to it. Three years later, it still feels exactly the same as the day he put it in. He genuinely cares about the craftsmanship. It shows."
+        authorName="Thomas R."
+        authorSubtext="Zirconia crown replacement · Calabasas"
+        authorInitials="T"
+        background="#EFE7D3"
+        accentColor="#8B5A2B"
+        quoteColor="#0A0E1A"
+        authorNameColor="#0A0E1A"
+        authorMetaColor="#5A6578"
+        quoteMarkColor="#B8733323"
+        avatarTextColor="#FFFFFF"
+        avatarBackground="#B87333"
+      />
+      <FaqSection
+        faqs={restorativeFaqs}
+        background="#FFFFFF"
+        accentColor="#B87333"
+        headingColor="#0A0E1A"
+        cardBorderColor="#E4DDC8"
+        cardBackgroundColor="#F7F2E7"
+        questionColor="#0A0E1A"
+        answerColor="#5A6578"
+        toggleBackgroundColor="#FFFFFF"
+        toggleIconColor="#B87333"
+      />
       <ClosingCta
         eyebrow="Ready When You Are"
+        eyebrowLined
+        eyebrowLineColor="#B87333"
         titleStart="Rebuild once."
         titleEmphasis="Keep for life."
         titleEnd=""
@@ -88,6 +115,18 @@ export default function RestorativePage() {
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
         footerText="© 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved"
+        eyebrowColor="#B87333"
+        headlineColor="#ffffff"
+        subtitleColor="#FFFFFF"
+        titleEmphasisColor="#B87333"
+        statsValueColor="#B87333"
+        primaryCtaBackground="#B87333"
+        primaryCtaTextColor="#0A0E1A"
+        primaryCtaBorderColor="#000000"
+        secondaryCtaBorderColor="#FFFFFF40"
+        secondaryCtaTextColor="#FFFFFF"
+        footerTextColor="#FFFFFF66"
+        heroOverlayGradient="radial-gradient(56% 70% at 50% 52%, rgba(184, 115, 51, 0.22) 0%, rgba(2, 9, 24, 0) 100%)"
       />
     </main>
   );

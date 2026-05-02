@@ -52,15 +52,15 @@ const processSteps: ProcessStep[] = [
 
 export default function RestorativeProcessSection() {
   return (
-    <section className="bg-[#EAE5D6] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-[#EFE7D3] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
       <div className="mx-auto w-full max-w-[1240px]">
-        <p className="font-fraunces text-[12px] uppercase tracking-[0.24em] text-[#B1814C]">§ The Process</p>
+        <p className="font-fraunces text-[11px] uppercase tracking-[0.19em] text-[#B87333]">§ The Process</p>
 
-        <h2 className="mt-4 font-fraunces text-[44px] leading-[0.97] tracking-[-0.03em] text-[#111A2B] sm:text-[58px] lg:text-[76px]">
-          How a restoration is <span className="font-light italic text-[#B67D47]">made.</span>
+        <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.97] tracking-[-0.035em] text-[#0A0E1A] sm:text-[58px] lg:text-[64px]">
+          How a restoration is <span className="italic text-[#B87333]">made.</span>
         </h2>
 
-        <p className="mt-6 max-w-[800px] text-[18px] leading-[1.62] text-[#6A7483] sm:text-[22px] lg:text-[27px]">
+        <p className="mt-6 max-w-[700px] text-[18px] leading-[1.62] text-[#5A6578] font-light sm:text-[22px] lg:text-[17px]">
           The difference between a great restoration and a rushed one is in the process. Here&apos;s every
           step we take, from your first visit to final placement.
         </p>
@@ -70,22 +70,22 @@ export default function RestorativeProcessSection() {
 
           <div className="space-y-6">
             {processSteps.map((step) => (
-              <article key={step.numeral} className="grid items-start gap-4 md:grid-cols-[74px_1fr] md:gap-5">
+              <article key={step.numeral} className="grid items-start gap-4 md:grid-cols-[84px_1fr] md:gap-5">
                 <div className="relative z-10 flex justify-center">
-                  <div className="inline-flex h-[40px] w-[40px] items-center justify-center rounded-full border border-[#C88543] bg-[#EAE5D6] font-fraunces text-[20px] italic text-[#BD7E46]">
+                  <div className="inline-flex h-[70px] w-[70px] items-center justify-center rounded-full border-2 border-[#B87333] bg-[#F7F2E7] font-fraunces text-[24px] italic text-[#B87333]">
                     {step.numeral}
                   </div>
                 </div>
 
-                <div className="rounded-[10px] border border-[#E7E7E7] bg-[#F4F4F4] px-5 pb-4 pt-4 sm:px-6 sm:pb-5">
-                  <div className="flex flex-wrap items-start justify-between gap-3 border-b border-[#E3E3E3] pb-3">
-                    <h3 className="font-fraunces text-[27px] leading-tight text-[#131D2D] sm:text-[32px] lg:text-[37px]">{step.title}</h3>
-                    <span className="inline-flex h-[26px] items-center rounded-full bg-[#F1EADF] px-3 font-fraunces text-[12px] italic text-[#B07A45]">
+                <div className="rounded-[16px] border border-[#E4DDC8] bg-[#FFFFFF] px-5 pb-4 pt-4 sm:px-6 sm:pb-5 min-h-[170px] flex flex-col justify-center">
+                  <div className="flex flex-wrap items-start justify-between gap-3 border-b border-[#E4DDC8] pb-3">
+                    <h3 className="font-fraunces text-[27px] leading-tight text-[#0A0E1A] tracking-[-0.0064em] sm:text-[32px] lg:text-[24px]">{step.title}</h3>
+                    <span className="inline-flex h-[26px] items-center rounded-[100px] bg-[#F7F2E7] px-3 font-fraunces text-[13px] italic text-[#8B5A2B]">
                       {step.duration}
                     </span>
                   </div>
 
-                  <p className="mt-3 text-[16px] leading-[1.66] text-[#67707F] sm:text-[17px] lg:text-[19px]">{step.description}</p>
+                  <p className="mt-3 text-[16px] leading-[1.66] text-[#5A6578] sm:text-[17px] lg:text-[15px]">{step.description}</p>
                 </div>
               </article>
             ))}
