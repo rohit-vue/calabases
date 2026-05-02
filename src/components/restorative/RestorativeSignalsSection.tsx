@@ -52,15 +52,15 @@ const signalCards: SignalCard[] = [
 
 export default function RestorativeSignalsSection() {
   return (
-    <section className="bg-[#ECE9DF] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-[#F7F2E7] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
       <div className="mx-auto w-full max-w-[1250px]">
-        <p className="font-fraunces text-[12px] uppercase tracking-[0.24em] text-[#B18757]">§ The Signals</p>
+        <p className="font-fraunces text-[11px] uppercase tracking-[0.26em] text-[#B87333]">§ The Signals</p>
 
-        <h2 className="mt-4 max-w-[980px] font-fraunces text-[44px] leading-[0.97] tracking-[-0.03em] text-[#0F1727] sm:text-[58px] lg:text-[76px]">
-          Six signs your tooth <span className="font-light italic text-[#B7804C]">needs work.</span>
+        <h2 className="mt-4 max-w-[980px] font-fraunces text-[44px] font-light leading-[0.97] tracking-[-0.0305em] text-[#0A0E1A] sm:text-[58px] lg:text-[64px]">
+          Six signs your tooth <span className="italic text-[#B87333]">needs work.</span>
         </h2>
 
-        <p className="mt-6 max-w-[860px] text-[18px] leading-[1.55] text-[#606A77] sm:text-[26px] lg:text-[37px]">
+        <p className="mt-6 max-w-[860px] text-[18px] leading-[1.55] text-[#5A6578] sm:text-[26px] font-light lg:text-[19px]">
           Most restorative problems announce themselves early - if you know what to listen for. Here are
           the signals we see most often in patients who&apos;ve waited too long.
         </p>
@@ -69,18 +69,18 @@ export default function RestorativeSignalsSection() {
           {signalCards.map((card) => (
             <article
               key={card.id}
-              className="rounded-[18px] border border-[#E0E0E0] bg-[#F5F5F5] px-6 pb-5 pt-6 sm:px-7 sm:pb-6"
+              className="rounded-[18px] border border-[#E4DDC8] bg-[#FFFFFF] px-6 pb-5 pt-6 sm:px-7 sm:pb-6"
             >
-              <p className="font-fraunces text-[18px] uppercase tracking-[0.12em] text-[#B18858]">{card.id}</p>
+              <p className="font-fraunces text-[14px] uppercase tracking-[0.156em] text-[#B87333]">{card.id}</p>
 
-              <h3 className="mt-3 font-fraunces text-[30px] leading-[1.05] text-[#1A2434] sm:text-[38px] lg:text-[46px]">{card.title}</h3>
+              <h3 className="mt-3 font-fraunces text-[30px] leading-[1.05] text-[#0A0E1A] tracking-[-0.005em] sm:text-[38px] lg:text-[22px]">{card.title}</h3>
 
-              <p className="mt-3 text-[17px] leading-[1.56] text-[#67717F] sm:text-[20px] lg:text-[24px]">{card.description}</p>
+              <p className="mt-3 text-[17px] leading-[1.56] text-[#5A6578] sm:text-[20px] lg:text-[14px]">{card.description}</p>
 
-              <div className="mt-5 border-t border-[#E0E0E0] pt-4">
+              <div className="mt-5 border-t border-[#E4DDC8] pt-4">
                 <div className="flex items-center justify-between gap-3">
-                  <p className="text-[12px] uppercase tracking-[0.22em] text-[#7D8796]">Likely Solution</p>
-                  <p className="font-fraunces text-[22px] italic text-[#B48757] sm:text-[26px] lg:text-[30px]">{card.solution}</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#5A6578]">Likely Solution</p>
+                  <p className="font-fraunces text-[22px] italic text-[#B87333] sm:text-[26px] lg:text-[15px]">{card.solution}</p>
                 </div>
               </div>
             </article>

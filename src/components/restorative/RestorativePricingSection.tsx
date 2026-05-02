@@ -110,15 +110,15 @@ const pricingCards: PricingCard[] = [
 
 export default function RestorativePricingSection() {
   return (
-    <section className="bg-[#ECE9DF] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-[#F7F2E7] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
       <div className="mx-auto w-full max-w-[1250px]">
-        <p className="font-fraunces text-[12px] uppercase tracking-[0.24em] text-[#B1824D]">§ Transparent Pricing</p>
+        <p className="font-fraunces text-[11px] uppercase tracking-[0.26em] text-[#B87333]">§ Transparent Pricing</p>
 
-        <h2 className="mt-4 font-fraunces text-[44px] leading-[0.98] tracking-[-0.03em] text-[#10192B] sm:text-[56px] lg:text-[74px]">
-          Every restoration, <span className="font-light italic text-[#B77D45]">every price.</span>
+        <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.98] tracking-[-0.035em] text-[#0A0E1A] sm:text-[56px] lg:text-[64px]">
+          Every restoration, <span className="italic text-[#B87333]">every price.</span>
         </h2>
 
-        <p className="mt-5 max-w-[860px] text-[17px] leading-[1.58] text-[#66707F] sm:text-[21px] lg:text-[26px]">
+        <p className="mt-5 max-w-[860px] text-[17px] font-light leading-[1.58] text-[#5A6578] sm:text-[21px] lg:text-[17px]">
           All pricing includes consultation, digital imaging, tooth preparation, digital impression, lab
           work, and final placement. No hidden fees.
         </p>
@@ -127,29 +127,29 @@ export default function RestorativePricingSection() {
           {pricingCards.map((card) => (
             <article
               key={`${card.eyebrow}-${card.title}`}
-              className="rounded-[14px] border border-[#DDDDDD] bg-[#F3F3F3] px-5 pb-5 pt-5 sm:px-6 sm:pb-6"
+              className="rounded-[20px] border border-[#E4DDC8] bg-[#FFFFFF] px-5 pb-5 pt-5 sm:px-6 sm:pb-6"
             >
-              <p className="font-fraunces text-[11px] uppercase tracking-[0.2em] text-[#BC8752]">{card.eyebrow}</p>
+              <p className="font-fraunces text-[12px] uppercase tracking-[0.17em] text-[#B87333]">{card.eyebrow}</p>
 
-              <h3 className="mt-2 font-fraunces text-[32px] leading-tight text-[#172133] sm:text-[37px] lg:text-[43px]">{card.title}</h3>
-              <p className="mt-1 min-h-[45px] font-fraunces text-[17px] italic leading-[1.4] text-[#738091]">{card.subtitle}</p>
+              <h3 className="mt-2 font-fraunces text-[32px] leading-tight tracking-[-0.006em] text-[#0A0E1A] sm:text-[37px] lg:text-[24px]">{card.title}</h3>
+              <p className="mt-1 min-h-[45px] font-fraunces text-[13px] italic leading-[1.4] text-[#5A6578]">{card.subtitle}</p>
 
-              <div className="mt-3 border-t border-[#DDDDDD] pt-3">
-                <p className="font-fraunces text-[40px] leading-none text-[#111B2D] sm:text-[47px] lg:text-[55px]">{card.price}</p>
-                <p className="mt-1 text-[14px] text-[#6A7483]">{card.priceNote}</p>
+              <div className="mt-3 border-t border-[#E4DDC8] pt-3">
+                <p className="font-fraunces text-[40px] leading-none text-[#0A0E1A] tracking-[-0.02em] sm:text-[47px] lg:text-[36px]">{card.price}</p>
+                <p className="mt-1 text-[12px] text-[#5A6578]">{card.priceNote}</p>
               </div>
 
-              <div className="mt-4 rounded-[10px] bg-[#ECE5D7] px-3 py-2">
+              <div className="mt-4 rounded-[12px] bg-[#F7F2E7] px-3 py-2">
                 <div className="flex items-center justify-between gap-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#9D7F5B]">{card.memberLabel}</p>
-                  <p className="font-fraunces text-[20px] italic text-[#B57B45] sm:text-[22px] lg:text-[24px]">{card.memberValue}</p>
+                  <p className="text-[12px] font-semibold uppercase text-[#8B5A2B]">{card.memberLabel}</p>
+                  <p className="font-fraunces text-[20px] italic text-[#B87333] sm:text-[22px] lg:text-[18px]">{card.memberValue}</p>
                 </div>
               </div>
 
               <ul className="mt-5 space-y-2.5">
                 {card.bullets.map((bullet) => (
-                  <li key={bullet} className="flex items-start gap-2 text-[15px] leading-[1.45] text-[#4D5869]">
-                    <span className="mt-[8px] inline-block h-[5px] w-[5px] rounded-full bg-[#B87D45]" />
+                  <li key={bullet} className="flex items-start gap-2 text-[13px] leading-[1.45] text-[#1C2333]">
+                    <span className=" text-[10px] text-[#B87333]" >◆</span>
                     <span>{bullet}</span>
                   </li>
                 ))}

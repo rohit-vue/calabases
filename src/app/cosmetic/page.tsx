@@ -64,7 +64,21 @@ export default function CosmeticPage() {
       <CosmaticPricingSection />
       <CosmaticMembershipMathSection />
       <CosmaticPatientProfilesSection />
-      <TestimonialSection />
+      <TestimonialSection
+        quote="I'd been thinking about veneers for ten years. I was terrified of looking fake. Dr. Kashani's digital preview sold me - I could see exactly what my smile would look like before we started. The result is so natural that my own mother didn't notice at first. She just said I looked rested."
+        authorName="Rachel K"
+        authorSubtext="8 Veneers • Calabasas"
+        authorInitials="R"
+        background="#0A0E1A"
+        accentColor="#C9A961"
+        quoteColor="#FFFFFF"
+        authorNameColor="#FFFFFF"
+        authorMetaColor="rgba(255, 255, 255, 0.5)"
+        quoteMarkColor="#121C35"
+        avatarTextColor="#0A0E1A"
+        avatarBackground="linear-gradient(135deg, #C9A961 0%, #F5EDD8 100%)"
+        showStars
+      />
       <FaqSection faqs={cosmeticFaqs} />
       <ClosingCta
         mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
