@@ -5,6 +5,7 @@ type FirstAidStep = {
 
 type FirstAidCard = {
   icon: string;
+  iconAlt: string;
   title: string;
   subtitle: string;
   steps: FirstAidStep[];
@@ -13,7 +14,8 @@ type FirstAidCard = {
 
 const firstAidCards: FirstAidCard[] = [
   {
-    icon: "🦷",
+    icon: "/images/tooth.png",
+    iconAlt: "Tooth icon",
     title: "Knocked-Out Tooth",
     subtitle: "Act within 30 minutes",
     steps: [
@@ -41,7 +43,8 @@ const firstAidCards: FirstAidCard[] = [
     alert: "⚠ Baby teeth should NOT be replanted. Call us for guidance.",
   },
   {
-    icon: "💥",
+    icon: "/images/warning.png",
+    iconAlt: "Warning icon",
     title: "Severe Toothache",
     subtitle: "Relieve pain, then come in",
     steps: [
@@ -69,7 +72,8 @@ const firstAidCards: FirstAidCard[] = [
     alert: "⚠ Pain + facial swelling + fever = call us immediately. Do not wait.",
   },
   {
-    icon: "🔨",
+    icon: "/images/hammer.png",
+    iconAlt: "Hammer icon",
     title: "Broken or Chipped Tooth",
     subtitle: "Protect, preserve, come in",
     steps: [
@@ -87,7 +91,8 @@ const firstAidCards: FirstAidCard[] = [
     ],
   },
   {
-    icon: "👑",
+    icon: "/images/crown.png",
+    iconAlt: "Crown icon",
     title: "Lost Filling or Crown",
     subtitle: "Temporary fix, then see us",
     steps: [
@@ -105,45 +110,45 @@ const firstAidCards: FirstAidCard[] = [
 
 export default function EmergencyFirstAidSection() {
   return (
-    <section className="bg-[#F6F7F5] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
-      <div className="mx-auto w-full max-w-[1250px]">
+    <section className="bg-[#F8F9FA] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+      <div className="mx-auto w-full max-w-[1240px]">
         <div className="max-w-[900px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-8 bg-[#2AB8BC]" />
-            <p className="text-[12px] uppercase tracking-[0.24em] text-[#2AAFB3]">First-Aid Guide</p>
+            <p className="text-[12px] uppercase tracking-[0.24em] text-[#2AAFB3] font-bold">First-Aid Guide</p>
           </div>
-          <h2 className="mt-4 font-fraunces text-[44px] leading-[0.96] tracking-[-0.03em] text-[#111A2C] sm:text-[58px] lg:text-[76px]">
+          <h2 className="mt-4 font-fraunces text-[44px] leading-[0.96] tracking-[-0.03em] text-[#111A2C] sm:text-[58px] lg:text-[64px]">
             What to do <span className="font-light italic text-[#EC4252]">right now.</span>
           </h2>
-          <p className="mt-5 max-w-[860px] text-[17px] leading-[1.6] text-[#687281] sm:text-[22px] lg:text-[30px]">
+          <p className="mt-5 max-w-[860px] text-[17px] leading-[1.6] text-[#687281] sm:text-[22px] lg:text-[18px]">
             While you&apos;re on your way to us, these steps can save a tooth or reduce damage. Follow along
             carefully - the next 30 minutes matter.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 lg:grid-cols-2">
+        <div className="mt-10 grid gap-12 lg:grid-cols-2">
           {firstAidCards.map((card) => (
             <article key={card.title} className="rounded-[16px] border border-[#F0E6E8] bg-[#FFFEFE] px-5 pb-5 pt-5 sm:px-6 sm:pb-6">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2F4] text-[18px]">
-                {card.icon}
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2F4]">
+                <img src={card.icon} alt={card.iconAlt} className="h-5 w-5 object-contain" />
               </span>
-              <h3 className="mt-4 font-fraunces text-[34px] leading-tight text-[#121C2E] sm:text-[40px] lg:text-[50px]">{card.title}</h3>
-              <p className="mt-1 text-[15px] font-semibold uppercase tracking-[0.16em] text-[#EB4252] sm:text-[18px] lg:text-[20px]">{card.subtitle}</p>
+              <h3 className="mt-4 font-fraunces text-[34px] leading-tight text-[#121C2E] sm:text-[40px] lg:text-[20px]">{card.title}</h3>
+              <p className="mt-1 text-[15px] font-semibold uppercase tracking-[0.16em] text-[#EB4252] sm:text-[18px] lg:text-[13px]">{card.subtitle}</p>
 
               <div className="mt-5 divide-y divide-[#EFE6E8] border-y border-[#EFE6E8]">
                 {card.steps.map((step) => (
                   <div key={step.title} className="flex gap-3 py-3">
                     <span className="mt-1 inline-block h-5 w-5 shrink-0 rounded-full bg-[#061127]" />
                     <div>
-                      <p className="text-[16px] font-semibold text-[#141E31] sm:text-[17px] lg:text-[19px]">{step.title}</p>
-                      <p className="mt-1 text-[15px] leading-[1.62] text-[#536276] sm:text-[16px] lg:text-[18px]">{step.description}</p>
+                      <p className="text-[16px] font-semibold text-[#141E31] sm:text-[17px] lg:text-[15px]">{step.title}</p>
+                      <p className="mt-1 text-[15px] leading-[1.62] text-[#536276] sm:text-[16px] lg:text-[15px]">{step.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
               {card.alert ? (
-                <div className="mt-4 rounded-[10px] border border-[#FFD4DA] bg-[#FFF3F5] px-3 py-2.5 text-[16px] font-semibold text-[#E94050]">
+                <div className="mt-4 rounded-[10px] border border-[#FFD4DA] bg-[#FFF3F5] px-3 py-2.5 text-[14px] font-semibold text-[#E94050]">
                   {card.alert}
                 </div>
               ) : null}
