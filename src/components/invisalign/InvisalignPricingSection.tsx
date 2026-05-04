@@ -7,10 +7,10 @@ export default function InvisalignPricingSection() {
         <div className="max-w-[520px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#C2B189]">Pricing</p>
+            <p className="text-[12px] font-semibold  uppercase tracking-[0.24em] text-[#C2B189]">Pricing</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[74px]">
+          <h2 className="mt-4 font-fraunces font-light text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[50px]">
             Transparent, with <span className="font-light italic text-[#C9A961]">zero surprises.</span>
           </h2>
 
@@ -34,26 +34,26 @@ export default function InvisalignPricingSection() {
         </div>
 
         <div className="overflow-hidden rounded-[16px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-6 py-6 text-[#D0D8E6] sm:px-7 sm:py-7">
-          <p className="text-[9px] uppercase tracking-[0.22em] text-[#C9A961]">Example · Mid-Complexity Case</p>
-          <h3 className="mt-3 font-fraunces text-[40px] leading-[0.95] text-[#EFF3FA] sm:text-[46px] lg:text-[52px]">Full Invisalign Treatment</h3>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">Example · Mid-Complexity Case</p>
+          <h3 className="mt-3 font-fraunces text-[40px] leading-[0.95] text-[#EFF3FA] sm:text-[46px] lg:text-[32px]">Full Invisalign Treatment</h3>
           <p className="mt-2 text-[13px] italic text-[#8D9AB1]">iTero scan + 30 aligners + retainers</p>
 
           <div className="mt-6 border-t border-[#24314C]">
             <div className="flex items-center justify-between border-b border-[#24314C] py-4">
               <span className="text-[14px] text-[#8F9BB0]">Standard pricing</span>
-              <span className="font-fraunces text-[30px] leading-none text-[#EEF2F8] sm:text-[34px] lg:text-[38px]">$6,500</span>
+              <span className="font-fraunces text-[30px] leading-none text-[rgba(255,255,255,0.4)] sm:text-[34px] lg:text-[18px]">$6,500</span>
             </div>
             <div className="flex items-center justify-between border-b border-[#24314C] py-4">
               <span className="text-[14px] text-[#8F9BB0]">Gleam member pricing</span>
-              <span className="font-fraunces text-[30px] leading-none text-[#EEF2F8] sm:text-[34px] lg:text-[38px]">$5,200</span>
+              <span className="font-fraunces text-[30px] leading-none text-[#EEF2F8] sm:text-[34px] lg:text-[18px]">$5,200</span>
             </div>
             <div className="flex items-center justify-between border-b border-[#24314C] py-4">
               <span className="text-[14px] text-[#8F9BB0]">You save</span>
-              <span className="font-fraunces text-[34px] leading-none text-[#C9A961] sm:text-[39px] lg:text-[44px]">$1,300</span>
+              <span className="font-fraunces text-[34px] leading-none text-[#C9A961] sm:text-[39px] lg:text-[22px]">$1,300</span>
             </div>
             <div className="flex items-center justify-between py-4">
               <span className="text-[14px] text-[#8F9BB0]">Monthly with 0% APR</span>
-              <span className="font-fraunces text-[34px] leading-none text-[#C9A961] sm:text-[39px] lg:text-[44px]">~$217/mo</span>
+              <span className="font-fraunces text-[34px] leading-none text-[#C9A961] sm:text-[39px] lg:text-[48px]">~$217/mo</span>
             </div>
           </div>
 

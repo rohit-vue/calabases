@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function InvisalignHero() {
   return (
-    <section className="relative overflow-hidden bg-[#F4F3EB] px-4 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-12 lg:px-24 lg:pb-20 lg:pt-14">
-      <div className="pointer-events-none absolute left-[7%%] rotate-[-20deg] top-[20%] hidden lg:block">
+    <section className="relative overflow-hidden bg-[rgba(201,169,97,0.25)] px-4 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-12 lg:px-24 lg:pb-20 lg:pt-14">
+      <div className="pointer-events-none absolute left-[14%] rotate-[-20deg] top-[11%] hidden lg:block">
         <Image
           src="/images/invisalign.png"
           alt=""
@@ -14,7 +14,7 @@ export default function InvisalignHero() {
           aria-hidden="true"
         />
       </div>
-      <div className="pointer-events-none absolute right-[2%] top-[42%] hidden lg:block">
+      <div className="pointer-events-none absolute right-[6%] top-[55%] scale-125 hidden lg:block ">
         <Image
           src="/images/invisalign.png"
           alt=""
@@ -27,23 +27,23 @@ export default function InvisalignHero() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1180px]">
         <div className="mx-auto max-w-[760px] text-center">
-          <p className="text-[9px] uppercase tracking-[0.22em] text-[#8E97A9]">Home / Services / Invisalign</p>
+          <p className="text-[9px] uppercase tracking-[0.22em] text-[#8E97A9] font-medium">Home / Services / Invisalign</p>
 
           <div className="mx-auto mt-5 inline-flex items-center gap-2 rounded-full border border-[#D6D7DB] bg-[#F8F8F7] px-4 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#20B4B0]" />
-            <p className="text-[10px] uppercase tracking-[0.18em] text-[#1DA6A2]">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-[#1DA6A2] font-medium">
               Certified Invisalign Provider · 400+ Cases
             </p>
           </div>
 
-          <h1 className="mt-7 font-fraunces text-[46px] leading-[0.9] tracking-tighter text-[#0D1321] sm:text-[68px] lg:text-[98px]">
+          <h1 className="mt-7 font-fraunces font-light text-[46px] leading-[0.9] tracking-tighter text-[#0D1321] sm:text-[68px] lg:text-[98px]">
             Straight teeth.
             <br />
             <span className="font-light italic text-[#C9A961]">No metal.</span>
           </h1>
 
-          <p className="mx-auto mt-5 max-w-[760px] font-fraunces text-[24px] italic leading-[1.2] text-[#2A3240] sm:text-[32px] lg:text-[41px]">
-            1 in 4 orthodontic patients today is an adult. Invisalign treats most cases in 30-50% less
+          <p className="mx-auto mt-5 max-w-[760px] font-fraunces text-[24px] font-extralight italic leading-[1.2] text-[#2A3240] sm:text-[32px] lg:text-[41px]">
+            <strong>1 in 4</strong> &nbsp; orthodontic patients today is an adult. Invisalign treats most cases in 30-50% less
             time than traditional braces - with aligners most people won&apos;t even notice you&apos;re wearing.
           </p>
 
