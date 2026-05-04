@@ -110,17 +110,17 @@ const firstAidCards: FirstAidCard[] = [
 
 export default function EmergencyFirstAidSection() {
   return (
-    <section className="bg-[#F8F9FA] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-[#F8F9FA] px-4 py-12 sm:px-8 sm:py-16 lg:px-32 lg:py-20">
       <div className="mx-auto w-full max-w-[1240px]">
         <div className="max-w-[900px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-8 bg-[#2AB8BC]" />
             <p className="text-[12px] uppercase tracking-[0.24em] text-[#2AAFB3] font-bold">First-Aid Guide</p>
           </div>
-          <h2 className="mt-4 font-fraunces text-[44px] leading-[0.96] tracking-[-0.03em] text-[#111A2C] sm:text-[58px] lg:text-[64px]">
+          <h2 className="mt-4 font-fraunces text-[28px] leading-[0.96] tracking-[-0.03em] text-[#111A2C] sm:text-[42px] lg:text-[64px]">
             What to do <span className="font-light italic text-[#EC4252]">right now.</span>
           </h2>
-          <p className="mt-5 max-w-[860px] text-[17px] leading-[1.6] text-[#687281] sm:text-[22px] lg:text-[18px]">
+          <p className="mt-5 max-w-[860px] text-[14px] leading-[1.6] text-[#687281] sm:text-[18px] lg:text-[18px]">
             While you&apos;re on your way to us, these steps can save a tooth or reduce damage. Follow along
             carefully - the next 30 minutes matter.
           </p>
@@ -132,16 +132,16 @@ export default function EmergencyFirstAidSection() {
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF2F4]">
                 <img src={card.icon} alt={card.iconAlt} className="h-5 w-5 object-contain" />
               </span>
-              <h3 className="mt-4 font-fraunces text-[34px] leading-tight text-[#121C2E] sm:text-[40px] lg:text-[20px]">{card.title}</h3>
-              <p className="mt-1 text-[15px] font-semibold uppercase tracking-[0.16em] text-[#EB4252] sm:text-[18px] lg:text-[13px]">{card.subtitle}</p>
+              <h3 className="mt-4 font-fraunces text-[20px] leading-tight text-[#121C2E] sm:text-[28px] lg:text-[20px]">{card.title}</h3>
+              <p className="mt-1 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#EB4252] sm:text-[14px] lg:text-[13px]">{card.subtitle}</p>
 
               <div className="mt-5 divide-y divide-[#EFE6E8] border-y border-[#EFE6E8]">
                 {card.steps.map((step) => (
                   <div key={step.title} className="flex gap-3 py-3">
                     <span className="mt-1 inline-block h-5 w-5 shrink-0 rounded-full bg-[#061127]" />
                     <div>
-                      <p className="text-[16px] font-semibold text-[#141E31] sm:text-[17px] lg:text-[15px]">{step.title}</p>
-                      <p className="mt-1 text-[15px] leading-[1.62] text-[#536276] sm:text-[16px] lg:text-[15px]">{step.description}</p>
+                      <p className="text-[14px] font-semibold text-[#141E31] sm:text-[16px] lg:text-[15px]">{step.title}</p>
+                      <p className="mt-1 text-[13px] leading-[1.62] text-[#536276] sm:text-[15px] lg:text-[15px]">{step.description}</p>
                     </div>
                   </div>
                 ))}

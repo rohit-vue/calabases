@@ -67,17 +67,17 @@ const pricingItems: PricingItem[] = [
 
 export default function EmergencyPricingSection() {
   return (
-    <section className="bg-[#F6F7F5] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-[#F6F7F5] px-4 py-12 sm:px-8 sm:py-16 lg:px-32 lg:py-20">
       <div className="mx-auto w-full max-w-[1240px]">
         <div className="max-w-[980px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-8 bg-[#21B8B8]" />
             <p className="text-[12px] uppercase tracking-[0.24em] text-[#20B2B2] font-bold">What It Costs</p>
           </div>
-          <h2 className="mt-4 font-fraunces text-[44px] leading-[0.96] tracking-[-0.03em] text-[#111A2C] sm:text-[58px] lg:text-[50px]">
+          <h2 className="mt-4 font-fraunces text-[26px] leading-[0.96] tracking-[-0.03em] text-[#111A2C] sm:text-[38px] lg:text-[50px]">
             Transparent pricing, <span className="font-light italic text-[#EC4252]">even in an emergency.</span>
           </h2>
-          <p className="mt-5 max-w-[900px] text-[17px] leading-[1.6] text-[#697382] sm:text-[22px] lg:text-[18px]">
+          <p className="mt-5 max-w-[900px] text-[14px] leading-[1.6] text-[#697382] sm:text-[18px] lg:text-[18px]">
             No hidden fees. No surprise bills. We&apos;ll tell you the cost before we do anything - and Gleam
             members save 20% on all emergency procedures.
           </p>
@@ -87,15 +87,15 @@ export default function EmergencyPricingSection() {
           {pricingItems.map((item) => (
             <article key={item.title} className="rounded-[16px] border border-[#E4E7E4] bg-[#F8FAF8] px-5 pb-5 pt-5 sm:px-6 sm:pb-6">
               <p className="text-[11px] uppercase tracking-[0.2em] text-[#22B0B0] font-bold">{item.eyebrow}</p>
-              <h3 className="mt-3 font-fraunces text-[32px] leading-tight text-[#121C2E] sm:text-[37px] lg:text-[22px]">{item.title}</h3>
-              <p className="mt-1 min-h-[42px] font-fraunces text-[18px] italic text-[#818A9A] lg:text-[13px]">{item.subtitle}</p>
-              <p className="mt-3 font-fraunces text-[40px] leading-none text-[#121C2E] sm:text-[48px] lg:text-[28px]">{item.price}</p>
-              <p className="mt-1 text-[14px] text-[#6E7888] lg:text-[12px]">{item.note}</p>
+              <h3 className="mt-3 font-fraunces text-[18px] leading-tight text-[#121C2E] sm:text-[24px] lg:text-[22px]">{item.title}</h3>
+              <p className="mt-1 min-h-[42px] font-fraunces text-[13px] italic text-[#818A9A] sm:text-[16px] lg:text-[13px]">{item.subtitle}</p>
+              <p className="mt-3 font-fraunces text-[26px] leading-none text-[#121C2E] sm:text-[32px] lg:text-[28px]">{item.price}</p>
+              <p className="mt-1 text-[12px] text-[#6E7888] sm:text-[13px] lg:text-[12px]">{item.note}</p>
 
               <div className="mt-4 border-t border-[#E1E5E1] pt-4">
                 <div className="flex items-center justify-between gap-3 ">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#22ACAC] lg:text-[10px]">{item.memberLabel}</p>
-                  <p className="font-fraunces text-[27px] italic text-[#20A9A9] sm:text-[31px] lg:text-[13px]">{item.memberValue}</p>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[#22ACAC] sm:text-[12px] lg:text-[10px]">{item.memberLabel}</p>
+                  <p className="font-fraunces text-[15px] italic text-[#20A9A9] sm:text-[20px] lg:text-[13px]">{item.memberValue}</p>
                 </div>
               </div>
             </article>

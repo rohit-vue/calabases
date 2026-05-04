@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function EmergencyErWarningSection() {
   return (
-    <section className="overflow-hidden bg-[#0B0E14] px-4 py-10 sm:px-8 sm:py-12 lg:px-20 lg:py-14">
+    <section className="overflow-hidden bg-[#0B0E14] px-4 py-10 sm:px-8 sm:py-12 lg:px-32 lg:py-20">
       <div className="mx-auto w-full max-w-[1240px] py-7 sm:py-8">
         <div className="grid items-start gap-6 lg:grid-cols-[130px_1fr_auto] lg:gap-8 lg:items-center">
           <div>
-            <p className="font-fraunces text-[60px] leading-none tracking-[-0.03em] text-[#E63D4A] sm:text-[72px] lg:text-[86px]">
+            <p className="font-fraunces text-[48px] leading-none tracking-[-0.03em] text-[#E63D4A] sm:text-[60px] lg:text-[86px]">
               2M
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function EmergencyErWarningSection() {
 
           <Link
             href="tel:+18185550100"
-            className="inline-flex h-[52px] shrink-0 items-center rounded-full bg-[#E63D4A] px-8 text-[16px] font-semibold text-white transition hover:opacity-90"
+            className="inline-flex h-[52px] w-full shrink-0 items-center justify-center rounded-full bg-[#E63D4A] px-8 text-[16px] font-semibold text-white transition hover:opacity-90 lg:w-auto"
           >
             <Image
               src="/images/📞.png"
