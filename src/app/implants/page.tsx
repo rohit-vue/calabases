@@ -1,5 +1,5 @@
 import CosmaticMembershipMathSection from "@/components/cosmatic/CosmaticMembershipMathSection";
-import FaqSection from "@/components/general/FaqSection";
+import FaqSection from "@/components/layout/FaqSection";
 import ImplantsCandidacySection from "@/components/implants/ImplantsCandidacySection";
 import ImplantsComparisonSection from "@/components/implants/ImplantsComparisonSection";
 import ImplantsHero from "@/components/implants/ImplantsHero";

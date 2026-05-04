@@ -7,7 +7,7 @@ import TransparentPricingSection from "@/components/general/TransparentPricingSe
 import MeetDentistSection from "@/components/general/MeetDentistSection";
 import InsuranceAcceptedSection from "@/components/general/InsuranceAcceptedSection";
 import PatientReviewsSection from "@/components/general/PatientReviewsSection";
-import FaqSection from "@/components/general/FaqSection";
+import FaqSection from "@/components/layout/FaqSection";
 import VisitUsSection from "@/components/general/VisitUsSection";
 import FinalCtaSection from "@/components/general/FinalCtaSection";
 

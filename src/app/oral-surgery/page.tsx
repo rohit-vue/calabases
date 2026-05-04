@@ -5,8 +5,8 @@ import OralSurgerySedationSection from "@/components/oral-surgery/OralSurgerySed
 import OralSurgeryCommitmentSection from "@/components/oral-surgery/OralSurgeryCommitmentSection";
 import OralSurgeryRecoverySection from "@/components/oral-surgery/OralSurgeryRecoverySection";
 import OralSurgeryPricingSection from "@/components/oral-surgery/OralSurgeryPricingSection";
-import OralSurgeryTestimonialSection from "@/components/oral-surgery/OralSurgeryTestimonialSection";
-import FaqSection from "@/components/general/FaqSection";
+import TestimonialSection from "@/components/layout/TestimonialSection";
+import FaqSection from "@/components/layout/FaqSection";
 import ClosingCta from "@/components/layout/ClosingCta";
 
 const oralSurgeryFaqs = [
@@ -67,13 +67,41 @@ export default function OralSurgeryPage() {
       <OralSurgeryCommitmentSection />
       <OralSurgeryRecoverySection />
       <OralSurgeryPricingSection />
-      <OralSurgeryTestimonialSection />
-      <FaqSection faqs={oralSurgeryFaqs} />
+      <TestimonialSection
+        label="Patient Recovery · Calabasas"
+        quote="I put off getting my wisdom teeth out until I was 34. I was terrified. I expected a week of pain and a vicodin prescription. I got IV sedation, woke up with no memory of the procedure, and was back at my desk on Tuesday. I wish I'd done it 10 years ago."
+        authorName="Nadia K."
+        authorSubtext="Wisdom teeth removal · Calabasas"
+        authorInitials="N"
+        background="#E6EEEA"
+        accentColor="#5E7267"
+        quoteColor="#0A0E1A"
+        authorNameColor="#0A0E1A"
+        authorMetaColor="#5E7267"
+        quoteMarkColor="#8FA99F"
+        avatarTextColor="#FFFFFF"
+        avatarBackground="#5E7267"
+      />
+      <FaqSection 
+      faqs={oralSurgeryFaqs}
+      background="#EFF4F2"
+      accentColor="#5E7267"
+      headingColor="#0A0E1A"
+      headingEmphasisColor="#5E7267"
+      cardBorderColor="#E4E0D6"
+      cardBackgroundColor="#FFFFFF"
+      questionColor="#0A0E1A"
+      answerColor="#5E7267"
+      toggleBackgroundColor="#F3F7F6"
+      toggleIconColor="#5E7267"
+      />
       <ClosingCta
         eyebrow="Calm, Modern, In-House"
+        eyebrowLined
+        eyebrowLineColor="#8FA99F"
         titleStart="Surgery shouldn't"
-        titleEmphasis="feel like"
-        titleEnd="surgery."
+        titleEmphasis="feel like surgery."
+        titleEnd=""
         subtitle="Book a consultation. We'll review your imaging, walk through your sedation options, and give you transparent pricing before you commit."
         primaryCtaLabel="Book Your Consultation"
         primaryCtaHref="#"
@@ -86,6 +114,23 @@ export default function OralSurgeryPage() {
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
         footerText="© 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved"
+        eyebrowColor="#8FA99F"
+        background="linear-gradient(116.24deg, #0A0E1A 0%, #1C2333 100%)"
+        headlineColor="#FFFFFF"
+        subtitleColor="#FFFFFF"
+        titleEmphasisColor="#8FA99F"
+        statsValueColor="#8FA99F"
+        statsLabelColor="#FFFFFF80"
+        statsDividerColor="#FFFFFF1A"
+        primaryCtaBackground="#8FA99F"
+        primaryCtaTextColor="#0A0E1A"
+        primaryCtaBorderColor="#000000"
+        secondaryCtaBorderColor="#FFFFFF40"
+        secondaryCtaTextColor="#FFFFFF"
+        footerTextColor="#FFFFFF66"
+        footerBarBackground="#0A0E1A"
+        footerBarBorderColor="#FFFFFF14"
+        heroOverlayGradient="radial-gradient(70.71% 70.71% at 50% 50%, rgba(143, 169, 159, 0.15) 0%, rgba(143, 169, 159, 0) 60%)"
       />
     </main>
   );

@@ -7,7 +7,7 @@ import RestorativeProcessSection from "@/components/restorative/RestorativeProce
 import RestorativePricingSection from "@/components/restorative/RestorativePricingSection";
 import RestorativeWarrantyCta from "@/components/restorative/RestorativeWarrantyCta";
 import TestimonialSection from "@/components/layout/TestimonialSection";
-import FaqSection from "@/components/general/FaqSection";
+import FaqSection from "@/components/layout/FaqSection";
 import ClosingCta from "@/components/layout/ClosingCta";
 
 const restorativeFaqs = [
