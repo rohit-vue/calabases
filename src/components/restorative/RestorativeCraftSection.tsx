@@ -12,7 +12,7 @@ export default function RestorativeCraftSection() {
         <div className="max-w-[620px]">
           <p className="font-fraunces text-[11px] italic uppercase tracking-[0.19em] text-[#8B5A2B]">§ Our Craft</p>
 
-          <h2 className="mt-3 font-fraunces text-[32px] font-light leading-[0.98] tracking-[-0.03em] text-[#0a0e1a] sm:mt-4 sm:text-[44px] md:text-[52px] lg:text-[56px]">
+          <h2 className="mt-3 font-fraunces text-[32px] font-light leading-[0.98] tracking-[-0.03em] text-[#0A0E1A] sm:mt-4 sm:text-[44px] md:text-[52px] lg:text-[56px]">
             Built to last <span className="italic text-[#B87333]">longer than</span>
             <br />
             <span className="italic text-[#B87333]">the teeth they replace.</span>

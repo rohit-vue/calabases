@@ -13,6 +13,7 @@ const config: Config = {
         inter: ["Inter", "sans-serif"],
         serif: ["DM Serif Display", "serif"],
         fraunces: ["Fraunces", "serif"],
+        jetbrains: ["JetBrains Mono", "monospace"],
       },
     },
   },
