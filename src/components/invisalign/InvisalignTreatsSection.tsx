@@ -38,29 +38,29 @@ export default function InvisalignTreatsSection() {
         <div className="max-w-[900px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#C2B189]">What it treats</p>
+            <p className="text-[12px] font-semibold  uppercase tracking-[0.24em] text-[#C2B189]">What it treats</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[74px]">
+          <h2 className="mt-4 font-fraunces font-light text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[50px]">
             Nine out of ten <span className="font-light italic text-[#C9A961]">orthodontic cases.</span>
           </h2>
 
-          <p className="mt-5 max-w-[820px] text-[17px] leading-normal text-[#687286] sm:text-[20px] lg:text-[22px]">
+          <p className="mt-5 max-w-[820px] font-light  text-[17px] leading-normal text-[#687286] sm:text-[20px] lg:text-[15px]">
             Invisalign treats the vast majority of orthodontic issues - from minor crowding to complex
             bite corrections. Here's what we can fix.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {treatCards.map((card) => (
             <article
               key={card.title}
-              className="rounded-[14px] border border-[#E3E0D7] bg-[#F8F8F6] px-5 py-5 sm:px-6 sm:py-6"
+              className="rounded-[14px]  border border-[#E3E0D7] bg-[#F8F8F6] px-5 py-5 sm:px-6 sm:py-6"
             >
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-[10px] bg-[#F2ECDC] font-fraunces text-[18px] text-[#1A2232]">
                 {card.icon}
               </span>
-              <h3 className="mt-4 font-fraunces text-[30px] leading-[0.98] text-[#121927] sm:text-[34px] lg:text-[38px]">{card.title}</h3>
+              <h3 className="mt-4 font-fraunces text-[30px] leading-[0.98] text-[#121927] sm:text-[34px] lg:text-[22px]">{card.title}</h3>
               <p className="mt-3 text-[15px] leading-[1.6] text-[#667081]">{card.description}</p>
             </article>
           ))}

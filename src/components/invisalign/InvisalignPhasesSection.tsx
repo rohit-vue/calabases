@@ -33,25 +33,25 @@ const phases = [
 
 export default function InvisalignPhasesSection() {
   return (
-    <section className="bg-[#F4F3EB] px-4 pb-16 pt-8 sm:px-8 sm:pb-18 sm:pt-10 lg:px-24 lg:pb-20 lg:pt-12">
+    <section className="bg-[#F0F4F7] px-4 pb-16 pt-8 sm:px-8 sm:pb-18 sm:pt-10 lg:px-24 lg:pb-20 lg:pt-12">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[860px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#C2B189]">How it works</p>
+            <p className="text-[12px] uppercase font-semibold tracking-[0.24em] text-[#C2B189]">How it works</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[74px]">
+          <h2 className="mt-4 font-fraunces text-[42px] font-light  leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[68px]">
             Five phases. One <span className="font-light italic text-[#C9A961]">straight smile.</span>
           </h2>
 
-          <p className="mt-5 max-w-[780px] text-[17px] leading-normal text-[#687286] sm:text-[20px] lg:text-[23px]">
+          <p className="mt-5 max-w-[780px] text-[17px] font-light leading-normal text-[#687286] sm:text-[20px] lg:text-[19px]">
             Invisalign uses a series of clear, custom-molded plastic aligners to shift your teeth 0.2-0.3mm
             per tray. You wear each for 1-2 weeks, 22 hours per day. No metal. No wires. No monthly adjustments.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {phases.map((phase, idx) => (
             <article
               key={phase.number}
@@ -64,11 +64,13 @@ export default function InvisalignPhasesSection() {
                 />
               ) : null}
 
-              <p className="font-fraunces text-[42px] italic leading-none text-[#C9A961] sm:text-[48px] lg:text-[54px]">{phase.number}</p>
-              <h3 className="mt-3 font-fraunces text-[25px] leading-[0.98] text-[#121927] sm:text-[28px] lg:text-[31px]">{phase.title}</h3>
-              <p className="mt-3 min-h-[88px] text-[14px] leading-[1.55] text-[#667081]">{phase.description}</p>
-              <div className="mt-4 border-t border-[#E6E3DB] pt-3">
-                <p className="text-[10px] uppercase tracking-[0.22em] text-[#C2B189]">{phase.timing}</p>
+              <p className="font-fraunces text-[42px] font-light italic leading-none text-[#C9A961] sm:text-[48px] lg:text-[54px]">{phase.number}</p>
+              <h3 className="mt-3 font-fraunces text-[25px] leading-[0.98] text-[#121927] sm:text-[28px]  lg:text-[21px]">{phase.title}</h3>
+              <p className="mt-3 min-h-[88px] flex-1 text-[14px] leading-[1.55] text-[#667081]">{phase.description}</p>
+              <div className="mt-4  pt-3">
+                <span className="inline-flex items-center rounded-[7px] bg-[#F0EDE4] px-2.5 py-1.5 text-[10px] font-bold uppercase leading-none tracking-[0.06em] text-[#C9A961]">
+                  {phase.timing}
+                </span>
               </div>
             </article>
           ))}
