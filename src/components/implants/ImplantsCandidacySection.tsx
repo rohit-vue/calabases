@@ -51,15 +51,15 @@ export default function ImplantsCandidacySection() {
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[900px]">
           <div className="flex items-center gap-2.5">
-            <span className="text-[14px] text-[#C3A66A]">⛓</span>
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#BDA670]">Candidacy</p>
+            <span className="font-fraunces italic uppercase text-[#5A6578]">§</span>
+            <p className="text-[11px] font-jetbrains uppercase tracking-[0.24em] text-[#C9A961]">Candidacy</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[74px]">
+          <h2 className="mt-4 font-fraunces font-light leading-[0.92] tracking-tighter text-[#101624] lg:text-[56px]">
             Are implants <span className="font-light italic text-[#C9A961]">right for you?</span>
           </h2>
 
-          <p className="mt-5 max-w-[820px] text-[17px] leading-normal text-[#687286] sm:text-[20px] lg:text-[23px]">
+          <p className="mt-5 max-w-[620px] font-inter font-light leading-normal text-[#5A6578] lg:text-[17px]">
             Most adults missing one or more teeth are candidates for implants - but not everyone is a fit
             on day one. Here&apos;s what we look for during your consultation.
           </p>
@@ -67,15 +67,17 @@ export default function ImplantsCandidacySection() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
           <div>
-            <h3 className="text-[34px] font-fraunces leading-none text-[#1D8D84] sm:text-[39px] lg:text-[44px]">✓ Great candidates</h3>
-            <div className="mt-4 border-t border-[#DDDACE]">
+            <h3 className="font-fraunces leading-none text-[#1D8D84] sm:text-[39px] lg:text-[28px]">✓ Great candidates</h3>
+            <div className="mt-2 border-t border-[#DDDACE]">
               {greatCandidates.map((item) => (
-                <div key={item.title} className="border-b border-[#E3E0D6] py-5">
+                <div key={item.title} className="border-t border-[#E3E0D6] pt-8 pb-3">
                   <div className="flex items-start gap-3">
-                    <span className="mt-1 text-[14px] text-[#1D8D84]">✓</span>
+                    <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E7F5F3] text-[14px] leading-none text-[#1D8D84]">
+                      ✓
+                    </span>
                     <div>
-                      <p className="text-[22px] font-fraunces leading-none text-[#121927] sm:text-[24px] lg:text-[26px]">{item.title}</p>
-                      <p className="mt-2 text-[15px] leading-[1.58] text-[#667081]">{item.description}</p>
+                      <p className="font-inter font-semibold leading-none text-[#121927] sm:text-[24px] lg:text-[15px]">{item.title}</p>
+                      <p className="mt-2 font-inter text-[14px] leading-[1.58] text-[#5A6578]">{item.description}</p>
                     </div>
                   </div>
                 </div>
@@ -84,15 +86,25 @@ export default function ImplantsCandidacySection() {
           </div>
 
           <div>
-            <h3 className="text-[34px] font-fraunces leading-none text-[#232A38] sm:text-[39px] lg:text-[44px]">⚠ May need extra steps</h3>
+            <h3 className="flex font-fraunces gap-2 leading-none text-[#1C2333] lg:text-[28px]"><svg
+              className="w-7 h-7 text-yellow-400"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M12 2L1 21h22L12 2z" />
+              <rect x="11" y="9" width="2" height="5" fill="black" />
+              <rect x="11" y="16" width="2" height="2" fill="black" />
+            </svg> May need extra steps</h3>
             <div className="mt-4 border-t border-[#DDDACE]">
               {extraSteps.map((item) => (
-                <div key={item.title} className="border-b border-[#E3E0D6] py-5">
+                <div key={item.title} className="border-t border-[#E3E0D6] pt-8 pb-3">
                   <div className="flex items-start gap-3">
-                    <span className="mt-1 text-[14px] text-[#E596A6]">!</span>
+                    <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FFE5E5] text-[14px] leading-none text-[#CC4444]">
+                      !
+                    </span>
                     <div>
-                      <p className="text-[22px] font-fraunces leading-none text-[#121927] sm:text-[24px] lg:text-[26px]">{item.title}</p>
-                      <p className="mt-2 text-[15px] leading-[1.58] text-[#667081]">{item.description}</p>
+                      <p className="font-inter font-bold leading-none text-[#0A0E1A] sm:text-[24px] lg:text-[15px]">{item.title}</p>
+                      <p className="mt-2 font-inter text-[14px] leading-[1.58] text-[#5A6578]">{item.description}</p>
                     </div>
                   </div>
                 </div>

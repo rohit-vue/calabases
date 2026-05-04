@@ -11,12 +11,12 @@ export default function CosmaticHero() {
   return (
     <section className="relative overflow-hidden bg-[#0A0E1A] px-4 py-10 sm:px-8 sm:py-14 lg:px-24 lg:py-16">
       <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-12">
-        <div className="relative z-10 max-w-[520px] text-white">
+        <div className="relative z-10 mx-auto w-full max-w-[520px] text-center text-white lg:mx-0 lg:text-left">
           <p className="text-[11px] uppercase tracking-[0.17em] text-[#FFFFFF66]">
             Home / Services / Cosmetic Dentistry
           </p>
 
-          <div className="mt-5 flex items-center gap-3">
+          <div className="mt-5 flex items-center justify-center gap-3 lg:justify-start">
             <span className="h-[0.2px] w-[46px] bg-[#C9A961]" />
             <p className="text-[11px] font-medium uppercase tracking-[0.3em] text-[#C9A961]">Issue no2 - The art of the smile</p>
             <span className="h-[0.2px] w-[46px] bg-[#C9A961]" />
@@ -30,35 +30,35 @@ export default function CosmaticHero() {
             done right.
           </h1>
 
-          <p className="mt-5 max-w-[460px] border-l-2 font-normal border-[#C9A961] pl-5 font-fraunces text-[20px] leading-[1.22] text-[#FFFFFFD9] sm:pl-6 sm:text-[22px] lg:text-[22px]">
+          <p className="mx-auto mt-5 max-w-[460px] border-l-2 border-[#C9A961] pl-5 text-left font-fraunces text-[20px] font-normal leading-[1.22] text-[#FFFFFFD9] sm:pl-6 sm:text-[22px] lg:mx-0 lg:text-[22px]">
             74% <span className="font-light italic">of Americans believe an unattractive smile can hurt their career. Your smile is an
             investment - here&apos;s how to get it right.</span>
           </p>
 
-          <p className="mt-6 max-w-[470px] text-[13px] leading-[1.55] text-[#FFFFFF99]">
+          <p className="mx-auto mt-6 max-w-[470px] text-[13px] leading-[1.55] text-[#FFFFFF99] lg:mx-0">
             Veneers. Whitening. Smile design. Over 1,200 cosmetic procedures completed in Calabasas
             since 2010 - with a digital preview of your final smile before we ever begin.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex w-full flex-col gap-3 lg:flex-row lg:flex-wrap">
             <Link
               href="#"
-              className="inline-flex h-[42px] items-center rounded-[100px] border-2 border-black bg-[#C9A961] px-6 text-[14px] tracking-[0.02em] font-semibold text-[#0A0E1A] transition hover:brightness-95"
+              className="flex h-[42px] w-full items-center justify-center rounded-[100px] border-2 border-black bg-[#C9A961] px-6 text-[14px] font-semibold tracking-[0.02em] text-[#0A0E1A] transition hover:brightness-95 lg:inline-flex lg:w-auto"
             >
               Book a Smile Consultation <span className="ml-2">→</span>
             </Link>
             <Link
               href="#"
-              className="inline-flex h-[42px] items-center rounded-[100px] border border-[#FFFFFF4D] px-6 text-[14px] font-semibold tracking-[0.02em] text-[#DEE3EC] transition hover:bg-white/5"
+              className="flex h-[42px] w-full items-center justify-center rounded-[100px] border border-[#FFFFFF4D] px-6 text-[14px] font-semibold tracking-[0.02em] text-[#DEE3EC] transition hover:bg-white/5 lg:inline-flex lg:w-auto"
             >
               Explore Treatments
             </Link>
           </div>
 
-          <div className="mt-9 grid grid-cols-1 gap-4 border-t border-[#FFFFFF1A] pt-5 sm:grid-cols-3 sm:gap-0">
+          <div className="mt-9 grid grid-cols-1 justify-items-center gap-4 border-t border-[#FFFFFF1A] pt-5 text-center sm:grid-cols-3 sm:gap-0 lg:justify-items-start lg:text-left">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <p className="font-fraunces text-[24px] tracking-[-0.023em] leading-none text-[#FFFFFF]">{stat.value}</p>
+                <p className="font-fraunces text-[24px] leading-none tracking-[-0.023em] text-[#FFFFFF]">{stat.value}</p>
                 <p className="mt-2 text-[9px] uppercase tracking-[0.18em] text-[#FFFFFF80]">{stat.label}</p>
               </div>
             ))}

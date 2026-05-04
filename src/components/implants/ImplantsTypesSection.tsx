@@ -13,7 +13,7 @@ const implantTypes = [
   {
     tag: "Multi-Tooth",
     title: "Multiple Implants",
-    subtitle: "For 2-5 missing teeth.",
+    subtitle: "For 2-3 missing teeth.",
     description:
       "Individual implants placed for each missing tooth. Preserves bone in every location and gives you independent teeth that look and function like the originals.",
     timeline: "4-7 months",
@@ -51,15 +51,15 @@ export default function ImplantsTypesSection() {
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[820px]">
           <div className="flex items-center gap-2.5">
-            <span className="text-[14px] text-[#C3A66A]">⛓</span>
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#BDA670]">Implant Types</p>
+            <span className="text-[14px] text-[#5A6578] italic">§</span>
+            <p className="font-jetbrains text-[11px] uppercase tracking-[0.24em] text-[#C9A961]">Implant Types</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#EEF2F8] sm:text-[58px] lg:text-[74px]">
+          <h2 className="mt-4 max-w-none font-fraunces text-[74px] font-light leading-[0.92] tracking-tighter text-[#EEF2F8] lg:whitespace-nowrap">
             One tooth. Several teeth. A <span className="font-light italic text-[#C9A961]">full arch.</span>
           </h2>
 
-          <p className="mt-5 max-w-[700px] text-[17px] leading-normal text-[#8D98AC] sm:text-[21px] lg:text-[24px]">
+          <p className="mt-5 max-w-[700px] text-[19px] leading-normal text-[#FFFFFF99] font-inter font-light">
             Every case is different. Here are the four implant solutions we offer, with real price ranges
             and what each is built for.
           </p>
@@ -69,33 +69,41 @@ export default function ImplantsTypesSection() {
           {implantTypes.map((item) => (
             <article
               key={item.title}
-              className="rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-5 py-6 sm:px-6"
+              className="grid h-full min-h-[560px] grid-rows-[auto_104px_minmax(180px,auto)_auto_auto] rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-5 py-6 sm:px-6"
             >
-              <p className="text-[9px] uppercase tracking-[0.24em] text-[#C7A861]">{item.tag}</p>
-              <h3 className="mt-4 font-fraunces text-[33px] leading-[0.95] text-[#EFF3F9] sm:text-[38px] lg:text-[43px]">{item.title}</h3>
-              <p className="mt-2 font-fraunces text-[18px] italic leading-[1.2] text-[#C8CEDC] sm:text-[20px] lg:text-[23px]">{item.subtitle}</p>
-              <p className="mt-4 text-[15px] leading-[1.58] text-[#99A5BB]">{item.description}</p>
+              <p className="font-jetbrains text-[10px] uppercase tracking-[0.24em] text-[#C9A961]">{item.tag}</p>
+              <div className="flex flex-col gap-2 pt-4">
+                <h3 className="font-fraunces text-[33px] leading-[0.95] text-[#EFF3F9] sm:text-[38px] lg:text-[28px]">
+                  {item.title}
+                </h3>
+                <p className="font-fraunces text-[18px] font-light italic leading-[1.2] text-[#C9A961] sm:text-[20px] lg:text-[13px]">
+                  {item.subtitle}
+                </p>
+              </div>
+              <div className="pt-6">
+                <p className="max-w-[240px] font-inter text-[14px] leading-[1.8] text-[#FFFFFFA6]">{item.description}</p>
+              </div>
 
-              <div className="mt-5 border-t border-[#1A2742] pt-4">
-                <div className="space-y-2.5">
-                  <div className="flex items-center justify-between text-[13px] text-[#8390A8]">
+              <div className="border-t border-[#1A2742] pt-4">
+                <div className="space-y-2">
+                  <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 text-[13px] text-[#FFFFFF80]">
                     <span>Timeline</span>
-                    <span className="text-[#D6DCE8]">{item.timeline}</span>
+                    <span className="text-right text-[#D6DCE8]">{item.timeline}</span>
                   </div>
-                  <div className="flex items-center justify-between text-[13px] text-[#8390A8]">
+                  <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 text-[13px] text-[#FFFFFF80]">
                     <span>Implants</span>
-                    <span className="text-[#D6DCE8]">{item.implants}</span>
+                    <span className="text-right text-[#D6DCE8]">{item.implants}</span>
                   </div>
-                  <div className="flex items-center justify-between text-[13px] text-[#8390A8]">
+                  <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 text-[13px] text-[#FFFFFF80]">
                     <span>Success rate</span>
-                    <span className="text-[#D6DCE8]">{item.successRate}</span>
+                    <span className="text-right text-[#D6DCE8]">{item.successRate}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-5 border-t border-[#1A2742] pt-4">
-                <p className="font-fraunces text-[36px] leading-[0.95] text-[#F4F7FC] sm:text-[42px] lg:text-[47px]">{item.price}</p>
-                <p className="mt-1 text-[11px] italic text-[#C9A961]">Gleam members save 20%</p>
+              <div className="mt-3 border-t border-[#1A2742] pt-4">
+                <p className="font-fraunces text-[36px] leading-[0.95] text-[#FFFFFF] sm:text-[42px] lg:text-[32px]">{item.price}</p>
+                <p className="font-jetbrains mt-1 text-[12px] text-[#C9A961]">Gleam members save 20%</p>
               </div>
             </article>
           ))}

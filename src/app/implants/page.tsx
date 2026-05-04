@@ -69,7 +69,12 @@ export default function ImplantsPage() {
         eyebrow="Gleam Membership"
         titleStart="The highest-ROI"
         titleEmphasis="membership you'll ever join."
-        subtitle="At $297/year, Gleam pays for itself 11x over on a single implant. 45x over on an All-on-4 case."
+        subtitle={
+          <>
+            At $297/year, Gleam pays for itself <span className="font-semibold">11x over</span> on a single implant. 45x over on an
+            All-on-4 case.
+          </>
+        }
         body="20% off every implant procedure, plus unlimited cleanings, exams, and X-rays for life. There's no other dental membership with this kind of math."
         tableHeaderFirstCol="Procedure"
         rows={[
