@@ -4,10 +4,10 @@ export default function ImplantsPatientCaseSection() {
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="text-center">
           <div className="inline-flex items-center gap-2.5">
-            <span className="text-[14px] text-[#C3A66A]">⛓</span>
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#BDA670]">Patient Case</p>
+            <span className="font-fraunces italic uppercase text-[#5A6578]">§</span>
+            <p className="text-[11px] uppercase tracking-[0.24em] text-[#C9A961]">Patient Case</p>
           </div>
-          <h2 className="mx-auto mt-4 max-w-[980px] font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#EEF2F8] sm:text-[56px] lg:text-[72px]">
+          <h2 className="mx-auto mt-4 max-w-[980px] font-fraunces font-light leading-[0.92] tracking-tighter text-[#EEF2F8] lg:text-[46px]">
             A 20-year denture-wearer.{" "}
             <span className="font-light italic text-[#C9A961]">One 6-month treatment.</span>
           </h2>
@@ -15,39 +15,39 @@ export default function ImplantsPatientCaseSection() {
 
         <div className="mx-auto mt-10 grid max-w-[980px] grid-cols-1 gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-center lg:gap-12">
           <aside className="rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-6 py-6 text-[#D0D8E6]">
-            <p className="text-[10px] uppercase tracking-[0.22em] text-[#75839E]">Case n°247</p>
+            <p className="text-[9px] font-jetbrains uppercase tracking-[0.22em] text-[#C9A961]">Case n°247</p>
 
             <div className="mt-5 grid grid-cols-2 gap-x-5 gap-y-4">
               <div>
-                <p className="text-[9px] uppercase tracking-[0.2em] text-[#70809C]">Treatment</p>
-                <p className="mt-2 font-fraunces text-[30px] leading-[0.95] text-[#EEF2F8] sm:text-[34px] lg:text-[40px]">All-on-4,</p>
-                <p className="font-fraunces text-[30px] leading-[0.95] text-[#EEF2F8] sm:text-[34px] lg:text-[40px]">Upper Arch</p>
+                <p className="font-inter text-[9px] uppercase tracking-[0.2em] text-[#FFFFFF80]">Treatment</p>
+                <p className="mt-2 font-fraunces text-[30px] leading-[0.95] text-[#FFFFFF] sm:text-[34px] lg:text-[22px] py-2">All-on-4 ·</p>
+                <p className="font-fraunces text-[30px] leading-[0.95] text-[#FFFFFF] sm:text-[34px] lg:text-[22px]">Upper Arch</p>
               </div>
               <div>
-                <p className="text-[9px] uppercase tracking-[0.2em] text-[#70809C]">Duration</p>
-                <p className="mt-2 font-fraunces text-[30px] leading-[0.95] text-[#EEF2F8] sm:text-[34px] lg:text-[40px]">6.5 months</p>
+                <p className="font-inter text-[9px] uppercase tracking-[0.2em] text-[#FFFFFF80]">Duration</p>
+                <p className="mt-2 font-fraunces leading-[0.95] text-[#FFFFFF] lg:text-[22px]">6.5 months</p>
               </div>
-              <div className="border-t border-[#1A2742] pt-4">
+              <div className="pt-4">
                 <p className="text-[9px] uppercase tracking-[0.2em] text-[#70809C]">Implants placed</p>
-                <p className="mt-2 font-fraunces text-[30px] leading-none text-[#EEF2F8] sm:text-[34px] lg:text-[40px]">4</p>
+                <p className="mt-2 font-fraunces leading-none text-[#EEF2F8] lg:text-[22px]">4</p>
               </div>
-              <div className="border-t border-[#1A2742] pt-4">
-                <p className="text-[9px] uppercase tracking-[0.2em] text-[#70809C]">Outcome</p>
-                <p className="mt-2 font-fraunces text-[30px] leading-[0.95] text-[#C9A961] sm:text-[34px] lg:text-[40px]">Full success</p>
+              <div className="pt-4">
+                <p className="text-[9px] uppercase tracking-[0.2em] text-[#FFFFFF80]">Outcome</p>
+                <p className="mt-2 font-fraunces leading-[0.95] text-[#C9A961] lg:text-[22px]">Full success</p>
               </div>
             </div>
 
-            <p className="mt-6 border-t border-[#1A2742] pt-4 text-[13px] text-[#8C99B0]">
+            <p className="font-jetbrains mt-6 border-t border-[#FFFFFF1A] pt-4 text-[14px] text-[#FFFFFF80]">
               Follow-up at 3 years: Stable. No complications.
             </p>
           </aside>
 
           <div>
-            <blockquote className="font-fraunces text-[30px] italic leading-[1.18] tracking-[-0.02em] text-[#EEF2F8] sm:text-[40px] lg:text-[49px]">
-              I wore dentures for 20 years. I stopped smiling in photos. I couldn&apos;t eat corn on the cob.
+            <blockquote className="font-fraunces italic leading-[1.18] tracking-[-0.02em] text-[#FFFFFF] font-light lg:text-[24px]">
+              "I wore dentures for 20 years. I stopped smiling in photos. I couldn&apos;t eat corn on the cob.
               After All-on-4, I forgot within a month that they weren&apos;t my real teeth. I eat whatever I
               want. I laugh without covering my mouth. Dr. Kashani didn&apos;t just fix my teeth - he gave me
-              back something I didn&apos;t know I&apos;d lost.
+              back something I didn&apos;t know I&apos;d lost."
             </blockquote>
 
             <div className="mt-8 inline-flex items-center gap-3">

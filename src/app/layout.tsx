@@ -1,12 +1,13 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Fraunces, Inter, DM_Serif_Display } from "next/font/google";
+import { Fraunces, Inter, DM_Serif_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 const dmSerif = DM_Serif_Display({ weight: "400", subsets: ["latin"], display: "swap" });
 const fraunces = Fraunces({ subsets: ["latin"], display: "swap" });
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Calabasas Smiles Dentist | Cosmetic, General & Emergency Care",
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.className} ${dmSerif.className} ${fraunces.className}`}>
+    <html lang="en" className={`${inter.className} ${dmSerif.className} ${fraunces.className} ${jetbrainsMono.className}`}>
       <body className="min-h-dvh overflow-x-hidden bg-bg-cream font-sans text-brand-primary antialiased flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

@@ -61,41 +61,53 @@ export default function ImplantsComparisonSection() {
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[860px]">
           <div className="flex items-center gap-2.5">
-            <span className="text-[14px] text-[#C3A66A]">⛓</span>
-            <p className="text-[9px] uppercase tracking-[0.24em] text-[#BDA670]">The Real Math</p>
+            <span className="text-[#5A6578] italic">§</span>
+            <p className="font-jetbrains text-[11px] uppercase tracking-[0.24em] text-[#BDA670]">The Real Math</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[74px]">
-            Implants vs. bridges <span className="font-light italic text-[#C9A961]">vs. dentures.</span>
+          <h2 className="mt-4 font-fraunces text-[42px] font-light leading-[0.92] tracking-tighter text-[#0A0E1A] sm:text-[58px] lg:text-[62px]">
+            Implants vs. bridges <span className="font-light font-fraunces italic text-[#B87333]">vs. dentures.</span>
           </h2>
 
-          <p className="mt-5 max-w-[760px] text-[17px] leading-normal text-[#687286] sm:text-[20px] lg:text-[23px]">
+          <p className="font-inter font-light mt-5 max-w-[760px] text-[20px] leading-normal text-[#5A6578]">
             People often default to bridges or dentures because the upfront cost is lower. Here&apos;s what
             20 years actually looks like - the math usually favors implants.
           </p>
         </div>
 
-        <div className="mt-10 overflow-x-auto rounded-[14px] border border-[#DFDDD3] bg-[#F8F8F6]">
+        <div className="mt-10 overflow-x-auto rounded-[14px] border border-[#DFDDD3] bg-[#FAF8F3]">
           <div className="grid min-w-[860px] grid-cols-[1.6fr_1fr_1fr_1fr] border-b border-[#E0DED4]">
-            <div className="bg-[#F8F8F6]" />
-            <div className="border-l border-[#DCCB9D] bg-[#C9A961] px-4 py-2">
-              <p className="text-[8px] uppercase tracking-[0.22em] text-[#0F1624]">Best Option</p>
-              <p className="mt-1 font-fraunces text-[27px] leading-none text-[#111827]">Implants</p>
+            <div className="bg-[#FAF8F3]" />
+            <div className="grid grid-rows-[32px_1fr] border-l border-[#DCCB9D] bg-[#C9A961]">
+              <div className="flex items-center justify-center border-b border-[#0F1624] bg-[#0F1624]">
+                <p className="text-[9px] uppercase tracking-[0.22em] text-[#C9A961]">Best Option</p>
+              </div>
+              <div className="px-6 pt-1 pb-4">
+                <p className="font-fraunces text-[17px] leading-none text-[#0A0E1A]">Implants</p>
+              </div>
             </div>
-            <div className="border-l border-[#202D49] bg-[#020918] px-4 py-2">
-              <p className="text-[8px] uppercase tracking-[0.22em] text-[#8D98AE]">Alternative</p>
-              <p className="mt-1 font-fraunces text-[27px] leading-none text-[#EEF2F8]">Bridges</p>
+            <div className="grid grid-rows-[32px_1fr] border-l border-[#202D49] bg-[#020918] px-4">
+              <div className="flex items-end">
+                <p className="pb-1 text-[8px] uppercase tracking-[0.22em] text-[#0A0E1A]">Alternative</p>
+              </div>
+              <div className="px-1">
+                <p className="font-fraunces text-[17px] leading-none text-[#FFFFFF]">Bridges</p>
+              </div>
             </div>
-            <div className="border-l border-[#202D49] bg-[#020918] px-4 py-2">
-              <p className="text-[8px] uppercase tracking-[0.22em] text-[#8D98AE]">Alternative</p>
-              <p className="mt-1 font-fraunces text-[27px] leading-none text-[#EEF2F8]">Dentures</p>
+            <div className="grid grid-rows-[32px_1fr] border-l border-[#202D49] bg-[#020918] px-4">
+              <div className="flex items-end">
+                <p className="pb-1 text-[8px] uppercase tracking-[0.22em] text-[#0A0E1A]">Alternative</p>
+              </div>
+              <div className="px-1">
+                <p className="font-fraunces text-[17px] leading-none text-[#FFFFFF]">Dentures</p>
+              </div>
             </div>
           </div>
 
           {comparisonRows.map((row) => (
             <div key={row.label} className="grid min-w-[860px] grid-cols-[1.6fr_1fr_1fr_1fr] border-t border-[#E0DED4]">
-              <div className="px-4 py-4 text-[14px] font-semibold text-[#222A39]">{row.label}</div>
-              <div className="border-l border-[#E0DED4] px-4 py-4 text-[14px] font-semibold text-[#B4873E]">{row.implants}</div>
+              <div className="p-4 font-inter text-[14px] font-semibold text-[#0A0E1A] bg-[#FAF8F3]">{row.label}</div>
+              <div className="border-l border-[#E0DED4] px-4 py-4 text-[14px] bg-[#FAF8F3] font-semibold text-[#B4873E]">{row.implants}</div>
               <div
                 className={`border-l border-[#E0DED4] px-4 py-4 text-[14px] ${
                   row.bridgesNegative ? "font-semibold text-[#D17662]" : "text-[#354055]"
