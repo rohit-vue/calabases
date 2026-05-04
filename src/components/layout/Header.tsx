@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#e7e2db] bg-white">
       {isEmergencyPage ? (
-        <div className="border-b border-[#d3383f] bg-[#E63D46] px-4 py-2 sm:px-6 md:px-8 lg:px-24">
+        <div className="bg-[#E63946] px-4 py-2 shadow-[0px_4px_20px_0px_#E6394633] sm:px-6 md:px-8 lg:px-24">
           <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-white">
               <span className="inline-block h-2 w-2 rounded-full bg-white" />
@@ -33,7 +33,7 @@ export default function Header() {
 
             <Link
               href="tel:+18185550100"
-              className="inline-flex h-8 items-center rounded-full bg-white px-4 text-[12px] font-semibold text-[#E63D46] transition hover:opacity-90"
+              className="inline-flex h-8 items-center rounded-[100px] bg-white px-4 text-[12px] font-bold text-[#E63946] transition hover:opacity-90"
             >
               <span className="mr-1.5">📞</span> Call (818) 555-0100
             </Link>

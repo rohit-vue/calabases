@@ -7,7 +7,7 @@ export type ClosingCtaStat = {
 
 /** Main content area (gradient + copy) — cosmetic landing uses this spacing. */
 export const CLOSING_CTA_MAIN_WRAPPER_CLASSES =
-  "relative px-4 pb-14 pt-16 sm:px-8 sm:pb-16 sm:pt-20 lg:px-24 lg:pb-20 lg:pt-24";
+  "relative px-4 pb-10 pt-12 sm:px-6 sm:pb-12 sm:pt-16 md:px-8 lg:px-24 lg:pb-20 lg:pt-24";
 
 export type ClosingCtaProps = {
   eyebrow?: string;
@@ -25,7 +25,7 @@ export type ClosingCtaProps = {
   mainWrapperClassName?: string;
   /** Hide the small uppercase line above the headline (cosmetic page). */
   hideEyebrow?: boolean;
-  /** Optional glow behind the central content block (cosmetic page). */
+  /** Optional styles on the central content block (e.g. `[background:radial-gradient(...)]` for a gold glow). */
   contentWrapperClassName?: string;
   /** Outer section `background` (any valid CSS value: solid, `linear-gradient()`, `url()`, etc.). */
   background?: string;
@@ -103,32 +103,35 @@ export default function ClosingCta({
         <div className="mx-auto w-full max-w-[1180px]">
           <div className={`relative z-10 mx-auto max-w-[760px] text-center ${contentWrapperClassName}`}>
             {hideEyebrow ? null : eyebrowLined ? (
-              <div className="flex items-center justify-center gap-3 sm:gap-5">
+              <div className="flex items-center justify-center gap-2 sm:gap-4 lg:gap-5">
                 <span
                   aria-hidden
-                  className="h-px w-8 shrink-0 sm:w-9"
+                  className="h-px w-6 shrink-0 sm:w-8 lg:w-9"
                   style={{ backgroundColor: ruleColor }}
                 />
                 <p
-                  className="font-fraunces text-[10px] font-light italic uppercase tracking-[0.28em] sm:text-[11px]"
+                  className="font-fraunces text-[9px] font-light italic uppercase tracking-[0.24em] sm:text-[10px] lg:text-[11px] lg:tracking-[0.28em]"
                   style={{ color: eyebrowColor }}
                 >
                   {eyebrow}
                 </p>
                 <span
                   aria-hidden
-                  className="h-px w-8 shrink-0 sm:w-9"
+                  className="h-px w-6 shrink-0 sm:w-8 lg:w-9"
                   style={{ backgroundColor: ruleColor }}
                 />
               </div>
             ) : (
-              <p className="text-[14px] uppercase tracking-[0.3em]" style={{ color: eyebrowColor }}>
+              <p
+                className="text-[11px] uppercase tracking-[0.26em] sm:text-[13px] lg:text-[14px] lg:tracking-[0.3em]"
+                style={{ color: eyebrowColor }}
+              >
                 {eyebrow}
               </p>
             )}
             <h2
-              className={`font-fraunces text-[54px] font-light leading-[0.95] tracking-[-0.045em] sm:text-[68px] ${
-                eyebrowLined ? "mt-2 sm:mt-3" : ""
+              className={`font-fraunces font-light leading-[0.98] tracking-[-0.045em] text-[34px] sm:text-[42px] md:text-[50px] lg:text-[68px] lg:leading-[0.95] ${
+                eyebrowLined ? "mt-2 sm:mt-2.5 lg:mt-3" : ""
               }`}
               style={{ color: headlineColor }}
             >
@@ -140,16 +143,16 @@ export default function ClosingCta({
             </h2>
 
             <p
-              className="mx-auto mt-5 max-w-[540px] font-fraunces text-[24px] font-light italic leading-[1.3] sm:text-[22px]"
+              className="mx-auto mt-4 max-w-[540px] font-fraunces text-[17px] font-light italic leading-[1.35] sm:mt-5 sm:text-[20px] md:text-[22px] lg:mt-5 lg:text-[24px] lg:leading-[1.3]"
               style={{ color: subtitleColor }}
             >
               {subtitle}
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-6 flex w-full flex-col items-stretch gap-2.5 sm:mt-7 sm:gap-3 lg:mt-8 lg:flex-row lg:flex-wrap lg:items-center lg:justify-center">
               <Link
                 href={primaryCtaHref}
-                className="inline-flex h-[44px] items-center rounded-[100px] border-2 px-6 text-[14px] font-semibold tracking-[0.023em] transition hover:brightness-95"
+                className="flex h-[44px] w-full items-center justify-center rounded-[100px] border-2 px-5 text-[13px] font-semibold tracking-[0.023em] transition hover:brightness-95 sm:px-6 sm:text-[14px] lg:inline-flex lg:w-auto"
                 style={{
                   backgroundColor: primaryCtaBackground,
                   color: primaryCtaTextColor,
@@ -160,7 +163,7 @@ export default function ClosingCta({
               </Link>
               <Link
                 href={secondaryCtaHref}
-                className="inline-flex h-[44px] items-center rounded-[100px] border px-6 text-[14px] font-semibold tracking-[0.023em] transition hover:bg-white/5"
+                className="flex h-[44px] w-full items-center justify-center rounded-[100px] border px-5 text-[13px] font-semibold tracking-[0.023em] transition hover:bg-white/5 sm:px-6 sm:text-[14px] lg:inline-flex lg:w-auto"
                 style={{
                   borderColor: secondaryCtaBorderColor,
                   color: secondaryCtaTextColor,
@@ -171,20 +174,25 @@ export default function ClosingCta({
             </div>
 
             <div
-              className={`mx-auto mt-10 grid max-w-[760px] border-t border-solid pt-6 ${
-                stats.length === 4 ? "grid-cols-2 gap-y-6 sm:grid-cols-4" : "grid-cols-3"
+              className={`mx-auto mt-6 grid max-w-[760px] border-t border-solid pt-4 sm:mt-8 sm:pt-5 lg:mt-10 lg:pt-6 ${
+                stats.length === 4
+                  ? "grid-cols-2 gap-x-2 gap-y-4 sm:gap-x-4 sm:gap-y-5 sm:grid-cols-4 lg:gap-y-6"
+                  : "grid-cols-3 gap-x-1 sm:gap-x-3"
               }`}
               style={{ borderTopColor: statsDividerColor }}
             >
               {stats.map((stat) => (
-                <div key={stat.label}>
+                <div key={stat.label} className="min-w-0 px-0.5">
                   <p
-                    className="font-fraunces text-[43px] font-light leading-none tracking-[-0.029em] sm:text-[44px]"
+                    className="font-fraunces text-[28px] font-light leading-none tracking-[-0.029em] sm:text-[36px] md:text-[40px] lg:text-[43px] xl:text-[44px]"
                     style={{ color: statsValueColor }}
                   >
                     {stat.value}
                   </p>
-                  <p className="mt-2 text-[12px] max-w-[150px] mx-auto text-center uppercase tracking-[0.2em]" style={{ color: statsLabelColor }}>
+                  <p
+                    className="mx-auto mt-1.5 max-w-[140px] text-center text-[10px] uppercase leading-tight tracking-[0.16em] sm:mt-2 sm:max-w-[150px] sm:text-[11px] sm:tracking-[0.18em] lg:text-[12px] lg:tracking-[0.2em]"
+                    style={{ color: statsLabelColor }}
+                  >
                     {stat.label}
                   </p>
                 </div>
@@ -195,13 +203,16 @@ export default function ClosingCta({
       </div>
 
       <div
-        className="border-t border-solid px-4 py-8 sm:px-8 lg:px-24"
+        className="border-t border-solid px-4 py-5 sm:px-8 sm:py-6 lg:px-24 lg:py-8"
         style={{
           backgroundColor: footerBarBackground,
           borderTopColor: footerBarBorderColor,
         }}
       >
-        <p className="mx-auto w-full max-w-[1180px] text-center text-[13px]" style={{ color: footerTextColor }}>
+        <p
+          className="mx-auto w-full max-w-[1180px] text-center text-[11px] leading-snug sm:text-[12px] lg:text-[13px]"
+          style={{ color: footerTextColor }}
+        >
           {footerText}
         </p>
       </div>

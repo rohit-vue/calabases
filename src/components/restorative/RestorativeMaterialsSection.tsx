@@ -45,18 +45,18 @@ const materials: MaterialRow[] = [
 
 export default function RestorativeMaterialsSection() {
   return (
-    <section className="bg-[#ffffff] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
-      <div className="mx-auto grid w-full max-w-[1240px] items-start gap-10 lg:grid-cols-[1fr_500px] lg:gap-20">
-        <div className="max-w-[640px]">
+    <section className="bg-[#ffffff] px-4 py-10 sm:px-6 sm:py-12 md:px-8 lg:px-20 lg:py-20">
+      <div className="mx-auto grid w-full max-w-[1240px] items-start gap-8 sm:gap-10 lg:grid-cols-[1fr_500px] lg:gap-20">
+        <div className="mx-auto max-w-[640px] text-center lg:mx-0 lg:text-left">
           <p className="font-fraunces text-[11px] uppercase tracking-[0.26em] text-[#B87333]">§ Materials Matter</p>
 
-          <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.96] tracking-[-0.0305em] text-[#0A0E1A] sm:text-[58px] lg:text-[64px]">
+          <h2 className="mt-3 font-fraunces text-[36px] font-light leading-[0.96] tracking-[-0.0305em] text-[#0A0E1A] sm:mt-4 sm:text-[48px] md:text-[58px] lg:text-[64px]">
             The difference is
             <br />
             <span className="italic text-[#B87333]">measured in decades.</span>
           </h2>
 
-          <div className="mt-7 space-y-5 text-[17px] leading-[1.68] text-[#5A6578] sm:text-[21px] lg:text-[17px]">
+          <div className="mt-6 space-y-4 text-[15px] leading-[1.62] text-[#5A6578] sm:mt-7 sm:space-y-5 sm:text-[18px] md:text-[20px] lg:text-[17px] lg:leading-[1.68]">
             <p>
               The material a restoration is made of determines everything - how long it lasts, how
               natural it looks, how much natural tooth we have to remove. Modern materials are{" "}
@@ -75,20 +75,23 @@ export default function RestorativeMaterialsSection() {
           </div>
         </div>
 
-        <aside className="rounded-[20px]  bg-[#F7F2E7] px-6 py-6 sm:px-7 sm:py-7">
-          <div className="space-y-6">
+        <aside className="rounded-[20px] bg-[#F7F2E7] px-4 py-5 sm:px-7 sm:py-7">
+          <div className="space-y-5 sm:space-y-6">
             {materials.map((material, index) => (
-              <div key={material.name} className={index !== materials.length - 1 ? "border-b border-[#0A0E1A14] pb-4" : ""}>
-                <div className="flex items-center justify-between gap-3">
+              <div
+                key={material.name}
+                className={index !== materials.length - 1 ? "border-b border-[#0A0E1A14] pb-3 sm:pb-4" : ""}
+              >
+                <div className="flex items-start justify-between gap-2 sm:items-center sm:gap-3">
                   <p
-                    className={`font-fraunces text-[24px] tracking-[-0.006em] leading-tight sm:text-[29px] lg:text-[20px] ${
+                    className={`min-w-0 font-fraunces text-[20px] leading-tight tracking-[-0.006em] sm:text-[24px] md:text-[27px] lg:text-[20px] ${
                       material.accent ? "italic text-[#B87333]" : "text-[#0A0E1A]"
                     }`}
                   >
                     {material.name}
                   </p>
                   <span
-                    className={`inline-flex h-7 items-center rounded-[100px] px-3 font-bold text-[10px] uppercase tracking-[0.15em] ${
+                    className={`inline-flex h-7 shrink-0 items-center rounded-[100px] px-2.5 font-bold text-[9px] uppercase tracking-[0.15em] sm:px-3 sm:text-[10px] ${
                       material.darkBadge
                         ? "bg-[#0A0E1A] text-[#FFFFFF]"
                         : "bg-[#B87333] text-[#FFFFFF]"

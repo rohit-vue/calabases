@@ -72,6 +72,10 @@ export type FaqSectionProps = {
   faqs?: FaqItem[];
   /** Small uppercase line above the title */
   eyebrow?: string;
+  /** When true, renders a prominent horizontal dash before the eyebrow. */
+  eyebrowLeadingDash?: boolean;
+  /** Dash color; defaults to `accentColor`. */
+  eyebrowLeadingDashColor?: string;
   /** Title line before the italic emphasis */
   titleStart?: string;
   /** Italic emphasis segment (e.g. “questions,”); colored with `headingEmphasisColor` or `accentColor` */
@@ -99,6 +103,8 @@ export type FaqSectionProps = {
 export default function FaqSection({
   faqs = defaultFaqs,
   eyebrow = "Frequently Asked",
+  eyebrowLeadingDash = false,
+  eyebrowLeadingDashColor,
   titleStart = "Your",
   titleEmphasis = "questions,",
   titleEnd = "answered.",
@@ -118,17 +124,27 @@ export default function FaqSection({
     initialOpenIndex !== undefined ? initialOpenIndex : 0,
   );
   const emphasisColor = headingEmphasisColor ?? accentColor;
+  const leadingDashColor = eyebrowLeadingDashColor ?? accentColor;
 
   return (
     <section className="px-4 py-16 sm:px-6 md:px-8 lg:px-80" style={{ background }}>
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[860px]">
-          <p
-            className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em]"
-            style={{ color: accentColor }}
-          >
-            {eyebrow}
-          </p>
+          <div className="mb-3 flex items-center gap-3">
+            {eyebrowLeadingDash ? (
+              <span
+                aria-hidden
+                className="h-[1.5px] w-4 shrink-0 rounded-full "
+                style={{ backgroundColor: leadingDashColor }}
+              />
+            ) : null}
+            <p
+              className="text-[12px] font-semibold uppercase tracking-[0.22em]"
+              style={{ color: accentColor }}
+            >
+              {eyebrow}
+            </p>
+          </div>
           <h2
             className="font-fraunces text-[30px] leading-[0.95] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]"
             style={{ color: headingColor }}

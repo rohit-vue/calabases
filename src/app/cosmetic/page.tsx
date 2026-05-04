@@ -65,11 +65,11 @@ export default function CosmeticPage() {
       <CosmaticMembershipMathSection />
       <CosmaticPatientProfilesSection />
       <TestimonialSection
-        quote="I'd been thinking about veneers for ten years. I was terrified of looking fake. Dr. Kashani's digital preview sold me - I could see exactly what my smile would look like before we started. The result is so natural that my own mother didn't notice at first. She just said I looked rested."
+        quote="&quot;I'd been thinking about veneers for ten years. I was terrified of looking fake. Dr. Kashani's digital preview sold me - I could see exactly what my smile would look like before we started. The result is so natural that my own mother didn't notice at first. She just said I looked rested.&quot;"
         authorName="Rachel K"
         authorSubtext="8 Veneers • Calabasas"
         authorInitials="R"
-        background="#0A0E1A"
+        background="linear-gradient(116.24deg, #0A0E1A 0%, #1C2333 100%)"
         accentColor="#C9A961"
         quoteColor="#FFFFFF"
         authorNameColor="#FFFFFF"
@@ -79,11 +79,11 @@ export default function CosmeticPage() {
         avatarBackground="linear-gradient(135deg, #C9A961 0%, #F5EDD8 100%)"
         showStars
       />
-      <FaqSection faqs={cosmeticFaqs} />
+      <FaqSection faqs={cosmeticFaqs} eyebrowLeadingDash eyebrowLeadingDashColor="#C9A961" />
       <ClosingCta
         mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
         hideEyebrow
-        contentWrapperClassName="bg-[radial-gradient(70.71%_70.71%_at_50%_50%,rgba(201,169,97,0.15)_0%,rgba(201,169,97,0)_60%)]"
+        contentWrapperClassName="[background:radial-gradient(70.71%_70.71%_at_50%_50%,rgba(201,169,97,0.15)_0%,rgba(201,169,97,0)_60%)]"
       />
     </main>
   );

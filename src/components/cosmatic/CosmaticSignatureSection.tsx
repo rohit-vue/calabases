@@ -107,13 +107,22 @@ export default function CosmaticSignatureSection() {
                 </p>
                 <p className="mt-5 max-w-[520px] text-[15px] leading-[1.65] text-[#FFFFFFB2]">{item.description}</p>
 
-                <div className="mt-7 grid grid-cols-1 border-y border-[#FFFFFF1A] py-4 sm:grid-cols-2">
+                <div className="mt-7 grid grid-cols-1 gap-y-1 border-y border-[#FFFFFF1A] py-2.5 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-2 sm:py-3 lg:gap-y-0 lg:py-4">
                   {item.metrics.map((metric) => (
-                    <div key={metric.label} className="py-3 sm:pr-5">
-                      <p className="text-[12px] uppercase tracking-[0.22em] text-[#FFFFFF66]">{metric.label}</p>
-                      <p className="mt-2 font-fraunces text-[25px] leading-[32px] text-[#FFFFFF] sm:text-[29px] lg:text-[20px]">{metric.value}</p>
+                    <div
+                      key={metric.label}
+                      className="py-2 text-center sm:px-1 sm:pr-5 lg:py-3 lg:text-left"
+                    >
+                      <p className="text-[11px] uppercase tracking-[0.2em] text-[#FFFFFF66] lg:text-[12px] lg:tracking-[0.22em]">
+                        {metric.label}
+                      </p>
+                      <p className="mt-1.5 font-fraunces text-[23px] leading-[1.15] text-[#FFFFFF] sm:text-[26px] lg:mt-2 lg:text-[20px] lg:leading-[32px]">
+                        {metric.value}
+                      </p>
                       {metric.note ? (
-                        <p className="mt-1 text-[12px] font-fraunces italic text-[#C9A961]">{metric.note}</p>
+                        <p className="mt-1 text-[11px] font-fraunces italic leading-snug text-[#C9A961] lg:text-[12px]">
+                          {metric.note}
+                        </p>
                       ) : null}
                     </div>
                   ))}
