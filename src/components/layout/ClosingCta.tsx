@@ -27,7 +27,7 @@ export type ClosingCtaProps = {
   hideEyebrow?: boolean;
   /** Optional glow behind the central content block (cosmetic page). */
   contentWrapperClassName?: string;
-  /** Outer section background (solid or gradient). */
+  /** Outer section `background` (any valid CSS value: solid, `linear-gradient()`, `url()`, etc.). */
   background?: string;
   /** Full CSS background for the atmospheric overlay (radial-gradient, etc.). */
   heroOverlayGradient?: string;

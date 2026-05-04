@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-type FaqItem = {
+export type FaqItem = {
   question: string;
   answer: string;
 };
@@ -55,14 +55,37 @@ const defaultFaqs: FaqItem[] = [
   },
 ];
 
+/** Default color tokens for the general FAQ; override per page like `TestimonialSection` props. */
+export const DEFAULT_FAQ_SECTION_COLORS = {
+  background: "#FAF8F3",
+  accentColor: "#C9A961",
+  headingColor: "#0A0E1A",
+  cardBorderColor: "#e5e1d7",
+  cardBackgroundColor: "#f9f9f8",
+  questionColor: "#0A0E1A",
+  answerColor: "#5A6578",
+  toggleBackgroundColor: "#f4f1e8",
+  toggleIconColor: "#c9ab6c",
+} as const;
+
 export type FaqSectionProps = {
   faqs?: FaqItem[];
+  /** Small uppercase line above the title */
+  eyebrow?: string;
+  /** Title line before the italic emphasis */
+  titleStart?: string;
+  /** Italic emphasis segment (e.g. “questions,”); colored with `headingEmphasisColor` or `accentColor` */
+  titleEmphasis?: string;
+  /** Title text after the emphasis */
+  titleEnd?: string;
+  /** Which item is open initially; `null` means all closed */
+  initialOpenIndex?: number | null;
   /** Section background (solid or CSS gradient) */
   background?: string;
   /** Eyebrow + default italic emphasis in the title */
   accentColor?: string;
   headingColor?: string;
-  /** Italic phrase in the title; defaults to `accentColor` */
+  /** Italic phrase color in the title; defaults to `accentColor` */
   headingEmphasisColor?: string;
   cardBorderColor?: string;
   cardBackgroundColor?: string;
@@ -72,20 +95,28 @@ export type FaqSectionProps = {
   toggleIconColor?: string;
 };
 
+/** Shared FAQ accordion used across service pages; tokens mirror `TestimonialSection`-style prop overrides. */
 export default function FaqSection({
   faqs = defaultFaqs,
-  background = "#FAF8F3",
-  accentColor = "#C9A961",
-  headingColor = "#0A0E1A",
+  eyebrow = "Frequently Asked",
+  titleStart = "Your",
+  titleEmphasis = "questions,",
+  titleEnd = "answered.",
+  initialOpenIndex,
+  background = DEFAULT_FAQ_SECTION_COLORS.background,
+  accentColor = DEFAULT_FAQ_SECTION_COLORS.accentColor,
+  headingColor = DEFAULT_FAQ_SECTION_COLORS.headingColor,
   headingEmphasisColor,
-  cardBorderColor = "#e5e1d7",
-  cardBackgroundColor = "#f9f9f8",
-  questionColor = "#0A0E1A",
-  answerColor = "#5A6578",
-  toggleBackgroundColor = "#f4f1e8",
-  toggleIconColor = "#c9ab6c",
+  cardBorderColor = DEFAULT_FAQ_SECTION_COLORS.cardBorderColor,
+  cardBackgroundColor = DEFAULT_FAQ_SECTION_COLORS.cardBackgroundColor,
+  questionColor = DEFAULT_FAQ_SECTION_COLORS.questionColor,
+  answerColor = DEFAULT_FAQ_SECTION_COLORS.answerColor,
+  toggleBackgroundColor = DEFAULT_FAQ_SECTION_COLORS.toggleBackgroundColor,
+  toggleIconColor = DEFAULT_FAQ_SECTION_COLORS.toggleIconColor,
 }: FaqSectionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(
+    initialOpenIndex !== undefined ? initialOpenIndex : 0,
+  );
   const emphasisColor = headingEmphasisColor ?? accentColor;
 
   return (
@@ -96,17 +127,17 @@ export default function FaqSection({
             className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em]"
             style={{ color: accentColor }}
           >
-            Frequently Asked
+            {eyebrow}
           </p>
           <h2
             className="font-fraunces text-[30px] leading-[0.95] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]"
             style={{ color: headingColor }}
           >
-            Your{" "}
+            {titleStart}{" "}
             <span className="font-light italic" style={{ color: emphasisColor }}>
-              questions,
+              {titleEmphasis}
             </span>{" "}
-            answered.
+            {titleEnd}
           </h2>
         </div>
 
@@ -115,8 +146,8 @@ export default function FaqSection({
             const isOpen = openIndex === index;
             return (
               <div
-                key={faq.question}
-                className="overflow-hidden rounded-[12px] border"
+                key={`${index}-${faq.question}`}
+                className="overflow-hidden rounded-[12px] py-3 border"
                 style={{
                   borderColor: cardBorderColor,
                   backgroundColor: cardBackgroundColor,

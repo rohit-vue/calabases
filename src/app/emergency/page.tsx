@@ -4,7 +4,7 @@ import EmergencyTreatSection from "@/components/emergency/EmergencyTreatSection"
 import EmergencyFirstAidSection from "@/components/emergency/EmergencyFirstAidSection";
 import EmergencyAvoidErSection from "@/components/emergency/EmergencyAvoidErSection";
 import EmergencyPricingSection from "@/components/emergency/EmergencyPricingSection";
-import FaqSection from "@/components/general/FaqSection";
+import FaqSection from "@/components/layout/FaqSection";
 import EmergencyFinalCtaSection from "@/components/emergency/EmergencyFinalCtaSection";
 
 const emergencyFaqs = [
