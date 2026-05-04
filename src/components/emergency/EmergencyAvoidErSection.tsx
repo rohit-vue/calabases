@@ -37,14 +37,14 @@ function ErCellText({ text, variant }: { text: string; variant: ErVariant }) {
 
 export default function EmergencyAvoidEr() {
   return (
-    <section className="bg-white px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-white px-4 py-12 sm:px-8 sm:py-16 lg:px-32 lg:py-20">
       <div className="mx-auto w-full max-w-[1240px]">
         <div className="max-w-[720px]">
           <p className="text-[11px] uppercase tracking-[0.24em] text-[#22B3B4] font-bold">Avoid the ER</p>
-          <h2 className="mt-4 font-fraunces text-[44px] leading-[0.95] tracking-[-0.03em] text-[#0F182B] sm:text-[60px] lg:text-[45px]">
+          <h2 className="mt-4 font-fraunces text-[26px] leading-[0.95] tracking-[-0.03em] text-[#0F182B] sm:text-[36px] lg:text-[45px]">
             Don&apos;t go to the hospital <span className="font-light italic text-[#EC4252]">for a tooth.</span>
           </h2>
-          <p className="mt-4 text-[18px] leading-normal text-[#5a6578]">
+          <p className="mt-4 text-[14px] sm:text-[18px] leading-normal text-[#5a6578]">
             2 million Americans end up in the ER every year for dental emergencies. It&apos;s almost always the wrong
             choice. Here&apos;s why.
           </p>

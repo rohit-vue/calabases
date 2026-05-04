@@ -6,76 +6,98 @@ type CommitmentItem = {
 
 const commitmentItems: CommitmentItem[] = [
   {
-    icon: "◔",
+    icon: "🎧",
     title: "Music you choose",
-    description: "Bluetooth headphones with your Spotify. Many patients say they remember the sounds of the procedure.",
+    description:
+      "Bluetooth headphones with your Spotify. Many patients say they barely remember the sounds of the procedure.",
   },
   {
-    icon: "◼",
+    icon: "📋",
     title: "Written aftercare plan",
     description: "Step-by-step instructions for the first 72 hours, including exactly when to call us.",
   },
   {
-    icon: "◒",
+    icon: "📞",
     title: "Direct access for 7 days",
-    description: "Every surgical patient gets our direct phone number for the first week. Call or text anytime.",
+    description:
+      "Every surgical patient gets our direct phone number for the first week. Call or text anytime.",
   },
   {
-    icon: "◉",
+    icon: "💊",
     title: "Modern pain protocol",
-    description: "Most patients manage with ibuprofen. Opioids only when truly necessary. We take pain management seriously.",
+    description:
+      "Most patients manage with ibuprofen. Opioids only when truly necessary. We take pain management seriously.",
   },
   {
-    icon: "◧",
+    icon: "🗓️",
     title: "Scheduled follow-up",
     description: "Every surgical patient has a check-in appointment within 7-10 days to ensure proper healing.",
   },
   {
-    icon: "♥",
+    icon: "❤️",
     title: "No judgment, ever",
-    description: "Anxious patients, first-time surgery patients, people who haven't been to the dentist in years - you're welcome here.",
+    description:
+      "Anxious patients, first-time surgery patients, people who haven't been to the dentist in years — you're welcome here.",
   },
 ];
 
 export default function OralSurgeryCommitmentSection() {
   return (
-    <section className="bg-[#020A1B] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
-      <div className="mx-auto grid w-full max-w-[1250px] items-start gap-10 lg:grid-cols-[340px_1fr] lg:gap-16">
-        <div className="pt-2">
+    <section className="relative overflow-hidden bg-[#0A0E1A] px-4 py-14 sm:px-10 sm:py-20 lg:py-[120px]">
+      {/* Figma node 1:3350 — ambient gradient */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-[100px] -top-[200px] size-[600px] rounded-full opacity-90"
+        style={{
+          background:
+            "radial-gradient(circle at center, rgba(90, 114, 95, 0.22) 0%, rgba(10, 12, 16, 0) 65%)",
+        }}
+      />
+
+      <div className="relative mx-auto grid w-full max-w-[1216px] items-start gap-12 lg:grid-cols-[minmax(0,442px)_minmax(0,1fr)] lg:gap-x-[92px] lg:gap-y-0">
+        <div className="max-w-[442px] my-auto">
           <div className="flex items-center gap-3">
-            <span className="h-px w-8 bg-[#6E7686]" />
-            <p className="text-[11px] uppercase tracking-[0.24em] text-[#8E97A8]">Our Commitment</p>
+            <span className="h-0.5 w-6 shrink-0 bg-[#8FA99F]" />
+            <p className="text-[11px] font-semibold uppercase leading-[19.2px] tracking-[3px] text-[#8FA99F]">
+              Our Commitment
+            </p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[44px] leading-[0.95] tracking-[-0.03em] text-[#E8ECF4] sm:text-[56px] lg:text-[72px]">
+          <h2 className="mt-5 font-fraunces text-[32px] font-light leading-[1.1] tracking-[-0.02em] text-white sm:text-[40px] md:text-[48px] lg:text-[56px] lg:leading-[1.05]">
             Your comfort,
             <br />
-            <span className="font-light italic text-[#9CA8BC]">engineered.</span>
+            <span className="font-light italic text-[#8FA99F]">engineered.</span>
           </h2>
 
-          <div className="mt-6 space-y-4 text-[17px] leading-[1.72] text-[#9AA4B5] sm:text-[20px] lg:text-[23px]">
+          <div className="mt-8 space-y-6 text-[15px] font-normal leading-[26px] text-[#FFFFFFB2] sm:text-[16px] sm:leading-[27px] lg:text-[17px] lg:leading-[28.9px]">
             <p>
-              Comfort isn&apos;t a bonus at our office - it&apos;s the protocol. Every surgical patient receives
-              the same care, from the moment they arrive to the moment they&apos;re back to normal.
+              Comfort isn&apos;t a bonus at our office — it&apos;s the protocol. Every surgical patient receives the
+              same care, from the moment they arrive to the moment they&apos;re back to normal.
             </p>
             <p>
-              We&apos;ve built our surgical process around one question: what do we wish had happened when we
-              had surgery ourselves? Then we made that the standard.
+              We&apos;ve built our surgical process around{" "}
+              <span className="font-semibold text-[#FFFFFF]">one question</span>: what do we wish had happened when
+              we had surgery ourselves? Then we made that the standard.
             </p>
           </div>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+       
+        <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2">
           {commitmentItems.map((item) => (
             <article
               key={item.title}
-              className="rounded-[14px] border border-[#1A253A] bg-[linear-gradient(180deg,#0E1728_0%,#0A1323_100%)] px-4 pb-4 pt-4 sm:px-5 sm:pb-5"
+              className="flex h-full min-h-[200px] w-full flex-col rounded-[16px] border border-[#FFFFFF14] bg-[#FFFFFF08] p-5 sm:min-h-[228px] sm:p-[29px]"
             >
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-[10px] border border-[#253247] bg-[#0D182A] text-[13px] text-[#D2DAE7]">
-                {item.icon}
-              </span>
-              <h3 className="mt-3 font-fraunces text-[28px] leading-tight text-[#EEF2F8] sm:text-[31px] lg:text-[35px]">{item.title}</h3>
-              <p className="mt-2 text-[15px] leading-[1.65] text-[#8F9AAE] sm:text-[16px] lg:text-[18px]">{item.description}</p>
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[12px] bg-[#8FA99F26] text-[24px] leading-none">
+                <span aria-hidden className="select-none">
+                  {item.icon}
+                </span>
+              </div>
+              <h3 className="mt-5 font-fraunces text-[18px] font-normal leading-7 text-[#FFFFFF] sm:text-[19px] lg:text-[20px] lg:leading-8">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-[14px] font-normal leading-[1.5] text-[#FFFFFF99] sm:text-[15px]">{item.description}</p>
             </article>
           ))}
         </div>

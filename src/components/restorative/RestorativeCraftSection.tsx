@@ -12,7 +12,7 @@ export default function RestorativeCraftSection() {
         <div className="max-w-[620px]">
           <p className="font-fraunces text-[11px] italic uppercase tracking-[0.19em] text-[#8B5A2B]">§ Our Craft</p>
 
-          <h2 className="mt-4 font-fraunces text-[38px] font-light leading-[0.98] tracking-[-0.03em] text-[#0a0e1a] sm:text-[52px] lg:text-[56px]">
+          <h2 className="mt-4 font-fraunces text-[38px] font-light leading-[0.98] tracking-[-0.03em] text-[#0A0E1A] sm:text-[52px] lg:text-[56px]">
             Built to last <span className="italic text-[#B87333]">longer than</span>
             <br />
             <span className="italic text-[#B87333]">the teeth they replace.</span>
@@ -48,7 +48,7 @@ export default function RestorativeCraftSection() {
               dentist, every fitting hand-checked.
             </p>
 
-            <div className="mt-8 border-t border-[#0A0E1A1A] pt-6">
+            <div className="mt-8 border-t border-[#0A0E1A] pt-6">
               <div className="grid grid-cols-2 gap-x-6 gap-y-6">
                 {cardStats.map((stat) => (
                   <div key={stat.label}>
