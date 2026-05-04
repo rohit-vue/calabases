@@ -33,36 +33,54 @@ export default function InvisalignPricingSection() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[16px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-6 py-6 text-[#D0D8E6] sm:px-7 sm:py-7">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">Example · Mid-Complexity Case</p>
-          <h3 className="mt-3 font-fraunces text-[40px] leading-[0.95] text-[#EFF3FA] sm:text-[46px] lg:text-[32px]">Full Invisalign Treatment</h3>
-          <p className="mt-2 text-[13px] italic text-[#8D9AB1]">iTero scan + 30 aligners + retainers</p>
+        <div className="relative overflow-hidden rounded-[36px] border border-[rgba(255,255,255,0.08)] bg-[#050A14] text-[#D0D8E6] sm:rounded-[40px]">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -right-20 -top-28 h-[min(60vw,340px)] w-[min(60vw,340px)] rounded-full bg-[#0c2030] opacity-35 blur-[90px]"
+          />
+          <div className="relative z-[1] flex flex-col px-7 py-8 sm:px-10 sm:py-9">
+            <header className="flex flex-col">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#C5A86D]">Example · Mid-Complexity Case</p>
+              <h3 className="mt-3 font-fraunces text-[34px] font-light leading-[0.98] text-white sm:text-[40px] lg:text-[38px]">
+                Full Invisalign Treatment
+              </h3>
+              <p className="mt-2 font-sans text-[13px] italic leading-snug text-[#8A99AD]">iTero scan + 30 aligners + retainers</p>
+            </header>
 
-          <div className="mt-6 border-t border-[#24314C]">
-            <div className="flex items-center justify-between border-b border-[#24314C] py-4">
-              <span className="text-[14px] text-[#8F9BB0]">Standard pricing</span>
-              <span className="font-fraunces text-[30px] leading-none text-[rgba(255,255,255,0.4)] sm:text-[34px] lg:text-[18px]">$6,500</span>
+            <div className="mt-6 border-t border-[rgba(255,255,255,0.08)] pt-6">
+              <div className="flex items-center justify-between gap-4 border-b border-[rgba(255,255,255,0.08)] py-4">
+                <span className="text-[14px] text-[#8A99AD]">Standard pricing</span>
+                <span className="shrink-0 font-fraunces text-[26px] font-light leading-none text-[rgba(255,255,255,0.42)] sm:text-[28px] lg:text-[18px]">
+                  $6,500
+                </span>
+              </div>
+              <div className="flex items-center justify-between gap-4 border-b border-[rgba(255,255,255,0.08)] py-4">
+                <span className="text-[14px] text-[#8A99AD]">Gleam member pricing</span>
+                <span className="shrink-0 font-fraunces text-[26px] font-light leading-none text-white sm:text-[28px] lg:text-[30px]">
+                  $5,200
+                </span>
+              </div>
+              <div className="flex items-center justify-between gap-4 border-b border-[rgba(255,255,255,0.08)] py-4">
+                <span className="text-[14px] text-[#8A99AD]">You save</span>
+                <span className="shrink-0 font-fraunces text-[26px] font-light leading-none text-[#C5A86D] sm:text-[28px] lg:text-[30px]">
+                  $1,300
+                </span>
+              </div>
+              <div className="flex items-center justify-between gap-4 py-5 sm:py-6">
+                <span className="text-[14px] text-[#8A99AD]">Monthly with 0% APR</span>
+                <span className="shrink-0 font-fraunces text-[32px] font-medium leading-none text-[#C5A86D] sm:text-[36px] lg:text-[28px]">
+                  ~$217/mo
+                </span>
+              </div>
             </div>
-            <div className="flex items-center justify-between border-b border-[#24314C] py-4">
-              <span className="text-[14px] text-[#8F9BB0]">Gleam member pricing</span>
-              <span className="font-fraunces text-[30px] leading-none text-[#EEF2F8] sm:text-[34px] lg:text-[18px]">$5,200</span>
-            </div>
-            <div className="flex items-center justify-between border-b border-[#24314C] py-4">
-              <span className="text-[14px] text-[#8F9BB0]">You save</span>
-              <span className="font-fraunces text-[34px] leading-none text-[#C9A961] sm:text-[39px] lg:text-[22px]">$1,300</span>
-            </div>
-            <div className="flex items-center justify-between py-4">
-              <span className="text-[14px] text-[#8F9BB0]">Monthly with 0% APR</span>
-              <span className="font-fraunces text-[34px] leading-none text-[#C9A961] sm:text-[39px] lg:text-[48px]">~$217/mo</span>
-            </div>
+
+            <Link
+              href="#"
+              className="mt-8 inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-[#C5A86D] px-6 text-[13px] font-semibold text-[#050A14] transition hover:brightness-95 sm:mt-9 sm:min-h-[54px]"
+            >
+              Book your free scan <span className="ml-2">→</span>
+            </Link>
           </div>
-
-          <Link
-            href="#"
-            className="mt-5 inline-flex h-[44px] w-full items-center justify-center rounded-full bg-[#C9A961] text-[12px] font-semibold text-[#0A0E1A] transition hover:brightness-95"
-          >
-            Book your free scan <span className="ml-2">→</span>
-          </Link>
         </div>
       </div>
     </section>

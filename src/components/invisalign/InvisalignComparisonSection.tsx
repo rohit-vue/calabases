@@ -107,7 +107,7 @@ export default function InvisalignComparisonSection() {
                   className="flex min-h-[52px] items-center justify-between gap-4 border-b border-[#27324A] py-3.5"
                 >
                   <p className="min-w-0 flex-1 pr-3 text-[14px] leading-snug text-[#8F9AB0]">{row.metric}</p>
-                  <p className="shrink-0 text-right font-fraunces text-[18px] font-light leading-none text-[#EEF2F8] sm:text-[20px] lg:text-[19px]">
+                  <p className="shrink-0 text-right font-fraunces text-[18px] font-light leading-none text-[#EEF2F8] sm:text-[20px] lg:text-[15px]">
                     {row.braces}
                   </p>
                 </div>

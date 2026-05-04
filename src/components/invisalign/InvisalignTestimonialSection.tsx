@@ -5,11 +5,11 @@ export default function InvisalignTestimonialSection() {
         <div className="mx-auto max-w-[960px] text-center">
           <p className="text-[18px] tracking-[0.35em] text-[#C9A961]">★★★★★</p>
 
-          <blockquote className="mx-auto mt-6 max-w-[920px] font-fraunces text-[34px] italic leading-[1.16] tracking-[-0.02em] text-[#111827] sm:text-[48px] lg:text-[66px]">
-            I had braces as a kid and my teeth shifted back by my 30s. I put off fixing them for a decade
+          <blockquote className="mx-auto mt-6 max-w-[920px] font-fraunces text-[34px] italic font-light leading-[1.16] tracking-[-0.02em] text-[#111827] sm:text-[48px] lg:text-[44px]">
+            "I had braces as a kid and my teeth shifted back by my 30s. I put off fixing them for a decade
             because the idea of metal braces at work felt ridiculous. Invisalign was the only reason I
             finally did it. Nobody at my office even noticed I was wearing them - and 14 months later, my
-            smile looks better than it did at 16.
+            smile looks better than it did at 16."
           </blockquote>
 
           <div className="mt-9 inline-flex items-center gap-3">

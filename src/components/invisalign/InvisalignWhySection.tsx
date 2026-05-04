@@ -1,5 +1,10 @@
 const topStats = [
-  { value: "15M+", label: "Patients treated globally", accent: true },
+  {
+    value: "15M",
+    blackSuffix: "+",
+    label: "Patients treated globally",
+    accent: true,
+  },
   { value: "12-18", suffix: "mo", label: "Average treatment time" },
   { value: "400+", label: "Cases completed here" },
   { value: "22", suffix: "hr", label: "Daily wear = 2hrs free" },
@@ -22,8 +27,11 @@ export default function InvisalignWhySection() {
               key={stat.label}
               className={`px-3 text-center sm:px-6 ${idx < topStats.length - 1 ? "border-r border-[#E2DED2]" : ""}`}
             >
-              <p className={`font-fraunces text-[36px] font-light italic leading-none sm:text-[44px] lg:text-[53px] ${stat.accent ? "text-[#C9A961]" : "text-[#111827]"}`}>
+              <p className={`font-fraunces text-[36px] font-light  leading-none sm:text-[44px] lg:text-[53px] ${stat.accent ? "text-[#C9A961]" : "text-[#111827]"}`}>
                 {stat.value}
+                {"blackSuffix" in stat && stat.blackSuffix ? (
+                  <span className="text-[#111827]">{stat.blackSuffix}</span>
+                ) : null}
                 {stat.suffix ? <span className="ml-0.5 align-top text-[15px] italic text-[#C9A961] sm:text-[18px] lg:text-[20px]">{stat.suffix}</span> : null}
               </p>
               <p className="mt-2 text-[9px] uppercase tracking-[0.18em] text-[#7A8599] font-medium">{stat.label}</p>
@@ -68,7 +76,7 @@ export default function InvisalignWhySection() {
                 className={`flex items-center justify-between gap-6 py-5 ${idx < rightFacts.length - 1 ? "border-b border-[#E2E8F0]" : ""}`}
               >
                 <p className="text-[12px] text-[#4E596E]">{fact.label}</p>
-                <p className="shrink-0 font-fraunces text-[30px] italic leading-none text-[#C9A961] sm:text-[36px] lg:text-[30px]">{fact.value}</p>
+                <p className="shrink-0 font-fraunces text-[30px]  leading-none text-[#C9A961] sm:text-[36px] lg:text-[30px]">{fact.value}</p>
               </div>
             ))}
           </div>
