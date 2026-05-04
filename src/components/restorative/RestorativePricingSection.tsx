@@ -110,39 +110,41 @@ const pricingCards: PricingCard[] = [
 
 export default function RestorativePricingSection() {
   return (
-    <section className="bg-[#F7F2E7] px-4 py-12 sm:px-8 sm:py-16 lg:px-20 lg:py-20">
+    <section className="bg-[#F7F2E7] px-4 py-10 sm:px-6 sm:py-12 md:px-8 lg:px-20 lg:py-20">
       <div className="mx-auto w-full max-w-[1250px]">
-        <p className="font-fraunces text-[11px] uppercase tracking-[0.26em] text-[#B87333]">§ Transparent Pricing</p>
+        <p className="text-center font-fraunces text-[11px] uppercase tracking-[0.26em] text-[#B87333] lg:text-left">§ Transparent Pricing</p>
 
-        <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.98] tracking-[-0.035em] text-[#0A0E1A] sm:text-[56px] lg:text-[64px]">
+        <h2 className="mt-3 text-center font-fraunces text-[36px] font-light leading-[0.98] tracking-[-0.035em] text-[#0A0E1A] sm:mt-4 sm:text-[48px] md:text-[56px] lg:text-left lg:text-[64px]">
           Every restoration, <span className="italic text-[#B87333]">every price.</span>
         </h2>
 
-        <p className="mt-5 max-w-[860px] text-[17px] font-light leading-[1.58] text-[#5A6578] sm:text-[21px] lg:text-[17px]">
+        <p className="mx-auto mt-4 max-w-[860px] text-center text-[15px] font-light leading-[1.55] text-[#5A6578] sm:mt-5 sm:text-[18px] md:text-[20px] lg:mx-0 lg:mt-5 lg:text-left lg:text-[17px] lg:leading-[1.58]">
           All pricing includes consultation, digital imaging, tooth preparation, digital impression, lab
           work, and final placement. No hidden fees.
         </p>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">
           {pricingCards.map((card) => (
             <article
               key={`${card.eyebrow}-${card.title}`}
-              className="rounded-[20px] border border-[#E4DDC8] bg-[#FFFFFF] px-5 pb-5 pt-5 sm:px-6 sm:pb-6"
+              className="rounded-[20px] border border-[#E4DDC8] bg-[#FFFFFF] px-4 pb-4 pt-4 sm:px-6 sm:pb-6 sm:pt-5"
             >
-              <p className="font-fraunces text-[12px] uppercase tracking-[0.17em] text-[#B87333]">{card.eyebrow}</p>
+              <p className="font-fraunces text-[11px] uppercase tracking-[0.17em] text-[#B87333] sm:text-[12px]">{card.eyebrow}</p>
 
-              <h3 className="mt-2 font-fraunces text-[32px] leading-tight tracking-[-0.006em] text-[#0A0E1A] sm:text-[37px] lg:text-[24px]">{card.title}</h3>
-              <p className="mt-1 min-h-[45px] font-fraunces text-[13px] italic leading-[1.4] text-[#5A6578]">{card.subtitle}</p>
+              <h3 className="mt-1.5 font-fraunces text-[28px] leading-tight tracking-[-0.006em] text-[#0A0E1A] sm:mt-2 sm:text-[32px] md:text-[35px] lg:text-[24px]">
+                {card.title}
+              </h3>
+              <p className="mt-1 min-h-0 font-fraunces text-[12px] italic leading-[1.4] text-[#5A6578] sm:min-h-[45px] sm:text-[13px]">{card.subtitle}</p>
 
-              <div className="mt-3 border-t border-[#E4DDC8] pt-3">
-                <p className="font-fraunces text-[40px] leading-none text-[#0A0E1A] tracking-[-0.02em] sm:text-[47px] lg:text-[36px]">{card.price}</p>
-                <p className="mt-1 text-[12px] text-[#5A6578]">{card.priceNote}</p>
+              <div className="mt-2.5 border-t border-[#E4DDC8] pt-2.5 sm:mt-3 sm:pt-3">
+                <p className="font-fraunces text-[34px] leading-none tracking-[-0.02em] text-[#0A0E1A] sm:text-[40px] md:text-[44px] lg:text-[36px]">{card.price}</p>
+                <p className="mt-1 text-[11px] text-[#5A6578] sm:text-[12px]">{card.priceNote}</p>
               </div>
 
-              <div className="mt-4 rounded-[12px] bg-[#F7F2E7] px-3 py-2">
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-[12px] font-semibold uppercase text-[#8B5A2B]">{card.memberLabel}</p>
-                  <p className="font-fraunces text-[20px] italic text-[#B87333] sm:text-[22px] lg:text-[18px]">{card.memberValue}</p>
+              <div className="mt-3 rounded-[12px] bg-[#F7F2E7] px-3 py-2 sm:mt-4">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                  <p className="text-[11px] font-semibold uppercase text-[#8B5A2B] sm:text-[12px]">{card.memberLabel}</p>
+                  <p className="font-fraunces text-[18px] italic text-[#B87333] sm:text-[20px] md:text-[22px] lg:text-[18px]">{card.memberValue}</p>
                 </div>
               </div>
 

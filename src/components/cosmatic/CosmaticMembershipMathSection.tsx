@@ -93,17 +93,17 @@ export default function CosmaticMembershipMathSection({
             ))}
           </div>
 
-          <div className="grid w-full min-w-0 grid-cols-4 items-center gap-x-1 bg-[#020918] px-3 py-3 text-white sm:gap-x-2 sm:px-4 lg:px-5">
-            <p className="min-w-0 whitespace-nowrap font-fraunces text-[16px] italic leading-none text-[#FFFFFF] sm:text-[18px] lg:text-[15px]">
+          <div className="grid w-full min-w-0 grid-cols-1 gap-4 bg-[#020918] px-4 py-4 text-white max-md:text-center md:grid-cols-4 md:items-center md:gap-x-3 md:gap-y-0 md:px-4 md:py-3 lg:px-5">
+            <p className="min-w-0 text-center font-fraunces text-[16px] italic leading-snug text-[#FFFFFF] sm:text-[18px] md:text-left md:leading-none lg:text-[15px]">
               {footerLabel}
             </p>
-            <p className="min-w-0 whitespace-nowrap text-center font-fraunces leading-none text-[#FFFFFF80]">
+            <p className="min-w-0 text-[13px] leading-none text-[#FFFFFF80] md:text-center md:whitespace-nowrap sm:text-[14px] lg:text-[16px]">
               {footerPrice}
             </p>
             <div className="flex min-w-0 justify-start">
               <Link
                 href={ctaHref}
-                className="inline-flex items-center whitespace-nowrap font-fraunces font-semibold leading-none text-[#FFFFFF] transition hover:text-white sm:text-[22px] lg:text-[18px]"
+                className="inline-flex items-center gap-1 font-fraunces text-[18px] font-semibold leading-none text-[#FFFFFF] transition hover:text-white sm:text-[22px] lg:text-[20px] md:whitespace-nowrap"
               >
                 {ctaLabel}
                 <span aria-hidden="true" className="ml-2 text-[20px] font-bold leading-none text-[#C9A961]">
@@ -111,7 +111,7 @@ export default function CosmaticMembershipMathSection({
                 </span>
               </Link>
             </div>
-            <div className="min-w-0" aria-hidden="true" />
+            <div className="hidden min-w-0 md:block" aria-hidden="true" />
           </div>
         </div>
       </div>

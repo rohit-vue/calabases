@@ -86,6 +86,7 @@ export default function RestorativePage() {
       />
       <FaqSection
         faqs={restorativeFaqs}
+        eyebrow="Frequently Asked"
         background="#FFFFFF"
         accentColor="#B87333"
         headingColor="#0A0E1A"
@@ -97,6 +98,7 @@ export default function RestorativePage() {
         toggleIconColor="#B87333"
       />
       <ClosingCta
+        mainWrapperClassName="relative px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 md:px-8 lg:px-24 lg:pb-20 lg:pt-24"
         eyebrow="Ready When You Are"
         eyebrowLined
         eyebrowLineColor="#B87333"

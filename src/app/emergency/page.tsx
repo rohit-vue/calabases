@@ -59,7 +59,25 @@ export default function EmergencyPage() {
       <EmergencyFirstAidSection />
       <EmergencyAvoidErSection />
       <EmergencyPricingSection />
-      <FaqSection faqs={emergencyFaqs} />
+      <FaqSection
+       faqs={emergencyFaqs}
+       eyebrow="Frequently Asked"
+       eyebrowLeadingDash
+       eyebrowLeadingDashColor="#0E8B87"
+       titleStart="Quick"
+       headingColor="#0A0E1A"
+       titleEmphasis="answers."
+       headingEmphasisColor="#E63946"
+       background="#ffffff"
+       titleEnd=""
+       accentColor="#0E8B87"
+       cardBorderColor="#E4E0D6"
+       cardBackgroundColor="#F8F9FA"
+       questionColor="#0A0E1A"
+       answerColor="#5A6578"
+       toggleBackgroundColor="#FFFFFF"
+       toggleIconColor="#E63946"
+       />
       <EmergencyFinalCtaSection />
     </main>
   );

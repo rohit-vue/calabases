@@ -83,17 +83,17 @@ export default function OralSurgeryPage() {
         avatarBackground="#5E7267"
       />
       <FaqSection 
-      faqs={oralSurgeryFaqs}
-      background="#EFF4F2"
-      accentColor="#5E7267"
-      headingColor="#0A0E1A"
-      headingEmphasisColor="#5E7267"
-      cardBorderColor="#E4E0D6"
-      cardBackgroundColor="#FFFFFF"
-      questionColor="#0A0E1A"
-      answerColor="#5E7267"
-      toggleBackgroundColor="#F3F7F6"
-      toggleIconColor="#5E7267"
+        faqs={oralSurgeryFaqs}
+        background="#EFF4F2"
+        accentColor="#5E7267"
+        headingColor="#0A0E1A"
+        headingEmphasisColor="#5E7267"
+        cardBorderColor="#E4E0D6"
+        cardBackgroundColor="#FFFFFF"
+        questionColor="#0A0E1A"
+        answerColor="#5E7267"
+        toggleBackgroundColor="#F3F7F6"
+        toggleIconColor="#5E7267"
       />
       <ClosingCta
         eyebrow="Calm, Modern, In-House"
