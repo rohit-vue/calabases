@@ -6,7 +6,7 @@ import CosmaticPsychologySection from "@/components/cosmatic/CosmaticPsychologyS
 import CosmaticProcessSection from "@/components/cosmatic/CosmaticProcessSection";
 import CosmaticPricingSection from "@/components/cosmatic/CosmaticPricingSection";
 import CosmaticSignatureSection from "@/components/cosmatic/CosmaticSignatureSection";
-import FaqSection from "@/components/general/FaqSection";
+import FaqSection from "@/components/layout/FaqSection";
 import ClosingCta, { CLOSING_CTA_MAIN_WRAPPER_CLASSES } from "@/components/layout/ClosingCta";
 import TestimonialSection from "@/components/layout/TestimonialSection";
 

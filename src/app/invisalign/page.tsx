@@ -7,7 +7,7 @@ import InvisalignTestimonialSection from "@/components/invisalign/InvisalignTest
 import InvisalignTreatsSection from "@/components/invisalign/InvisalignTreatsSection";
 import InvisalignWhySection from "@/components/invisalign/InvisalignWhySection";
 import ClosingCta from "@/components/layout/ClosingCta";
-import FaqSection from "@/components/general/FaqSection";
+import FaqSection from "@/components/layout/FaqSection";
 
 const invisalignFaqs = [
   {
