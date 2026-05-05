@@ -55,11 +55,11 @@ export default function ImplantsTypesSection() {
             <p className="font-jetbrains text-[11px] uppercase tracking-[0.24em] text-[#C9A961]">Implant Types</p>
           </div>
 
-          <h2 className="mt-4 max-w-none font-fraunces text-[74px] font-light leading-[0.92] tracking-tighter text-[#EEF2F8] lg:whitespace-nowrap">
+          <h2 className="mt-4 max-w-none font-fraunces text-[44px] font-light leading-[0.94] tracking-tighter text-[#EEF2F8] sm:text-[58px] lg:text-[68px] xl:whitespace-nowrap">
             One tooth. Several teeth. A <span className="font-light italic text-[#C9A961]">full arch.</span>
           </h2>
 
-          <p className="mt-5 max-w-[700px] text-[19px] leading-normal text-[#FFFFFF99] font-inter font-light">
+          <p className="mt-5 max-w-[700px] font-inter text-[16px] font-light leading-normal text-[#FFFFFF99] sm:text-[18px] lg:text-[19px]">
             Every case is different. Here are the four implant solutions we offer, with real price ranges
             and what each is built for.
           </p>
@@ -69,19 +69,19 @@ export default function ImplantsTypesSection() {
           {implantTypes.map((item) => (
             <article
               key={item.title}
-              className="grid h-full min-h-[560px] grid-rows-[auto_104px_minmax(180px,auto)_auto_auto] rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-5 py-6 sm:px-6"
+              className="flex h-full flex-col rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-5 py-6 sm:px-6 xl:min-h-[560px]"
             >
               <p className="font-jetbrains text-[10px] uppercase tracking-[0.24em] text-[#C9A961]">{item.tag}</p>
-              <div className="flex flex-col gap-2 pt-4">
-                <h3 className="font-fraunces text-[33px] leading-[0.95] text-[#EFF3F9] sm:text-[38px] lg:text-[28px]">
+              <div className="mt-4 space-y-2">
+                <h3 className="font-fraunces text-[30px] leading-[0.95] text-[#EFF3F9] sm:text-[34px] lg:text-[28px]">
                   {item.title}
                 </h3>
-                <p className="font-fraunces text-[18px] font-light italic leading-[1.2] text-[#C9A961] sm:text-[20px] lg:text-[13px]">
+                <p className="font-fraunces text-[16px] font-light italic leading-[1.2] text-[#C9A961] sm:text-[18px] lg:text-[13px]">
                   {item.subtitle}
                 </p>
               </div>
-              <div className="pt-6">
-                <p className="max-w-[240px] font-inter text-[14px] leading-[1.8] text-[#FFFFFFA6]">{item.description}</p>
+              <div className="mt-5 flex-1">
+                <p className="max-w-[250px] font-inter text-[14px] leading-[1.8] text-[#FFFFFFA6]">{item.description}</p>
               </div>
 
               <div className="border-t border-[#1A2742] pt-4">
@@ -101,8 +101,10 @@ export default function ImplantsTypesSection() {
                 </div>
               </div>
 
-              <div className="mt-3 border-t border-[#1A2742] pt-4">
-                <p className="font-fraunces text-[36px] leading-[0.95] text-[#FFFFFF] sm:text-[42px] lg:text-[32px]">{item.price}</p>
+              <div className="mt-4 border-t border-[#1A2742] pt-4">
+                <p className="font-fraunces text-[32px] leading-[0.95] text-[#FFFFFF] sm:text-[38px] lg:text-[32px]">
+                  {item.price}
+                </p>
                 <p className="font-jetbrains mt-1 text-[12px] text-[#C9A961]">Gleam members save 20%</p>
               </div>
             </article>
