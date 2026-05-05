@@ -69,15 +69,15 @@ export default function CosmaticSignatureSection() {
   return (
     <section className="bg-[#0A0E1A] px-4 py-14 sm:px-8 sm:py-16 lg:px-24 lg:py-20">
       <div className="mx-auto w-full max-w-[1180px]">
-        <div className="max-w-[820px]">
-          <div className="flex items-center gap-3">
+        <div className="mx-auto max-w-[820px] text-center lg:mx-0 lg:text-left">
+          <div className="flex items-center justify-center gap-3 lg:justify-start">
             <span className="h-[0.2px] w-[28px] bg-[#C9A961]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A961]">What we offer</p>
           </div>
-          <h2 className="mt-3 font-fraunces text-[44px] font-light leading-[0.95] tracking-[-0.03em] text-[#FFFFFF] sm:text-[56px] lg:text-[52px]">
+          <h2 className="mt-3 font-fraunces text-[32px] font-light leading-[0.95] tracking-[-0.03em] text-[#FFFFFF] sm:text-[42px] md:text-[48px] lg:text-[52px]">
             Three treatments. <span className="italic text-[#C9A961]">One outcome.</span>
           </h2>
-          <p className="mt-5 max-w-[660px] text-[17px] font-light leading-normal text-[#FFFFFF99]">
+          <p className="mt-5 max-w-[660px] text-[15px] font-light leading-normal text-[#FFFFFF99] sm:text-[16px] lg:text-[17px]">
             A smile that looks like you. Only better. Each treatment is tailored, each result is
             predictable, and each price is transparent before you begin.
           </p>
@@ -85,29 +85,31 @@ export default function CosmaticSignatureSection() {
 
         <div className="mt-10 border-t border-[#121D36]" />
 
-        <div className="space-y-12 lg:space-y-16">
+        <div className="space-y-10 sm:space-y-12 lg:space-y-16">
           {treatments.map((item, idx) => (
             <article
               key={item.number}
-              className={`grid grid-cols-1 gap-8 border-b border-[#FFFFFF1A] py-10 lg:grid-cols-2 lg:gap-10 ${item.reverse ? "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1" : ""}`}
+              className={`grid grid-cols-1 gap-6 border-b border-[#FFFFFF1A] py-8 sm:gap-8 sm:py-10 lg:grid-cols-2 lg:gap-10 ${item.reverse ? "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1" : ""}`}
             >
-              <div className="max-w-[560px]">
-                <div className="flex items-center gap-3">
+              <div className="mx-auto max-w-[560px] text-center lg:mx-0 lg:text-left">
+                <div className="flex items-center justify-center gap-3 lg:justify-start">
                   <span className="h-[0.2px] w-[20px] bg-[#C9A961]" />
                   <p className="text-[12px]  tracking-[0.35em] text-[#C9A961]">
                     {item.number} - {item.tag}
                   </p>
                 </div>
                 
-                <h3 className="mt-3 font-fraunces text-[42px] font-light leading-[0.95] tracking-[-0.027em] text-[#FFFFFF] sm:text-[52px] lg:text-[56px]">
+                <h3 className="mt-3 font-fraunces text-[32px] font-light leading-[0.95] tracking-[-0.027em] text-[#FFFFFF] sm:text-[44px] md:text-[50px] lg:text-[56px]">
                   {item.title} <span className="font-light italic text-[#C9A961]">{item.emphasis}</span>
                 </h3>
-                <p className="mt-4 max-w-[520px] font-fraunces font-light text-[22px] italic leading-[1.2] text-[#FFFFFFD9] sm:text-[27px] lg:text-[22px]">
+                <p className="mt-4 max-w-[520px] font-fraunces font-light text-[18px] italic leading-[1.2] text-[#FFFFFFD9] sm:text-[22px] md:text-[24px] lg:text-[22px]">
                   {item.subtitle}
                 </p>
-                <p className="mt-5 max-w-[520px] text-[15px] leading-[1.65] text-[#FFFFFFB2]">{item.description}</p>
+                <p className="mt-5 max-w-[520px] text-[14px] leading-[1.65] text-[#FFFFFFB2] sm:text-[15px] lg:text-[15px]">
+                  {item.description}
+                </p>
 
-                <div className="mt-7 grid grid-cols-1 gap-y-1 border-y border-[#FFFFFF1A] py-2.5 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-2 sm:py-3 lg:gap-y-0 lg:py-4">
+                <div className="mt-6 grid grid-cols-1 gap-y-1 border-y border-[#FFFFFF1A] py-2.5 sm:mt-7 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-2 sm:py-3 lg:gap-y-0 lg:py-4">
                   {item.metrics.map((metric) => (
                     <div
                       key={metric.label}
@@ -116,7 +118,7 @@ export default function CosmaticSignatureSection() {
                       <p className="text-[11px] uppercase tracking-[0.2em] text-[#FFFFFF66] lg:text-[12px] lg:tracking-[0.22em]">
                         {metric.label}
                       </p>
-                      <p className="mt-1.5 font-fraunces text-[23px] leading-[1.15] text-[#FFFFFF] sm:text-[26px] lg:mt-2 lg:text-[20px] lg:leading-[32px]">
+                      <p className="mt-1.5 font-fraunces text-[20px] leading-[1.15] text-[#FFFFFF] sm:text-[23px] md:text-[24px] lg:mt-2 lg:text-[20px] lg:leading-[32px]">
                         {metric.value}
                       </p>
                       {metric.note ? (
@@ -128,16 +130,22 @@ export default function CosmaticSignatureSection() {
                   ))}
                 </div>
 
-                <Link
-                  href="#"
-                  className="mt-6 inline-flex items-center gap-2 text-[14px] font-semibold tracking-[0.05em] text-[#C9A961] transition hover:text-[#dfc28b]"
-                >
-                  {item.cta} <span aria-hidden="true">→</span>
-                </Link>
+                <div className="mt-6 flex justify-center lg:justify-start">
+                  <Link
+                    href="#"
+                    className="inline-flex items-center gap-2 text-[14px] font-semibold tracking-[0.05em] text-[#C9A961] transition hover:text-[#dfc28b]"
+                  >
+                    {item.cta} <span aria-hidden="true">→</span>
+                  </Link>
+                </div>
               </div>
 
-              <div className={`${idx === 1 ? "lg:pt-14" : "lg:pt-8"}`}>
-                <p className="mb-5 text-[10px] uppercase font-semibold tracking-[0.24em] text-[#C9A961]">{item.imageLabel}</p>
+              <div
+                className={`text-center lg:text-left ${idx === 1 ? "lg:pt-14" : "lg:pt-8"}`}
+              >
+                <p className="mb-5 text-[10px] uppercase font-semibold tracking-[0.24em] text-[#C9A961]">
+                  {item.imageLabel}
+                </p>
                 <div className="mx-auto w-full max-w-[300px] overflow-hidden rounded-[20px] sm:max-w-[360px] lg:max-w-[400px]">
                   <Image
                     src={item.image}

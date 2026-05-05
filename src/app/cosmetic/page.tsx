@@ -74,7 +74,7 @@ export default function CosmeticPage() {
         quoteColor="#FFFFFF"
         authorNameColor="#FFFFFF"
         authorMetaColor="rgba(255, 255, 255, 0.5)"
-        quoteMarkColor="#121C35"
+        quoteMarkColor="#C9A961"
         avatarTextColor="#0A0E1A"
         avatarBackground="linear-gradient(135deg, #C9A961 0%, #F5EDD8 100%)"
         showStars
