@@ -35,30 +35,32 @@ export default function CosmaticPatientProfilesSection() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C9A961]">Who Chooses Cosmetic Work</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.95] tracking-[-0.03em] text-[#0A0E1A] sm:text-[56px] lg:text-[52px]">
+          <h2 className="mt-4 font-fraunces text-[32px] font-light leading-[0.95] tracking-[-0.03em] text-[#0A0E1A] sm:text-[42px] md:text-[48px] lg:text-[52px]">
             Not who you&apos;d <span className="italic text-[#C9A961]">expect.</span>
           </h2>
 
-          <p className="mt-5 max-w-[650px] text-[17px] leading-[1.45] text-[#5A6578] font-light sm:text-[20px] lg:text-[17px]">
+          <p className="mt-5 max-w-[650px] text-[15px] leading-[1.45] text-[#5A6578] font-light sm:text-[16px] md:text-[17px] lg:text-[17px]">
             The typical cosmetic patient isn&apos;t a celebrity or a 22-year-old influencer. It&apos;s people
             who&apos;ve been thinking about it for years, and finally have the life circumstances to make it
             happen.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {profiles.map((profile) => (
             <article
               key={profile.title}
-              className="rounded-[16px] border border-[#E4E0D6] bg-[#FFFFFF] px-5 py-5 sm:px-6 sm:py-9"
+              className="rounded-[16px] border border-[#E4E0D6] bg-[#FFFFFF] px-4 py-5 sm:px-6 sm:py-9"
             >
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-md text-[32px]">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-md text-[28px] sm:h-9 sm:w-9 sm:text-[32px]">
                 {profile.icon}
               </span>
-              <h3 className="mt-8 max-w-[210px] font-fraunces text-[28px] leading-[1.03] tracking-[-0.006em] text-[#0A0E1A] sm:text-[32px] lg:text-[20px]">
+              <h3 className="mt-6 max-w-[210px] font-fraunces text-[22px] leading-[1.03] tracking-[-0.006em] text-[#0A0E1A] sm:mt-8 sm:text-[26px] md:text-[28px] lg:text-[20px]">
                 {profile.title}
               </h3>
-              <p className="mt-3 text-[14px] leading-[1.62] text-[#5A6578]">{profile.description}</p>
+              <p className="mt-3 text-[13px] leading-[1.62] text-[#5A6578] sm:text-[14px] lg:text-[14px]">
+                {profile.description}
+              </p>
             </article>
           ))}
         </div>

@@ -39,25 +39,31 @@ export default function CosmaticProcessSection() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C9A961]">The Process</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.95] tracking-[-0.03em] text-[#0A0E1A] sm:text-[58px] lg:text-[52px]">
+          <h2 className="mt-4 font-fraunces text-[30px] font-light leading-[0.95] tracking-[-0.03em] text-[#0A0E1A] sm:text-[40px] md:text-[46px] lg:text-[52px]">
             Your smile, <span className="italic text-[#C9A961]">designed.</span>
           </h2>
 
-          <p className="mt-5 max-w-[680px] text-[18px] leading-[1.45] text-[#5A6578] font-light sm:text-[22px] lg:text-[17px]">
+          <p className="mt-5 max-w-[680px] text-[15px] leading-[1.45] text-[#5A6578] font-light sm:text-[16px] md:text-[18px] lg:text-[17px]">
             Cosmetic dentistry shouldn&apos;t be a guessing game. Our 4-step digital smile design process lets
             you see and approve your final result before we ever touch a tooth.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-10 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((step) => (
             <article
               key={step.numeral}
-              className="rounded-[14px] border border-[#E4E0D6] bg-[#FFFFFF] px-5 py-6 sm:px-6 sm:py-7"
+              className="rounded-[14px] border border-[#E4E0D6] bg-[#FFFFFF] px-4 py-5 sm:px-6 sm:py-7"
             >
-              <p className="font-fraunces text-[44px] italic leading-none font-light tracking-[-0.056em] text-[#C9A961] sm:text-[52px] lg:text-[64px]">{step.numeral}</p>
-              <h3 className="mt-4 font-fraunces text-[28px] leading-[1.05] text-[#0A0E1A] tracking-[-0.007em] sm:text-[31px] lg:text-[22px]">{step.title}</h3>
-              <p className="mt-4 min-h-[96px] text-[14px] leading-[1.62] text-[#5A6578] lg:min-h-[114px]">{step.description}</p>
+              <p className="font-fraunces text-[36px] italic leading-none font-light tracking-[-0.056em] text-[#C9A961] sm:text-[48px] md:text-[56px] lg:text-[64px]">
+                {step.numeral}
+              </p>
+              <h3 className="mt-3 font-fraunces text-[22px] leading-[1.05] text-[#0A0E1A] tracking-[-0.007em] sm:mt-4 sm:text-[26px] md:text-[28px] lg:text-[22px]">
+                {step.title}
+              </h3>
+              <p className="mt-3 min-h-0 text-[13px] leading-[1.62] text-[#5A6578] sm:mt-4 sm:min-h-[88px] sm:text-[14px] lg:min-h-[114px] lg:text-[14px]">
+                {step.description}
+              </p>
               <div className="mt-6 border-t border-[#E4E0D6] pt-4">
                 <p className="text-[10px] uppercase font-semibold tracking-[0.22em] text-[#C9A961]">{step.timing}</p>
               </div>

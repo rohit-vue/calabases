@@ -22,7 +22,7 @@ export default function CosmaticHero() {
             <span className="h-[0.2px] w-[46px] bg-[#C9A961]" />
           </div>
 
-          <h1 className="mt-7 font-fraunces font-light text-[48px] leading-[0.9] tracking-[-0.05em] text-[#FFFFFF] sm:text-[60px] lg:text-[72px]">
+          <h1 className="mt-7 font-fraunces font-light text-[36px] leading-[0.9] tracking-[-0.05em] text-[#FFFFFF] sm:text-[48px] md:text-[60px] lg:text-[72px]">
             Cosmetic
             <br />
             <span className="italic text-[#C9A961]">dentistry,</span>
@@ -30,12 +30,12 @@ export default function CosmaticHero() {
             done right.
           </h1>
 
-          <p className="mx-auto mt-5 max-w-[460px] border-l-2 border-[#C9A961] pl-5 text-left font-fraunces text-[20px] font-normal leading-[1.22] text-[#FFFFFFD9] sm:pl-6 sm:text-[22px] lg:mx-0 lg:text-[22px]">
+          <p className="mx-auto mt-5 max-w-[460px] border-l-2 border-[#C9A961] pl-5 text-left font-fraunces text-[17px] font-normal leading-[1.22] text-[#FFFFFFD9] sm:pl-6 sm:text-[19px] md:text-[21px] lg:mx-0 lg:text-[22px]">
             74% <span className="font-light italic">of Americans believe an unattractive smile can hurt their career. Your smile is an
             investment - here&apos;s how to get it right.</span>
           </p>
 
-          <p className="mx-auto mt-6 max-w-[470px] text-[13px] leading-[1.55] text-[#FFFFFF99] lg:mx-0">
+          <p className="mx-auto mt-6 max-w-[470px] text-[12px] leading-[1.55] text-[#FFFFFF99] sm:text-[13px] lg:mx-0 lg:text-[13px]">
             Veneers. Whitening. Smile design. Over 1,200 cosmetic procedures completed in Calabasas
             since 2010 - with a digital preview of your final smile before we ever begin.
           </p>
@@ -58,7 +58,9 @@ export default function CosmaticHero() {
           <div className="mt-9 grid grid-cols-1 justify-items-center gap-4 border-t border-[#FFFFFF1A] pt-5 text-center sm:grid-cols-3 sm:gap-0 lg:justify-items-start lg:text-left">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <p className="font-fraunces text-[24px] leading-none tracking-[-0.023em] text-[#FFFFFF]">{stat.value}</p>
+                <p className="font-fraunces text-[20px] leading-none tracking-[-0.023em] text-[#FFFFFF] sm:text-[22px] lg:text-[24px]">
+                  {stat.value}
+                </p>
                 <p className="mt-2 text-[9px] uppercase tracking-[0.18em] text-[#FFFFFF80]">{stat.label}</p>
               </div>
             ))}

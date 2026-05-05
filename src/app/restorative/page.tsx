@@ -80,7 +80,7 @@ export default function RestorativePage() {
         quoteColor="#0A0E1A"
         authorNameColor="#0A0E1A"
         authorMetaColor="#5A6578"
-        quoteMarkColor="#B8733323"
+        quoteMarkColor="#B87333"
         avatarTextColor="#FFFFFF"
         avatarBackground="#B87333"
       />

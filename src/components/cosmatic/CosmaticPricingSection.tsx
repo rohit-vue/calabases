@@ -57,11 +57,11 @@ export default function CosmaticPricingSection() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C9A961]">Transparent Pricing</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[44px] font-light leading-[0.95] tracking-[-0.03em] text-[#0A0E1A] sm:text-[56px] lg:text-[52px]">
+          <h2 className="mt-4 font-fraunces text-[32px] font-light leading-[0.95] tracking-[-0.03em] text-[#0A0E1A] sm:text-[42px] md:text-[48px] lg:text-[52px]">
             Three paths to a <span className="italic text-[#C9A961]">better smile.</span>
           </h2>
 
-          <p className="mt-5 max-w-[700px] text-[18px] leading-[1.45] text-[#5A6578] font-light sm:text-[22px] lg:text-[17px]">
+          <p className="mt-5 max-w-[700px] text-[15px] leading-[1.45] text-[#5A6578] font-light sm:text-[16px] md:text-[18px] lg:text-[17px]">
             Every cosmetic plan is custom - but here&apos;s what most Calabasas patients invest. All prices
             include consultation, digital smile design, and placement.
           </p>
@@ -79,7 +79,9 @@ export default function CosmaticPricingSection() {
                 </div>
               ) : null}
 
-              <h3 className={`font-fraunces text-[34px] leading-[0.95] tracking-[-0.007em] sm:text-[38px] lg:text-[28px] ${plan.featured ? "text-[#FFFFFF]" : "text-[#0A0E1A]"}`}>
+              <h3
+                className={`font-fraunces text-[28px] leading-[0.95] tracking-[-0.007em] sm:text-[32px] md:text-[34px] lg:text-[28px] ${plan.featured ? "text-[#FFFFFF]" : "text-[#0A0E1A]"}`}
+              >
                 {plan.name}
               </h3>
               <p className={`mt-3 font-fraunces text-[13px] italic leading-[1.3] ${plan.featured ? "text-[#FFFFFF80]" : "text-[#5A6578]"}`}>
@@ -87,8 +89,14 @@ export default function CosmaticPricingSection() {
               </p>
 
               <div className={`mt-5 ${plan.featured ? "text-[#FFFFFF]" : "text-[#0A0E1A]"}`}>
-                <span className="font-fraunces text-[44px] leading-none tracking-[-0.03em] sm:text-[50px] lg:text-[48px]">{plan.price}</span>
-                <span className={`text-[18px] sm:text-[19px] lg:text-[16px] tracking-[-0.03em] ${plan.featured ? "text-[#FFFFFF80]" : "text-[#5A6578]"}`}>{plan.range}</span>
+                <span className="font-fraunces text-[36px] leading-none tracking-[-0.03em] sm:text-[42px] lg:text-[48px]">
+                  {plan.price}
+                </span>
+                <span
+                  className={`text-[16px] tracking-[-0.03em] sm:text-[17px] md:text-[18px] lg:text-[16px] ${plan.featured ? "text-[#FFFFFF80]" : "text-[#5A6578]"}`}
+                >
+                  {plan.range}
+                </span>
                 <p className="mt-1 text-[13px] italic text-[#C9A961]">{plan.memberNote}</p>
               </div>
 
@@ -97,7 +105,7 @@ export default function CosmaticPricingSection() {
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
-                      className={`flex items-center gap-2 text-[14px] leading-[1.45] ${plan.featured ? "text-[#FFFFFFD9]" : "text-[#1C2333]"}`}
+                      className={`flex items-start gap-2 text-[13px] leading-[1.45] sm:text-[14px] lg:text-[14px] ${plan.featured ? "text-[#FFFFFFD9]" : "text-[#1C2333]"}`}
                     >
                       <span className="mt-1 text-[14px] text-[#C9A961]">✓</span>
                       <span>{feature}</span>
