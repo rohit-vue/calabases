@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useState } from "react";
 
 export type FaqItem = {
@@ -70,6 +71,8 @@ export const DEFAULT_FAQ_SECTION_COLORS = {
 
 export type FaqSectionProps = {
   faqs?: FaqItem[];
+  /** Optional symbol or text rendered before the eyebrow. */
+  eyebrowPrefix?: ReactNode;
   /** Small uppercase line above the title */
   eyebrow?: string;
   /** When true, renders a prominent horizontal dash before the eyebrow. */
@@ -102,6 +105,7 @@ export type FaqSectionProps = {
 /** Shared FAQ accordion used across service pages; tokens mirror `TestimonialSection`-style prop overrides. */
 export default function FaqSection({
   faqs = defaultFaqs,
+  eyebrowPrefix,
   eyebrow = "Frequently Asked",
   eyebrowLeadingDash = false,
   eyebrowLeadingDashColor,
@@ -127,10 +131,13 @@ export default function FaqSection({
   const leadingDashColor = eyebrowLeadingDashColor ?? accentColor;
 
   return (
-    <section className="px-4 py-16 sm:px-6 md:px-8 lg:px-80" style={{ background }}>
+    <section className="px-4 py-16 sm:px-6 md:px-8 lg:px-24 xl:px-32" style={{ background }}>
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[860px]">
           <div className="mb-3 flex items-center gap-3">
+            {eyebrowPrefix ? (
+              <span className="font-fraunces italic text-[#5A6578]">{eyebrowPrefix}</span>
+            ) : null}
             {eyebrowLeadingDash ? (
               <span
                 aria-hidden

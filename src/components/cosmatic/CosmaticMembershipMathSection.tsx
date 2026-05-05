@@ -100,7 +100,7 @@ export default function CosmaticMembershipMathSection({
             <p className="min-w-0 text-[13px] leading-none text-[#FFFFFF80] md:text-center md:whitespace-nowrap sm:text-[14px] lg:text-[16px]">
               {footerPrice}
             </p>
-            <div className="flex min-w-0 justify-start">
+            <div className="flex min-w-0 justify-center md:justify-start">
               <Link
                 href={ctaHref}
                 className="inline-flex items-center gap-1 font-fraunces text-[18px] font-semibold leading-none text-[#FFFFFF] transition hover:text-white sm:text-[22px] lg:text-[20px] md:whitespace-nowrap"
