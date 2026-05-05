@@ -5,7 +5,7 @@ export default function InvisalignTestimonialSection() {
         <div className="mx-auto max-w-[960px] text-center">
           <p className="text-[18px] tracking-[0.35em] text-[#C9A961]">★★★★★</p>
 
-          <blockquote className="mx-auto mt-6 max-w-[920px] font-fraunces text-[18px] italic font-light leading-[1.22] tracking-[-0.02em] text-[#111827] sm:text-[32px] md:text-[40px] lg:text-[44px] lg:leading-[1.16]">
+          <blockquote className="mx-auto mt-6 max-w-[920px] font-fraunces text-[18px] italic font-light leading-[1.22] tracking-[-0.02em] text-[#0A0E1A] sm:text-[32px] md:text-[40px] lg:text-[44px] lg:leading-[1.16]">
             "I had braces as a kid and my teeth shifted back by my 30s. I put off fixing them for a decade
             because the idea of metal braces at work felt ridiculous. Invisalign was the only reason I
             finally did it. Nobody at my office even noticed I was wearing them - and 14 months later, my
@@ -17,7 +17,7 @@ export default function InvisalignTestimonialSection() {
               M
             </span>
             <div className="text-left">
-              <p className="text-[12px] font-semibold text-[#111827] lg:text-[16px]">Melissa T.</p>
+              <p className="text-[12px] font-semibold text-[#0A0E1A] lg:text-[16px]">Melissa T.</p>
               <p className="text-[10px] text-[#6E788B] lg:text-[13px]">14-month Invisalign • Calabasas</p>
             </div>
           </div>

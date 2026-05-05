@@ -35,16 +35,16 @@ const treatCards = [
 
 export default function InvisalignTreatsSection() {
   return (
-    <section className="bg-[#F4F3EB] px-4 pb-12 pt-8 sm:px-6 sm:pb-14 sm:pt-10 md:px-8 md:pb-16 lg:px-20 lg:py-20">
+    <section className="bg-[#F0F4F7] px-4 pb-12 pt-8 sm:px-6 sm:pb-14 sm:pt-10 md:px-8 md:pb-16 lg:px-20 lg:py-20">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[900px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[11px] font-semibold  uppercase tracking-[0.24em] text-[#C2B189]">What it treats</p>
+            <p className="text-[11px] font-semibold  uppercase tracking-[0.24em] text-[#C9A961]">What it treats</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces font-light text-[34px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[48px] md:text-[58px] lg:text-[50px]">
-            Nine out of ten <span className="font-light italic text-[#C9A961]">orthodontic cases.</span>
+          <h2 className="mt-4 font-fraunces font-light text-[34px] leading-[0.92] tracking-tighter text-[#0A0E1A] sm:text-[48px] md:text-[58px] lg:text-[50px]">
+            Nine out of ten <span className="font-light italic text-[#B87333]">orthodontic cases.</span>
           </h2>
 
           <p className="mt-5 max-w-[820px] font-light text-[15px] leading-normal text-[#687286] sm:text-[18px] md:text-[20px] lg:text-[15px]">
@@ -66,7 +66,7 @@ export default function InvisalignTreatsSection() {
                   card.icon
                 )}
               </span>
-              <h3 className="mt-4 font-fraunces text-[24px] leading-[0.98] text-[#121927] sm:text-[28px] md:text-[34px] lg:text-[22px]">{card.title}</h3>
+              <h3 className="mt-4 font-fraunces text-[24px] leading-[0.98] text-[#0A0E1A] sm:text-[28px] md:text-[34px] lg:text-[22px]">{card.title}</h3>
               <p className="mt-3 text-[15px] leading-[1.6] text-[#667081]">{card.description}</p>
             </article>
           ))}

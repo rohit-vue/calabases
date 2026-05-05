@@ -83,6 +83,7 @@ export default function CosmeticPage() {
       <ClosingCta
         mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
         hideEyebrow
+        heroOverlayGradient="none"
         contentWrapperClassName="[background:radial-gradient(70.71%_70.71%_at_50%_50%,rgba(201,169,97,0.15)_0%,rgba(201,169,97,0)_60%)]"
       />
     </main>

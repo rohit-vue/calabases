@@ -27,10 +27,10 @@ export default function InvisalignWhySection() {
               key={stat.label}
               className={`px-2 text-center sm:px-4 md:px-6 ${idx < topStats.length - 1 ? "border-r border-[#E2DED2]" : ""}`}
             >
-              <p className={`font-fraunces text-[28px] font-light leading-none sm:text-[36px] md:text-[44px] lg:text-[53px] ${stat.accent ? "text-[#C9A961]" : "text-[#111827]"}`}>
+              <p className={`font-fraunces text-[28px] font-light leading-none sm:text-[36px] md:text-[44px] lg:text-[53px] ${stat.accent ? "text-[#C9A961]" : "text-[#0A0E1A]"}`}>
                 {stat.value}
                 {"blackSuffix" in stat && stat.blackSuffix ? (
-                  <span className="text-[#111827]">{stat.blackSuffix}</span>
+                  <span className="text-[#0A0E1A]">{stat.blackSuffix}</span>
                 ) : null}
                 {stat.suffix ? <span className="ml-0.5 align-top text-[12px] italic text-[#C9A961] sm:text-[15px] md:text-[18px] lg:text-[20px]">{stat.suffix}</span> : null}
               </p>
@@ -43,10 +43,10 @@ export default function InvisalignWhySection() {
           <div className="max-w-[560px]">
             <div className="flex items-center gap-3">
               <span className="h-px w-[28px] bg-[#D9CCAD]" />
-              <p className="text-[11px] uppercase font-semibold tracking-[0.24em] text-[#C2B189]">Why straight teeth matter</p>
+              <p className="text-[11px] uppercase font-semibold tracking-[0.24em] text-[#C9A961]">Why straight teeth matter</p>
             </div>
 
-            <h2 className="mt-4 font-fraunces font-light text-[34px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[44px] md:text-[52px] lg:text-[56px]">
+            <h2 className="mt-4 font-fraunces font-light text-[34px] leading-[0.92] tracking-tighter text-[#0A0E1A] sm:text-[44px] md:text-[52px] lg:text-[56px]">
               Not just about <span className="font-light  text-[#C9A961]">looks.</span>
             </h2>
 
