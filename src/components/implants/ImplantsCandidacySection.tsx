@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const greatCandidates = [
   {
     title: "Missing one or more teeth",
@@ -47,19 +49,19 @@ const extraSteps = [
 
 export default function ImplantsCandidacySection() {
   return (
-    <section className="bg-[#F4F3EB] px-4 pb-16 pt-10 sm:px-8 sm:pb-20 sm:pt-12 lg:px-24 lg:pb-24 lg:pt-14">
+    <section className="bg-[#FAF8F3] px-4 pb-16 pt-10 sm:px-8 sm:pb-20 sm:pt-12 lg:px-24 lg:pb-24 lg:pt-14">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[900px]">
           <div className="flex items-center gap-2.5">
             <span className="font-fraunces italic uppercase text-[#5A6578]">§</span>
-            <p className="text-[11px] font-jetbrains uppercase tracking-[0.24em] text-[#C9A961]">Candidacy</p>
+            <p className="text-[8px] font-jetbrains font-medium  uppercase tracking-[0.24em] text-[#C9A961] lg:text-[11px]">Candidacy</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces font-light leading-[0.92] tracking-tighter text-[#101624] lg:text-[56px]">
+          <h2 className="mt-4 font-fraunces font-light text-[32px] leading-[0.92] tracking-tighter text-[#101624] lg:text-[52px]">
             Are implants <span className="font-light italic text-[#C9A961]">right for you?</span>
           </h2>
 
-          <p className="mt-5 max-w-[620px] font-inter font-light leading-normal text-[#5A6578] lg:text-[17px]">
+          <p className="mt-5 max-w-[620px] font-inter font-light leading-normal text-[#5A6578] lg:text-[16px]">
             Most adults missing one or more teeth are candidates for implants - but not everyone is a fit
             on day one. Here&apos;s what we look for during your consultation.
           </p>
@@ -67,16 +69,16 @@ export default function ImplantsCandidacySection() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
           <div>
-            <h3 className="font-fraunces leading-none text-[#1D8D84] sm:text-[39px] lg:text-[28px]">✓ Great candidates</h3>
+            <h3 className="font-fraunces text-[30px] leading-none text-[#0E8B87] sm:text-[34px] md:text-[36px] lg:text-[28px]">✓ Great candidates</h3>
             <div className="mt-2 border-t border-[#DDDACE]">
               {greatCandidates.map((item) => (
-                <div key={item.title} className="border-t border-[#E3E0D6] pt-8 pb-3">
+                <div key={item.title} className="border-t border-[#E4E0D6] pt-8 pb-3">
                   <div className="flex items-start gap-3">
-                    <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E7F5F3] text-[14px] leading-none text-[#1D8D84]">
-                      ✓
+                    <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E8F7F6]">
+                      <Image src="/images/✓.svg" alt="" aria-hidden="true" width={14} height={14} />
                     </span>
                     <div>
-                      <p className="font-inter font-semibold leading-none text-[#121927] sm:text-[24px] lg:text-[15px]">{item.title}</p>
+                      <p className="font-inter font-semibold leading-none text-[#0A0E1A] sm:text-[24px] lg:text-[15px]">{item.title}</p>
                       <p className="mt-2 font-inter text-[14px] leading-[1.58] text-[#5A6578]">{item.description}</p>
                     </div>
                   </div>
@@ -97,7 +99,7 @@ export default function ImplantsCandidacySection() {
             </svg> May need extra steps</h3>
             <div className="mt-4 border-t border-[#DDDACE]">
               {extraSteps.map((item) => (
-                <div key={item.title} className="border-t border-[#E3E0D6] pt-8 pb-3">
+                <div key={item.title} className="border-t border-[#E4E0D6] pt-8 pb-3">
                   <div className="flex items-start gap-3">
                     <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FFE5E5] text-[14px] leading-none text-[#CC4444]">
                       !

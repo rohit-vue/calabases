@@ -94,14 +94,18 @@ export default function ImplantsPage() {
         faqs={implantsFaqs}
         eyebrowPrefix="§"
         accentColor="#C9A961"
-        background="#F4F3EB"
-        cardBackgroundColor="#FFFFFF"
-        cardBorderColor="#E5E1D7"
-        toggleBackgroundColor="#F4F1E8"
+        headingEmphasisColor="#B87333"
+        background="#FFFFFF"
+        cardBackgroundColor="#FAF8F3"
+        cardBorderColor="#E4E0D6"
+        toggleBackgroundColor="#FFFFFF"
         toggleIconColor="#C9A961"
       />
       <ClosingCta
         eyebrow="Ready When You Are"
+        eyebrowColor="#C9A961"
+        eyebrowLined
+        eyebrowLineColor="#C9A961"
         titleStart="Replace once."
         titleEmphasis="Keep forever."
         titleEnd=""
@@ -116,6 +120,8 @@ export default function ImplantsPage() {
           { value: "15+", label: "Years Experience" },
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
+        background="linear-gradient(0deg, #1C2333, #1C2333), linear-gradient(90deg, rgba(255, 255, 255, 0.024) 2.5%, rgba(255, 255, 255, 0) 2.5%), linear-gradient(180deg, rgba(255, 255, 255, 0.024) 2.5%, rgba(255, 255, 255, 0) 2.5%)"
+        heroOverlayGradient="radial-gradient(70.71% 70.71% at 50% 50%, rgba(25, 181, 176, 0.15) 0%, rgba(25, 181, 176, 0) 60%)"
       />
     </main>
   );
