@@ -51,32 +51,41 @@ export default function CosmaticApproachSection() {
           
         </div>
 
-        <div className="w-full max-w-[620px]">
+        <div className="mx-auto w-full max-w-[620px] lg:mx-0">
           <div className="flex items-center gap-3">
             <span className="h-[0.2px] w-[30px] bg-[#C9A961]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A961]">Our Approach</p>
           </div>
 
-          <h2 className="mt-3 max-w-[470px] font-fraunces font-light text-[42px] leading-[0.95] tracking-[-0.026em] text-[#0A0E1A] sm:text-[54px] lg:text-[56px]">
+          <h2 className="mt-3 max-w-[470px] font-fraunces font-light text-[32px] leading-[0.95] tracking-[-0.026em] text-[#0A0E1A] sm:text-[44px] md:text-[52px] lg:text-[56px]">
             Look like you were <span className="font-light italic text-[#C9A961]">born with it.</span>
           </h2>
 
-          <p className="mt-5 max-w-[520px] text-[17px] leading-[1.55] text-[#5A6578]">
+          <p className="mt-5 max-w-[520px] text-[15px] leading-[1.55] text-[#5A6578] sm:text-[16px] lg:text-[17px]">
             Here&apos;s what separates great cosmetic work from the rest: the goal isn&apos;t perfection,
             it&apos;s invisibility. The best cosmetic dentistry looks like you&apos;ve always had a great smile -
             not like you paid for one.
           </p>
-          <p className="mt-4 max-w-[520px] text-[17px] leading-[1.55] text-[#5A6578]">
+          <p className="mt-4 max-w-[520px] text-[15px] leading-[1.55] text-[#5A6578] sm:text-[16px] lg:text-[17px]">
             Our approach is conservative, precise, and built around four principles.
           </p>
 
           <div className="mt-8 border-t border-[#E4E0D6]">
             {principles.map((item) => (
-              <div key={item.number} className="grid grid-cols-[52px_minmax(0,1fr)] gap-3 border-b border-[#E2E2DF] py-5">
-                <p className="pt-1 font-fraunces text-[20px] italic leading-none text-[#C9A961] sm:text-[22px]">{item.number}</p>
+              <div
+                key={item.number}
+                className="grid grid-cols-[44px_minmax(0,1fr)] gap-2.5 border-b border-[#E2E2DF] py-4 sm:grid-cols-[52px_minmax(0,1fr)] sm:gap-3 sm:py-5"
+              >
+                <p className="pt-0.5 font-fraunces text-[18px] italic leading-none text-[#C9A961] sm:pt-1 sm:text-[20px] lg:text-[22px]">
+                  {item.number}
+                </p>
                 <div>
-                  <h3 className="font-fraunces text-[22px] leading-none tracking-[-0.01em] text-[#0A0E1A] sm:text-[26px] lg:text-[20px]">{item.title}</h3>
-                  <p className="mt-2 text-[14px] leading-[1.55] text-[#5A6578]">{item.description}</p>
+                  <h3 className="font-fraunces text-[19px] leading-[1.1] tracking-[-0.01em] text-[#0A0E1A] sm:text-[22px] md:text-[24px] lg:text-[20px]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-[13px] leading-[1.55] text-[#5A6578] sm:text-[14px] lg:text-[14px]">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}

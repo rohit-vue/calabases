@@ -13,7 +13,7 @@ export default function ImplantsPatientCaseSection() {
           </h2>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-[980px] grid-cols-1 gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-center lg:gap-12">
+        <div className="mx-auto mt-10 grid max-w-[980px] grid-cols-1 gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-start lg:gap-12">
           <aside className="rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-6 py-6 text-[#D0D8E6]">
             <p className="text-[9px] font-jetbrains uppercase tracking-[0.22em] text-[#C9A961]">Case n°247</p>
 

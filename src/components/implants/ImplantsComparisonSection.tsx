@@ -77,8 +77,8 @@ export default function ImplantsComparisonSection() {
 
         <div className="mt-10 overflow-x-auto rounded-[14px] border border-[#DFDDD3] bg-[#FAF8F3]">
           <div className="grid min-w-[860px] grid-cols-[1.6fr_1fr_1fr_1fr] border-b border-[#E0DED4]">
-            <div className="bg-[#FAF8F3]" />
-            <div className="grid grid-rows-[32px_1fr] border-l border-[#DCCB9D] bg-[#C9A961]">
+            <div className="bg-[#C9A9610F]" />
+            <div className="grid grid-rows-[32px_1fr] border-l border-[#DCCB9D] bg-[#C9A9610F]">
               <div className="flex items-center justify-center border-b border-[#0F1624] bg-[#0F1624]">
                 <p className="text-[9px] uppercase tracking-[0.22em] text-[#C9A961]">Best Option</p>
               </div>
@@ -106,8 +106,8 @@ export default function ImplantsComparisonSection() {
 
           {comparisonRows.map((row) => (
             <div key={row.label} className="grid min-w-[860px] grid-cols-[1.6fr_1fr_1fr_1fr] border-t border-[#E0DED4]">
-              <div className="p-4 font-inter text-[14px] font-semibold text-[#0A0E1A] bg-[#FAF8F3]">{row.label}</div>
-              <div className="border-l border-[#E0DED4] px-4 py-4 text-[14px] bg-[#FAF8F3] font-semibold text-[#B4873E]">{row.implants}</div>
+              <div className="bg-[#C9A9610F] p-4 font-inter text-[14px] font-semibold text-[#0A0E1A]">{row.label}</div>
+              <div className="border-l border-[#E0DED4] bg-[#C9A9610F] px-4 py-4 text-[14px] font-semibold text-[#B4873E]">{row.implants}</div>
               <div
                 className={`border-l border-[#E0DED4] px-4 py-4 text-[14px] ${
                   row.bridgesNegative ? "font-semibold text-[#D17662]" : "text-[#354055]"

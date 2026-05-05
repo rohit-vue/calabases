@@ -90,7 +90,16 @@ export default function ImplantsPage() {
       />
       <ImplantsCandidacySection />
       <ImplantsPatientCaseSection />
-      <FaqSection faqs={implantsFaqs} />
+      <FaqSection
+        faqs={implantsFaqs}
+        eyebrowPrefix="§"
+        accentColor="#C9A961"
+        background="#F4F3EB"
+        cardBackgroundColor="#FFFFFF"
+        cardBorderColor="#E5E1D7"
+        toggleBackgroundColor="#F4F1E8"
+        toggleIconColor="#C9A961"
+      />
       <ClosingCta
         eyebrow="Ready When You Are"
         titleStart="Replace once."

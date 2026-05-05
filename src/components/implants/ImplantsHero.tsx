@@ -20,9 +20,6 @@ export default function ImplantsHero() {
           <div className="mt-5 flex items-center gap-2.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#C9A961]" />
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#B99D66]">
-              <span className="mr-1 inline-flex align-middle font-fraunces text-[12px] font-normal italic leading-none normal-case text-[#5A6578]">
-                §
-              </span>
               Specification n°04 - Permanent Tooth Replacement
             </p>
           </div>
