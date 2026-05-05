@@ -47,36 +47,42 @@ const implantTypes = [
 
 export default function ImplantsTypesSection() {
   return (
-    <section className="bg-[#020918] px-4 py-14 sm:px-8 sm:py-16 lg:px-24 lg:py-20">
+    <section className="bg-[#0A0E1A] px-4 py-14 sm:px-8 sm:py-16 lg:px-24 lg:py-20">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[820px]">
           <div className="flex items-center gap-2.5">
             <span className="text-[14px] text-[#5A6578] italic">§</span>
-            <p className="font-jetbrains text-[11px] uppercase tracking-[0.24em] text-[#C9A961]">Implant Types</p>
+            <p className="font-jetbrains text-[11px] uppercase tracking-[2.2px] text-[#C9A961]">Implant Types</p>
           </div>
 
-          <h2 className="mt-4 max-w-none font-fraunces text-[44px] font-light leading-[0.94] tracking-tighter text-[#EEF2F8] sm:text-[58px] lg:text-[68px] xl:whitespace-nowrap">
-            One tooth. Several teeth. A <span className="font-light italic text-[#C9A961]">full arch.</span>
+          <h2 className="mt-4 max-w-none font-fraunces text-[34px] font-light leading-[0.98] tracking-[-1.4px] text-[#FFFFFF] sm:text-[44px] md:text-[50px] lg:text-[52px] lg:leading-[0.94] lg:tracking-[-2.28px] xl:whitespace-nowrap">
+            One tooth. Several teeth. A <span className="font-light italic text-[#B87333]">full arch.</span>
           </h2>
 
-          <p className="mt-5 max-w-[700px] font-inter text-[16px] font-light leading-normal text-[#FFFFFF99] sm:text-[18px] lg:text-[19px]">
+          <p className="mt-5 max-w-[700px] font-inter text-[16px] font-light leading-normal text-[#FFFFFF99] sm:text-[18px] lg:text-[16px]">
             Every case is different. Here are the four implant solutions we offer, with real price ranges
             and what each is built for.
           </p>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {implantTypes.map((item) => (
+          {implantTypes.map((item, idx) => (
             <article
               key={item.title}
-              className="flex h-full flex-col rounded-[14px] border border-[#1A2742] bg-[linear-gradient(160deg,#0A1327_0%,#091224_100%)] px-5 py-6 sm:px-6 xl:min-h-[560px]"
+              className="relative flex h-full flex-col overflow-hidden rounded-[14px] border border-[#FFFFFF14] bg-[#FFFFFF08] px-5 py-6 sm:px-6 xl:min-h-[560px]"
             >
-              <p className="font-jetbrains text-[10px] uppercase tracking-[0.24em] text-[#C9A961]">{item.tag}</p>
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -right-1 top-[-12px] font-fraunces text-[88px] font-light leading-none tracking-[-8px] text-[#FFFFFF08] sm:text-[100px] lg:text-[110px]"
+              >
+                {String(idx + 1).padStart(2, "0")}
+              </span>
+              <p className="font-jetbrains text-[10px] uppercase tracking-[2px] font-medium text-[#C9A961]">{item.tag}</p>
               <div className="mt-4 space-y-2">
-                <h3 className="font-fraunces text-[30px] leading-[0.95] text-[#EFF3F9] sm:text-[34px] lg:text-[28px]">
+                <h3 className="font-fraunces text-[30px] leading-[0.95] text-[#FFFFFF] tracking-[-0.56px] sm:text-[34px] lg:text-[28px]">
                   {item.title}
                 </h3>
-                <p className="font-fraunces text-[16px] font-light italic leading-[1.2] text-[#C9A961] sm:text-[18px] lg:text-[13px]">
+                <p className="font-fraunces text-[16px] font-light italic leading-[1.2] text-[#C9A961] sm:text-[18px] lg:text-[14px]">
                   {item.subtitle}
                 </p>
               </div>
@@ -84,24 +90,24 @@ export default function ImplantsTypesSection() {
                 <p className="max-w-[250px] font-inter text-[14px] leading-[1.8] text-[#FFFFFFA6]">{item.description}</p>
               </div>
 
-              <div className="border-t border-[#1A2742] pt-4">
+              <div className="border-t border-[#FFFFFF14] pt-4">
                 <div className="space-y-2">
                   <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 text-[13px] text-[#FFFFFF80]">
                     <span>Timeline</span>
-                    <span className="text-right text-[#D6DCE8]">{item.timeline}</span>
+                    <span className="text-right text-[#FFFFFF]">{item.timeline}</span>
                   </div>
                   <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 text-[13px] text-[#FFFFFF80]">
                     <span>Implants</span>
-                    <span className="text-right text-[#D6DCE8]">{item.implants}</span>
+                    <span className="text-right text-[#FFFFFF]">{item.implants}</span>
                   </div>
                   <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 text-[13px] text-[#FFFFFF80]">
                     <span>Success rate</span>
-                    <span className="text-right text-[#D6DCE8]">{item.successRate}</span>
+                    <span className="text-right text-[#FFFFFF]">{item.successRate}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-4 border-t border-[#1A2742] pt-4">
+              <div className="mt-4 border-t border-[#FFFFFF14] pt-4">
                 <p className="font-fraunces text-[32px] leading-[0.95] text-[#FFFFFF] sm:text-[38px] lg:text-[32px]">
                   {item.price}
                 </p>

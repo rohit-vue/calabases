@@ -42,17 +42,17 @@ export default function CosmaticMembershipMathSection({
   ctaHref = "#",
 }: CosmaticMembershipMathSectionProps) {
   return (
-    <section className="bg-[linear-gradient(106.66deg,#F5EDD8_0%,#EDE2C2_100%)] px-4 py-14 sm:px-8 sm:py-16 lg:px-24 lg:py-20">
+    <section className="bg-[linear-gradient(107.63deg,rgba(201,169,97,0)_0%,rgba(201,169,97,0.72)_100%),linear-gradient(106.66deg,#F5EDD8_0%,#EDE2C2_100%)] px-4 py-14 sm:px-8 sm:py-16 lg:px-24 lg:py-20">
       <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-12">
         <div className="min-w-0 max-w-[470px] mx-auto text-center lg:mx-0 lg:text-left">
           <div className="flex items-center justify-center gap-3 lg:justify-start">
             <span className="font-fraunces text-[#5A6578] italic uppercase">§</span>
-            <p className="font-jetbrains text-[11px] font-semibold uppercase tracking-[0.24em] text-[#B87333]">
+            <p className="font-jetbrains text-[11px] font-medium uppercase tracking-[2.2px] text-[#B87333]">
               {eyebrow}
             </p>
           </div>
 
-          <h2 className="mt-4 font-fraunces font-light text-[32px] leading-[0.95] tracking-[-0.029em] text-[#0A0E1A] sm:text-[44px] md:text-[50px] lg:text-[56px]">
+          <h2 className="mt-4 font-fraunces font-light text-[32px] leading-[0.95] tracking-[-1.68px] text-[#0A0E1A] sm:text-[44px] md:text-[50px] lg:text-[56px]">
             {titleStart} <span className="italic text-[#B87333]">{titleEmphasis}</span>
           </h2>
 
@@ -99,13 +99,13 @@ export default function CosmaticMembershipMathSection({
             <p className="min-w-0 shrink font-fraunces text-[10px] italic leading-tight text-[#FFFFFF] sm:text-[11px] md:text-left md:text-[18px] md:leading-none lg:text-[14px]">
               {footerLabel}
             </p>
-            <p className="min-w-0 shrink whitespace-nowrap text-center text-[10px] leading-none text-[#FFFFFF80] sm:text-[11px] md:text-center md:text-[14px] md:leading-none md:whitespace-nowrap lg:text-[14px]">
+            <p className="min-w-0 font-fraunces shrink whitespace-nowrap text-center text-[10px] leading-none text-[#FFFFFF80] sm:text-[11px] md:text-center md:text-[14px] md:leading-none md:whitespace-nowrap lg:text-[14px]">
               {footerPrice}
             </p>
             <div className="flex min-w-0 shrink justify-end md:justify-center md:justify-start">
               <Link
                 href={ctaHref}
-                className="inline-flex items-center gap-0.5 font-fraunces text-[11px] font-semibold leading-none text-[#FFFFFF] transition hover:text-white sm:text-[12px] md:gap-1 md:text-[22px] md:whitespace-nowrap lg:text-[20px]"
+                className="inline-flex items-center gap-0.5 font-fraunces text-[11px] font-semibold leading-none text-[#FFFFFF] transition hover:text-white sm:text-[12px] md:gap-1 md:text-[22px] md:whitespace-nowrap lg:text-[18px]"
               >
                 {ctaLabel}
                 <span
