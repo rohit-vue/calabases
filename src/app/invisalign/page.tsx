@@ -69,7 +69,8 @@ export default function InvisalignPage() {
       <InvisalignPricingSection />
       <InvisalignTestimonialSection />
       <FaqSection faqs={invisalignFaqs}
-      background="rgb(201, 169, 97, 0.26)"/>
+      background="rgb(201, 169, 97, 0.26)"
+      eyebrowLeadingDash={true}/>
       <ClosingCta
         mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
         hideEyebrow

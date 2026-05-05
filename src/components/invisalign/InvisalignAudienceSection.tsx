@@ -31,14 +31,14 @@ function AudienceCard({
 }) {
   return (
     <article
-      className={`rounded-[16px] border px-6 py-7 sm:px-8 sm:py-8 ${
+      className={`rounded-[16px] border px-4 py-6 sm:px-6 sm:py-7 md:px-8 md:py-8 ${
         highlighted
           ? "border-[#ECE3CF] bg-[#F5F0DD]"
           : "border-[#E5E7ED] bg-[#FAFBFC] shadow-[0_8px_24px_rgba(11,16,33,0.06)]"
       }`}
     >
       <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9BA5B7]">{eyebrow}</p>
-      <h3 className="mt-3 font-fraunces font-light text-[40px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[52px] lg:text-[42px]">
+      <h3 className="mt-3 font-fraunces font-light text-[30px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[40px] md:text-[52px] lg:text-[42px]">
         {titleMain} <span className="font-light italic text-[#C9A961]">{titleEmphasis}</span>
       </h3>
       <p className="mt-4 text-[15px] leading-[1.62] text-[#667081]">{description}</p>
@@ -57,19 +57,19 @@ function AudienceCard({
 
 export default function InvisalignAudienceSection() {
   return (
-    <section className="bg-[#FFFFFF] px-4 pb-16 pt-10 sm:px-8 sm:pb-20 sm:pt-12 lg:px-24 lg:pb-24 lg:pt-14">
+    <section className="bg-[#FFFFFF] px-4 pb-12 pt-8 sm:px-6 sm:pb-14 sm:pt-10 md:px-8 md:pb-16 lg:px-20 lg:py-20">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[900px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[12px] font-semibold uppercase tracking-[0.24em] text-[#C2B189]">Who it's for</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C2B189]">Who it's for</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[42px] font-light leading-[0.92] tracking-tighter text-[#101624] sm:text-[58px] lg:text-[50px]">
+          <h2 className="mt-4 font-fraunces text-[34px] font-light leading-[0.92] tracking-tighter text-[#101624] sm:text-[48px] md:text-[58px] lg:text-[50px]">
             Designed for <span className="font-light italic text-[#C9A961]">every age.</span>
           </h2>
 
-          <p className="mt-5 max-w-[860px] font-light  text-[17px] leading-normal text-[#687286] sm:text-[20px] lg:text-[15px]">
+          <p className="mt-5 max-w-[860px] font-light text-[15px] leading-normal text-[#687286] sm:text-[18px] md:text-[20px] lg:text-[15px]">
             Whether you&apos;re a professional who doesn&apos;t want metal in board meetings, a teen who
             doesn&apos;t want braces in prom photos, or an adult whose teeth shifted back after childhood
             braces - Invisalign meets you where you are.
