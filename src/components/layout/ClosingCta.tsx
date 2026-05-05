@@ -131,7 +131,7 @@ export default function ClosingCta({
             )}
             <h2
               className={`font-fraunces font-light leading-[0.98] tracking-[-0.045em] text-[34px] sm:text-[42px] md:text-[50px] lg:text-[68px] lg:leading-[0.95] ${
-                eyebrowLined ? "mt-2 sm:mt-2.5 lg:mt-3" : ""
+                eyebrowLined ? "mt-2 sm:mt-2.5 lg:mt-5" : ""
               }`}
               style={{ color: headlineColor }}
             >
