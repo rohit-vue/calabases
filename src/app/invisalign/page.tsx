@@ -6,7 +6,7 @@ import InvisalignPricingSection from "@/components/invisalign/InvisalignPricingS
 import InvisalignTestimonialSection from "@/components/invisalign/InvisalignTestimonialSection";
 import InvisalignTreatsSection from "@/components/invisalign/InvisalignTreatsSection";
 import InvisalignWhySection from "@/components/invisalign/InvisalignWhySection";
-import ClosingCta from "@/components/layout/ClosingCta";
+import ClosingCta, { CLOSING_CTA_MAIN_WRAPPER_CLASSES } from "@/components/layout/ClosingCta";
 import FaqSection from "@/components/layout/FaqSection";
 
 const invisalignFaqs = [
@@ -68,9 +68,13 @@ export default function InvisalignPage() {
       <InvisalignTreatsSection />
       <InvisalignPricingSection />
       <InvisalignTestimonialSection />
-      <FaqSection faqs={invisalignFaqs} />
+      <FaqSection faqs={invisalignFaqs}
+      background="rgb(201, 169, 97, 0.26)"
+      eyebrowLeadingDash={true}/>
       <ClosingCta
-        eyebrow="Ready When You Are"
+        mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
+        hideEyebrow
+        contentWrapperClassName="bg-[radial-gradient(70.71%_70.71%_at_50%_50%,rgba(201,169,97,0.15)_0%,rgba(201,169,97,0)_60%)]"
         titleStart="Start with a"
         titleEmphasis="free scan."
         titleEnd=""
@@ -83,8 +87,21 @@ export default function InvisalignPage() {
           { value: "400+", label: "Cases Completed" },
           { value: "12-18mo", label: "Average Treatment" },
           { value: "15+", label: "Years Experience" },
-          { value: "4.9 ★", label: "564 Reviews" },
+          { value: "4.9 ★", label: "584 Reviews" },
         ]}
+        footerText="© 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved"
+        headlineColor="#FFFFFF"
+        subtitleColor="#FFFFFF"
+        titleEmphasisColor="#C9A961"
+        statsValueColor="#C9A961"
+        statsLabelColor="rgba(255, 255, 255, 0.88)"
+        primaryCtaBackground="#C9A961"
+        primaryCtaTextColor="#0A0E1A"
+        primaryCtaBorderColor="#000000"
+        secondaryCtaBorderColor="#FFFFFF40"
+        secondaryCtaTextColor="#FFFFFF"
+        footerTextColor="#FFFFFF66"
+        heroOverlayGradient="radial-gradient(56% 70% at 50% 52%, rgba(201, 169, 97, 0.22) 0%, rgba(2, 9, 24, 0) 100%)"
       />
     </main>
   );
