@@ -153,7 +153,7 @@ export default function FaqSection({
             </p>
           </div>
           <h2
-            className="font-fraunces text-[30px] leading-[0.95] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]"
+            className="font-fraunces font-light text-[30px] leading-[0.95] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]"
             style={{ color: headingColor }}
           >
             {titleStart}{" "}

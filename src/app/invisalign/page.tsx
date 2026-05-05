@@ -68,13 +68,19 @@ export default function InvisalignPage() {
       <InvisalignTreatsSection />
       <InvisalignPricingSection />
       <InvisalignTestimonialSection />
-      <FaqSection faqs={invisalignFaqs}
-      background="rgb(201, 169, 97, 0.26)"
-      eyebrowLeadingDash={true}/>
+      <FaqSection
+        faqs={invisalignFaqs}
+        background="rgb(201, 169, 97, 0.26)"
+        accentColor="#B87333"
+        eyebrowLeadingDash={true}
+      />
       <ClosingCta
         mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
         hideEyebrow
-        contentWrapperClassName="bg-[radial-gradient(70.71%_70.71%_at_50%_50%,rgba(201,169,97,0.15)_0%,rgba(201,169,97,0)_60%)]"
+        background="linear-gradient(114.06deg, #0A0E1A 0%, #1C2333 100%)"
+        heroOverlayGradient="none"
+        footerBarBackground="#0A0E1A"
+        footerBarBorderColor="rgba(255,255,255,0.06)"
         titleStart="Start with a"
         titleEmphasis="free scan."
         titleEnd=""
@@ -101,7 +107,6 @@ export default function InvisalignPage() {
         secondaryCtaBorderColor="#FFFFFF40"
         secondaryCtaTextColor="#FFFFFF"
         footerTextColor="#FFFFFF66"
-        heroOverlayGradient="radial-gradient(56% 70% at 50% 52%, rgba(201, 169, 97, 0.22) 0%, rgba(2, 9, 24, 0) 100%)"
       />
     </main>
   );

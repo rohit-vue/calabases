@@ -34,12 +34,12 @@ function AudienceCard({
       className={`rounded-[16px] border px-4 py-6 sm:px-6 sm:py-7 md:px-8 md:py-8 ${
         highlighted
           ? "border-[#ECE3CF] bg-[#F5F0DD]"
-          : "border-[#E5E7ED] bg-[#FAFBFC] shadow-[0_8px_24px_rgba(11,16,33,0.06)]"
+          : "border-[#E5E7ED] bg-[#FFFFFF] shadow-[0_8px_24px_rgba(11,16,33,0.06)]"
       }`}
     >
       <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9BA5B7]">{eyebrow}</p>
-      <h3 className="mt-3 font-fraunces font-light text-[30px] leading-[0.92] tracking-tighter text-[#101624] sm:text-[40px] md:text-[52px] lg:text-[42px]">
-        {titleMain} <span className="font-light italic text-[#C9A961]">{titleEmphasis}</span>
+      <h3 className="mt-3 font-fraunces font-light text-[30px] leading-[0.92] tracking-tighter text-[#0A0E1A] sm:text-[40px] md:text-[52px] lg:text-[42px]">
+        {titleMain} <span className="font-light italic text-[#B87333]">{titleEmphasis}</span>
       </h3>
       <p className="mt-4 text-[15px] leading-[1.62] text-[#667081]">{description}</p>
 
@@ -62,11 +62,11 @@ export default function InvisalignAudienceSection() {
         <div className="max-w-[900px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C2B189]">Who it's for</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C9A961]">Who it's for</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[34px] font-light leading-[0.92] tracking-tighter text-[#101624] sm:text-[48px] md:text-[58px] lg:text-[50px]">
-            Designed for <span className="font-light italic text-[#C9A961]">every age.</span>
+          <h2 className="mt-4 font-fraunces text-[34px] font-light leading-[0.92] tracking-tighter text-[#0A0E1A] sm:text-[48px] md:text-[58px] lg:text-[50px]">
+            Designed for <span className="font-light italic text-[#B87333]">every age.</span>
           </h2>
 
           <p className="mt-5 max-w-[860px] font-light text-[15px] leading-normal text-[#687286] sm:text-[18px] md:text-[20px] lg:text-[15px]">

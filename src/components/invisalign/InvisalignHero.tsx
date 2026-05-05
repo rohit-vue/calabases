@@ -3,7 +3,13 @@ import Link from "next/link";
 
 export default function InvisalignHero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[rgba(201,169,97,0.25)] px-4 pb-10 pt-6 sm:px-8 sm:pb-16 sm:pt-12 lg:px-20 lg:pb-20 lg:pt-12">
+    <section
+      className="relative isolate overflow-hidden px-4 pb-10 pt-6 sm:px-8 sm:pb-16 sm:pt-12"
+      style={{
+        background:
+          "linear-gradient(130.54deg, #F7F2E7 58.86%, #C9A961 135.77%)",
+      }}
+    >
       <div className="pointer-events-none absolute left-[-3%] top-[24%] -z-10 rotate-[-18deg] sm:left-[2%] sm:top-[8%] block lg:z-0 lg:hidden">
         <Image
           src="/images/invisalign.png"
@@ -59,7 +65,7 @@ export default function InvisalignHero() {
           <h1 className="mt-5 font-fraunces font-light text-[50px] leading-[0.88] tracking-[-0.02em] text-[#0D1321] sm:mt-7 sm:text-[68px] lg:text-[98px]">
             Straight teeth.
             <br />
-            <span className="font-light italic text-[#C9A961]">No metal.</span>
+            <span className="font-light italic text-[#B87333]">No metal.</span>
           </h1>
 
           <p className="mx-auto mt-3 max-w-[320px] font-fraunces text-[20px] font-extralight italic leading-[1.18] text-[#2A3240] sm:mt-5 sm:max-w-[760px] sm:text-[32px] lg:text-[41px]">
@@ -75,7 +81,7 @@ export default function InvisalignHero() {
           <div className="mt-5 flex flex-col items-stretch justify-center gap-2 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
             <Link
               href="#"
-              className="inline-flex h-[44px] w-full items-center justify-center rounded-full bg-[#020918] px-3 text-[11px] font-semibold text-white transition hover:opacity-90 sm:w-auto sm:h-[44px] sm:px-6 sm:text-[12px]"
+              className="inline-flex h-[44px] w-full items-center justify-center rounded-full bg-[#0A0E1A] px-3 text-[11px] font-semibold text-white transition hover:opacity-90 sm:w-auto sm:h-[44px] sm:px-6 sm:text-[12px]"
             >
               Book a Free Smile Scan <span className="ml-1.5">→</span>
             </Link>

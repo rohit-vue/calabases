@@ -38,11 +38,11 @@ export default function InvisalignPhasesSection() {
         <div className="max-w-[860px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-[28px] bg-[#D9CCAD]" />
-            <p className="text-[11px] uppercase font-semibold tracking-[0.24em] text-[#C2B189]">How it works</p>
+            <p className="text-[11px] uppercase font-semibold tracking-[0.24em] text-[#C9A961]">How it works</p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-[34px] font-light leading-[0.92] tracking-tighter text-[#101624] sm:text-[48px] md:text-[58px] lg:text-[68px]">
-            Five phases. One <span className="font-light italic text-[#C9A961]">straight smile.</span>
+          <h2 className="mt-4 font-fraunces text-[34px] font-light leading-[0.92] tracking-tighter text-[#0A0E1A] sm:text-[48px] md:text-[58px] lg:text-[68px]">
+            Five phases. One <span className="font-light italic text-[#B87333]">straight smile.</span>
           </h2>
 
           <p className="mt-5 max-w-[780px] text-[15px] font-light leading-normal text-[#687286] sm:text-[18px] md:text-[20px] lg:text-[19px]">
@@ -65,7 +65,7 @@ export default function InvisalignPhasesSection() {
               ) : null}
 
               <p className="font-fraunces text-[36px] font-light italic leading-none text-[#C9A961] sm:text-[42px] md:text-[48px] lg:text-[54px]">{phase.number}</p>
-              <h3 className="mt-3 font-fraunces text-[22px] leading-[0.98] text-[#121927] sm:text-[25px] md:text-[28px] lg:text-[21px]">{phase.title}</h3>
+              <h3 className="mt-3 font-fraunces text-[22px] leading-[0.98] text-[#0A0E1A] sm:text-[25px] md:text-[28px] lg:text-[21px]">{phase.title}</h3>
               <p className="mt-3 min-h-[88px] flex-1 text-[14px] leading-[1.55] text-[#667081]">{phase.description}</p>
               <div className="mt-4  pt-3">
                 <span className="inline-flex items-center rounded-[7px] bg-[#F0EDE4] px-2.5 py-1.5 text-[10px] font-bold uppercase leading-none tracking-[0.06em] text-[#C9A961]">
