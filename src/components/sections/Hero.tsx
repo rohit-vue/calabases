@@ -18,7 +18,7 @@ export default function Hero() {
                 <br /> Dentist
               </h1>
               <p className="pt-1 text-[1.05rem] leading-[1.12] text-[#1C2333] sm:text-[1.2rem] lg:text-[20px]">
-                Cosmetic, general, and emergency care in Calabasas, Agoura Hills, and Hidden Hills.
+              Cosmetic, general, and emergency care in Encino, Sherman Oaks, and Tarzana
               </p>
             </div>
 
@@ -67,23 +67,26 @@ export default function Hero() {
           />
 
           {/* Overlay cards wrapper */}
-          <div className="absolute inset-x-3 bottom-3 hidden items-stretch justify-between gap-2.5 sm:flex md:gap-3">
-            <div className="flex min-h-[116px] w-[43%] min-w-0 flex-col rounded-[18px] bg-[rgba(250,247,244,0.95)] px-3.5 py-3 shadow-[0px_4px_19.3px_0px_#00000040] backdrop-blur-[10px] md:px-4 lg:w-[176px]">
-              <h4 className="max-w-[130px] text-[16px] font-semibold leading-[1.05] text-[#0A0E1A] md:text-[17px]">
+          <div className="absolute inset-x-3 bottom-3 flex items-stretch justify-between gap-2.5 md:gap-3">
+            <div className="flex min-h-[116px] w-[40%] min-w-[39%] flex-col rounded-[18px] bg-[rgba(250,247,244,0.95)] px-3.5 py-3 shadow-[0px_4px_19.3px_0px_#00000040] backdrop-blur-[10px] md:px-4 lg:w-[176px]">
+              <h4 className="max-w-[130px] text-[12px] font-semibold leading-[1.05] text-[#0A0E1A] md:text-[17px] lg:text-[16px]">
                 No Insurance?
                 <br />
                 No Problem
               </h4>
 
               <div className="mt-auto flex items-end gap-1.5">
-                <span className="text-[24px] font-fraunces font-medium leading-none tracking-[-0.02em] text-[#0A0E1A] md:text-[32px]">$297</span>
+                <span className="font-fraunces text-[24px] font-medium leading-none tracking-[-0.02em] text-[#0A0E1A] md:text-[32px] lg:text-[24px]">$297</span>
                 <span className="pb-0.5 text-[12px] font-medium text-[#5A6578]">/ year</span>
               </div>
             </div>
 
-            <div className="flex min-h-[116px] w-[57%] min-w-0 flex-col justify-between rounded-[18px] bg-[rgba(220,185,168,0.9)] px-4 py-3 shadow-[0_12px_28px_rgba(84,58,42,0.14)] backdrop-blur-[10px] md:px-5 lg:w-[224px]">
+            <div
+              className="flex min-h-[116px] w-[57%] min-w-[54%]  flex-col justify-between rounded-[18px] bg-[#FFFFFF52] px-4 py-3 shadow-[0_12px_28px_rgba(84,58,42,0.14)] backdrop-blur-[10px] md:px-5 lg:w-[224px]"
+              style={{ width: "stretch" }}
+            >
               <div className="min-w-0">
-                <h4 className="font-fraunces max-w-[150px] text-[14px] font-bold leading-[0.95] text-[#fffaf6] md:text-[15px]">
+                <h4 className="font-fraunces max-w-[150px] text-[14px] font-bold leading-[0.95] text-[#fffaf6] md:text-[20px]">
                     Our Unlimited Membership
                 </h4>
               </div>
@@ -94,7 +97,7 @@ export default function Hero() {
                   <li>Unlimited X-Rays</li>
                   <li>Unlimited Exams</li>
                 </ul>
-                <button className="shrink-0 rounded-[100px] bg-white px-3 py-1.5 text-[10px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 md:px-3.5 md:py-2 md:text-[11px]">
+                <button className="shrink-0 rounded-[100px] bg-white px-3 mb-4 mr-3.5 py-1.5 text-[10px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 md:px-3.5 md:py-2 md:text-[11px]">
                   Join Now
                 </button>
               </div>
@@ -103,7 +106,7 @@ export default function Hero() {
         </div>
 
         {/* Mobile versions (Stacked below image) */}
-        <div className="grid grid-cols-1 gap-4 sm:hidden">
+        <div className="hidden grid-cols-1 gap-4 sm:hidden">
           <div className="rounded-[22px] bg-[rgba(249,243,239,0.94)] px-5 py-4 shadow-sm backdrop-blur-md">
             <h4 className="max-w-[150px] text-[18px] font-bold leading-[1.05] text-[#1f2937]">
               No Insurance?
@@ -115,11 +118,12 @@ export default function Hero() {
               <span className="pb-0.5 text-[12px] font-medium text-[#6b7a90]">/ year</span>
             </div>
           </div>
-          <div className="flex items-end justify-between gap-4 rounded-[22px] bg-[rgba(220,185,168,0.92)] px-5 py-4 shadow-sm backdrop-blur-md">
+
+          <div className="flex items-end justify-between gap-4 rounded-[22px] bg-[rgba(220,185,168,0.92)] px-5 py-4 shadow-sm backdrop-blur-md max-[360px]:flex-col max-[360px]:items-start">
             <div className="flex min-w-0 flex-1 flex-col">
               <div>
                 <h4 className="font-fraunces max-w-[145px] text-[16px] leading-[0.9] text-white">
-                  Our Unlimited Membership
+                Our Unlimited Membership
                 </h4>
               </div>
               <div className="mt-3.5">
@@ -130,7 +134,7 @@ export default function Hero() {
                 </ul>
               </div>
             </div>
-            <div className="shrink-0 pb-0.5">
+            <div className="shrink-0 pb-0.5 max-[360px]:pt-1">
               <button className="rounded-full bg-white px-3 py-1.5 text-[10px] font-semibold text-[#111827] shadow-sm">
                 Join Now
               </button>

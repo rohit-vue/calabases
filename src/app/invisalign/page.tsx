@@ -71,8 +71,11 @@ export default function InvisalignPage() {
       <FaqSection
         faqs={invisalignFaqs}
         background="rgb(201, 169, 97, 0.26)"
-        accentColor="#B87333"
+        accentColor="#C9A961"
+        headingEmphasisColor="#B87333"
         eyebrowLeadingDash={true}
+        toggleBackgroundColor="#C9A96142"
+        toggleIconColor="#C9A961"
       />
       <ClosingCta
         mainWrapperClassName={CLOSING_CTA_MAIN_WRAPPER_CLASSES}
@@ -100,7 +103,7 @@ export default function InvisalignPage() {
         subtitleColor="#FFFFFF"
         titleEmphasisColor="#C9A961"
         statsValueColor="#C9A961"
-        statsLabelColor="rgba(255, 255, 255, 0.88)"
+        statsLabelFontSize={11}
         primaryCtaBackground="#C9A961"
         primaryCtaTextColor="#0A0E1A"
         primaryCtaBorderColor="#000000"
