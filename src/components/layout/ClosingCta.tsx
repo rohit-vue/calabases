@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export type ClosingCtaStat = {
@@ -42,6 +43,7 @@ export type ClosingCtaProps = {
   secondaryCtaTextColor?: string;
   statsValueColor?: string;
   statsLabelColor?: string;
+  statsLabelFontSize?: number;
   statsDividerColor?: string;
   footerBarBackground?: string;
   footerBarBorderColor?: string;
@@ -75,7 +77,7 @@ export default function ClosingCta({
   contentWrapperClassName = "",
   background = "#020918",
   heroOverlayGradient =
-    "radial-gradient(56% 70% at 50% 52%, rgba(34, 52, 98, 0.6) 0%, rgba(2, 9, 24, 0) 100%)",
+    "radial-gradient(56% 70% at 50% 52%, #223462 0%, #02091800 100%)",
   eyebrowColor = "#8E9AB0",
   headlineColor = "#FFFFFF",
   titleEmphasisColor = "#C9A961",
@@ -83,14 +85,16 @@ export default function ClosingCta({
   primaryCtaBackground = "#C9A961",
   primaryCtaTextColor = "#0A0E1A",
   primaryCtaBorderColor = "#000000",
-  secondaryCtaBorderColor = "rgba(255, 255, 255, 0.3)",
+  secondaryCtaBorderColor = "#FFFFFF4D",
   secondaryCtaTextColor = "#E4E9F2",
   statsValueColor = "#C9A961",
-  statsLabelColor = "rgba(255, 255, 255, 0.5)",
-  statsDividerColor = "rgba(255, 255, 255, 0.1)",
+  statsLabelColor = "#ffffff80",
+  statsLabelFontSize = 12,
+
+  statsDividerColor = "#FFFFFF1A",
   footerBarBackground = "#0A0E1A",
-  footerBarBorderColor = "rgba(255, 255, 255, 0.08)",
-  footerTextColor = "rgba(255, 255, 255, 0.4)",
+  footerBarBorderColor = "#FFFFFF14",
+  footerTextColor = "#FFFFFF66",
   eyebrowLined = false,
   eyebrowLineColor,
 }: ClosingCtaProps) {
@@ -143,7 +147,7 @@ export default function ClosingCta({
             </h2>
 
             <p
-              className="mx-auto mt-4 max-w-[540px] font-fraunces text-[17px] font-light italic leading-[1.35] sm:mt-5 sm:text-[20px] md:text-[22px] lg:mt-5 lg:text-[24px] lg:leading-[1.3]"
+              className="mx-auto mt-4 max-w-[540px] font-fraunces text-[17px] font-light italic leading-[1.35] sm:mt-5 sm:text-[20px] md:text-[22px] lg:mt-5 lg:text-[22px] lg:leading-[1.3]"
               style={{ color: subtitleColor }}
             >
               {subtitle}
@@ -159,7 +163,15 @@ export default function ClosingCta({
                   borderColor: primaryCtaBorderColor,
                 }}
               >
-                {primaryCtaLabel} <span className="ml-2">→</span>
+                {primaryCtaLabel}
+                <Image
+                  src="/images/arrow.svg"
+                  alt=""
+                  aria-hidden
+                  width={11}
+                  height={11}
+                  className="ml-2 h-[11px] w-[11px] shrink-0"
+                />
               </Link>
               <Link
                 href={secondaryCtaHref}
@@ -191,7 +203,7 @@ export default function ClosingCta({
                   </p>
                   <p
                     className="mx-auto mt-1.5 max-w-[140px] text-center text-[10px] uppercase leading-tight tracking-[0.16em] sm:mt-2 sm:max-w-[150px] sm:text-[11px] sm:tracking-[0.18em] lg:text-[12px] lg:tracking-[0.2em]"
-                    style={{ color: statsLabelColor }}
+                    style={{ color: statsLabelColor, fontSize: `${statsLabelFontSize}px` }}
                   >
                     {stat.label}
                   </p>

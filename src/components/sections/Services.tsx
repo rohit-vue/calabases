@@ -1,5 +1,6 @@
 // components/sections/Services.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Services() {
   const services = [
@@ -7,28 +8,32 @@ export default function Services() {
       title: "General Dentistry",
       desc: "Deep Cleaning, Fillings etc",
       image: "/images/general-dentistry.png",
+      href: "/general",
       variant: "large" as const,
     },
     {
       title: "Cosmetic Dentistry",
       desc: "Veneers, Teeth Whitening etc.",
       image: "/images/cosmetic-dentistry.png",
+      href: "/cosmetic",
       variant: "large" as const,
     },
     {
       title: "Restorative",
       desc: "Crowns & Bridges",
       image: "/images/restorative-dentistry.jpg",
+      href: "/restorative",
       variant: "small" as const,
     },
-    { title: "Dental Implants", image: "/images/dental-implants.jpg", variant: "small" as const },
-    { title: "Invisalign", image: "/images/invisalign-aligner.jpg", variant: "small" as const },
-    { title: "TMJ & Specialty", image: "/images/tmj-dentistry.png", variant: "small" as const },
-    { title: "Pediatric Dentistry", image: "/images/pediatric-dentistry.png", variant: "small" as const },
+    { title: "Dental Implants", image: "/images/dental-implants.jpg", href: "/implants", variant: "small" as const },
+    { title: "Invisalign", image: "/images/invisalign-aligner.jpg", href: "/invisalign", variant: "small" as const },
+    { title: "TMJ & Specialty", image: "/images/tmj-dentistry.png", href: "/general", variant: "small" as const },
+    { title: "Pediatric Dentistry", image: "/images/pediatric-dentistry.png", href: "/general", variant: "small" as const },
     {
       title: "Oral Surgery",
       desc: "Extractions, Root Canals",
       image: "/images/oral-surgery.png",
+      href: "/oral-surgery",
       variant: "small" as const,
     },
   ];
@@ -66,8 +71,10 @@ export default function Services() {
             const textWidth = isLarge ? "max-w-[56%] sm:max-w-[54%]" : "max-w-[58%] sm:max-w-[56%]";
 
             return (
-              <div
+              <Link
                 key={`${service.title}-${idx}`}
+                href={service.href}
+                aria-label={`Go to ${service.title}`}
                 className={[
                   "relative overflow-hidden rounded-[16px] border border-[#ECE8E0] bg-white",
                   minHeight,
@@ -94,7 +101,7 @@ export default function Services() {
                     sizes={isLarge ? "(min-width: 640px) 50vw, 100vw" : "(min-width: 640px) 33vw, 100vw"}
                   />
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -11,6 +11,15 @@ const servicesLinks = [
   "Pediatric Dentistry",
 ] as const;
 
+const serviceHrefByLabel: Record<(typeof servicesLinks)[number], string> = {
+  "General Dentistry": "/general",
+  "Cosmetic Dentistry": "/cosmetic",
+  "Dental Implants": "/implants",
+  Invisalign: "/invisalign",
+  "Oral Surgery": "/oral-surgery",
+  "Pediatric Dentistry": "/general",
+};
+
 const aboutLinks = [
   "Meet the Dentists",
   "Our Office",
@@ -29,7 +38,7 @@ function LinkColumn({ title, links }: { title: string; links: readonly string[] 
         {links.map((label) => (
           <li key={label}>
             <Link
-              href="#"
+              href={title === "SERVICES" ? serviceHrefByLabel[label as (typeof servicesLinks)[number]] : "#"}
               className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
             >
               {label}
