@@ -34,6 +34,20 @@ export default function Header() {
   const pathname = usePathname();
   const isGeneralPage = pathname.startsWith("/general");
   const isEmergencyPage = pathname.startsWith("/emergency");
+  const isConsultationPage = [
+    "/cosmetic",
+    "/restorative",
+    "/implants",
+    "/invisalign",
+    "/oral-surgery",
+  ].some((route) => pathname.startsWith(route));
+
+  const headerCtaLabel = isEmergencyPage
+    ? "Call now"
+    : isConsultationPage
+      ? "Book Consultation"
+      : "Book Appointment";
+  const headerCtaHref = isEmergencyPage ? "tel:+18185550100" : "#";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -176,10 +190,14 @@ export default function Header() {
             </nav>
 
             <Link
-              href="#"
-              className="flex h-[40px]  items-center justify-center rounded-[100px] bg-[#0A0E1A] px-6 text-[12px] font-semibold text-white transition hover:opacity-90 xl:min-w-[186px] xl:px-4 xl:text-[13px]"
+              href={headerCtaHref}
+              className={`flex h-[40px] items-center justify-center rounded-[100px] px-6 transition hover:opacity-90 xl:min-w-[186px] xl:px-4 ${
+                isEmergencyPage
+                  ? "bg-[#E63946] font-inter text-[13px] font-bold text-white"
+                  : "bg-[#0A0E1A] text-[12px] font-semibold text-white xl:text-[13px]"
+              }`}
             >
-              Book Appointment
+              {headerCtaLabel}
             </Link>
           </div>
 
@@ -240,9 +258,6 @@ export default function Header() {
               >
                 Gleam Membership
               </Link>
-              <span className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#5A6578]">
-                More
-              </span>
               {displayedMore.map((link) => (
                 <Link
                   key={link.href}
@@ -255,11 +270,15 @@ export default function Header() {
               ))}
             </nav>
             <Link
-              href="#"
-              className="mt-5 flex h-[44px] w-full items-center justify-center rounded-[100px] bg-[#0A0E1A] px-6 text-[12px] font-medium text-white transition hover:opacity-90"
+              href={headerCtaHref}
+              className={`mt-5 flex h-[44px] w-full items-center justify-center rounded-[100px] px-6 transition hover:opacity-90 ${
+                isEmergencyPage
+                  ? "bg-[#E63946] font-inter text-[13px] font-bold text-white"
+                  : "bg-[#0A0E1A] text-[12px] font-medium text-white"
+              }`}
               onClick={() => setMobileOpen(false)}
             >
-              Book Appointment
+              {headerCtaLabel}
             </Link>
           </div>
         </div>
