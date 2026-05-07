@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="space-y-8 lg:space-y-10">
             <div className="space-y-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#5A6578] sm:text-[11px]">
-                Lasting Impressions
+                Lasting Impressions     
               </p>
               <h1 className="font-fraunces text-[4.2rem] leading-[0.9] tracking-[-0.07em] text-[#111827] sm:text-[5rem] md:text-[5.2rem] lg:text-[86px]">
                 Encino
