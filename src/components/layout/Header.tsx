@@ -123,11 +123,11 @@ export default function Header() {
       ) : null}
       <div className="px-4 py-4 sm:px-6 sm:py-5 md:px-8 lg:px-24 lg:py-6">
         <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between">
-          <Link href="/" className="flex flex-col leading-none">
-            <span className="mb-1 text-[9px] font-inter uppercase tracking-[0.24em] text-[#5A6578] sm:text-[10px]">
+          <Link href="/" className="flex flex-col  leading-none">
+            <span className="mb-1 text-center  text-[9px] font-inter uppercase tracking-[0.24em] text-[#5A6578] sm:text-[10px]">
               {isGeneralPage ? "Advanced" : "Lasting"}
             </span>
-            <span className="font-fraunces text-[20px] font-semibold tracking-[-0.01em] text-[#0A0E1A] sm:text-[22px]">
+            <span className="font-fraunces text-[20px] uppercase font-semibold tracking-[-0.01em] text-[#0A0E1A] sm:text-[22px]">
               {isGeneralPage ? "Dentistry" : "Impressions"}
             </span>
           </Link>
