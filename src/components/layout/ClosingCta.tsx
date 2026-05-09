@@ -56,7 +56,7 @@ export type ClosingCtaProps = {
 
 const defaultStats: ClosingCtaStat[] = [
   { value: "1,200+", label: "Cosmetic Procedures" },
-  { value: "15+", label: "Years in Calabasas" },
+  { value: "15+", label: "Years in Encino" },
   { value: "4.9 ★", label: "564 Reviews" },
 ];
 
@@ -67,11 +67,11 @@ export default function ClosingCta({
   titleEnd = "not accidental.",
   subtitle = "Book a complimentary smile consultation. See your digital preview. Decide if it's the right year.",
   primaryCtaLabel = "Book Your Consultation",
-  primaryCtaHref = "#",
+  primaryCtaHref = "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V",
   secondaryCtaLabel = "Call Us Directly",
   secondaryCtaHref = "tel:+18185550100",
   stats = defaultStats,
-  footerText = "© 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved",
+  footerText = "© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved",
   mainWrapperClassName = CLOSING_CTA_MAIN_WRAPPER_CLASSES,
   hideEyebrow = false,
   contentWrapperClassName = "",

@@ -89,7 +89,7 @@ export default function InvisalignPage() {
         titleEnd=""
         subtitle="See your new smile in 3D before you commit. Book a complimentary iTero scan and we'll show you exactly what Invisalign can do for you."
         primaryCtaLabel="Book Your Free Scan"
-        primaryCtaHref="#"
+        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
         secondaryCtaLabel="Call to Learn More"
         secondaryCtaHref="tel:+18185550100"
         stats={[
@@ -98,7 +98,7 @@ export default function InvisalignPage() {
           { value: "15+", label: "Years Experience" },
           { value: "4.9 ★", label: "584 Reviews" },
         ]}
-        footerText="© 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved"
+        footerText="© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved"
         headlineColor="#FFFFFF"
         subtitleColor="#FFFFFF"
         titleEmphasisColor="#C9A961"

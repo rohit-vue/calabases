@@ -83,16 +83,16 @@ export default function TransparentPricingSection() {
           <table className="w-full min-w-[760px] border-collapse text-left">
             <thead>
               <tr className="bg-[#f3f1ec]">
-                <th className="w-[40%] border-b border-r border-[#d8d3c7] px-4 py-4 text-[14px] font-medium text-[#2c313c] sm:px-5">
+                <th className="w-auto border-b border-r border-[#d8d3c7] px-4 py-4 text-[14px] font-medium text-[#2c313c] sm:px-5">
                   &nbsp;
                 </th>
-                <th className="w-[20%] border-b border-r border-[#d8d3c7] px-4 py-4 text-[14px] font-fraunces font-normal text-[#0A0E1A] sm:px-5">
+                <th className="w-auto border-b border-r border-[#d8d3c7] px-4 py-4 text-[14px] font-fraunces font-normal text-[#0A0E1A] sm:px-5">
                   With Insurance
                 </th>
-                <th className="w-[20%] border-b border-r border-[#d8d3c7] px-4 py-4 text-[14px] font-fraunces font-normal text-[#0A0E1A] sm:px-5">
+                <th className="w-auto border-b border-r border-[#d8d3c7] px-4 py-4 text-[14px] font-fraunces font-normal text-[#0A0E1A] sm:px-5">
                   Pay-Per-Visit
                 </th>
-                <th className="w-[20%] border-b border-[#d8d3c7] px-0 py-0 align-top">
+                <th className="w-auto border-b border-[#d8d3c7] px-0 py-0 align-top">
                   <div className="overflow-hidden rounded-tr-[16px]">
                     <div className="bg-[#3AA716] px-3 py-1 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-white">
                       Recommended

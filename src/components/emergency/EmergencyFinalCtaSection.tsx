@@ -35,7 +35,7 @@ export default function EmergencyFinalCtaSection() {
 
       <div className="border-t border-[#102036] bg-[#030A1B] px-4 py-4 sm:px-8 lg:px-20">
         <p className="mx-auto w-full max-w-[1240px] text-center text-[11px] text-[#6B7588]">
-          © 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved
+          © 2026 Lasting Impressions Dental Spa · Calabasas, CA · All Rights Reserved
         </p>
       </div>
     </section>

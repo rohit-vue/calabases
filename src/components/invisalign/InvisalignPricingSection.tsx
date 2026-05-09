@@ -76,7 +76,8 @@ export default function InvisalignPricingSection() {
             </div>
 
             <Link
-              href="#"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              target="_blank"
               className="mt-8 inline-flex min-h-[52px] w-full items-center justify-center rounded-full bg-[#C9A961] px-6 text-[13px] font-semibold text-[#050A14] transition hover:brightness-95 sm:mt-9 sm:min-h-[54px]"
             >
               Book your free scan <span className="ml-2">→</span>

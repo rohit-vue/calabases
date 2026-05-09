@@ -15,6 +15,8 @@ export default function Hero() {
               </p>
               <h1 className="font-fraunces text-[4.2rem] leading-[0.9] tracking-[-0.07em] text-[#111827] sm:text-[5rem] md:text-[5.2rem] lg:text-[86px]">
                 Encino
+                <br />
+                Dentist
               </h1>
               <p className="pt-1 text-[1.05rem] leading-[1.12] text-[#1C2333] sm:text-[1.2rem] lg:text-[20px]">
               Cosmetic, general, and emergency care in Encino, Sherman Oaks, and Tarzana
@@ -48,9 +50,9 @@ export default function Hero() {
                 Same-week appointments. Modern care. No pressure.
               </p>
             </div>
-            <button className="whitespace-nowrap rounded-full bg-white px-7 py-3 text-[14px] font-semibold text-[#0A0E1A]  transition hover:bg-white/90">
+            <a href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className="whitespace-nowrap rounded-full bg-white px-7 py-3 text-[14px] font-semibold text-[#0A0E1A]  transition hover:bg-white/90">
               Book Appointment
-            </button>
+            </a>
           </div>
         </div>
 
@@ -96,9 +98,9 @@ export default function Hero() {
                   <li>Unlimited X-Rays</li>
                   <li>Unlimited Exams</li>
                 </ul>
-                <button className="shrink-0 rounded-[100px] bg-white px-3 mb-4 mr-3.5 py-1.5 text-[10px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 md:px-3.5 md:py-2 md:text-[11px]">
+                <a href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className="shrink-0 rounded-[100px] bg-white px-3 mb-4 mr-3.5 py-1.5 text-[10px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 md:px-3.5 md:py-2 md:text-[11px]">
                   Join Now
-                </button>
+                </a>
               </div>
             </div>
           </div>

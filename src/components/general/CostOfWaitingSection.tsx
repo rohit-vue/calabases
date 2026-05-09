@@ -58,7 +58,8 @@ export default function CostOfWaitingSection() {
         </div>
 
         <Link
-          href="#"
+          href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+          target="_blank"
           className="mt-8 inline-flex h-[46px] items-center rounded-[100px] bg-[#C9A961] px-8 text-[12px] font-semibold text-white transition hover:brightness-95"
         >
           Book Your Appointment →

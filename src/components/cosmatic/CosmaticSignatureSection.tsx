@@ -51,7 +51,7 @@ const treatments = [
     subtitle:
       "Reshape the gumline in a single 30-minute appointment. Immediate, dramatic, and most patients are back to work the next day.",
     description:
-      "Using soft tissue laser precision, we create proportional, balanced esthetics with minimal recovery. For many patients, it's the simplest cosmetic change with the most transformative result.",
+      "Using soft tissue laser precision, we create proportional, balanced aesthetics with minimal recovery. For many patients, it's the simplest cosmetic change with the most transformative result.",
     imageLabel: "Precision Work",
     image: "/images/signaturec.png",
     caption: "30 minutes. Permanent transformation.",

@@ -33,16 +33,14 @@ function ServiceCard({
       <div className="flex items-start justify-between gap-4 border-b border-current/15 pb-3">
         <div>
           <h3
-            className={`font-fraunces text-[20px] tracking-[-0.03em] leading-[0.95] sm:text-[26px] ${
-              emergency ? "text-[#FFFFFF]" : "text-[#0A0E1A]"
-            }`}
+            className={`font-fraunces text-[20px] tracking-[-0.03em] leading-[0.95] sm:text-[26px] ${emergency ? "text-[#FFFFFF]" : "text-[#0A0E1A]"
+              }`}
           >
             {title}
           </h3>
           <p
-            className={`mt-2 text-[9px] uppercase tracking-[0.2em] ${
-              emergency ? "text-[#C9A961]" : "text-[#5A6578]"
-            }`}
+            className={`mt-2 text-[9px] uppercase tracking-[0.2em] ${emergency ? "text-[#C9A961]" : "text-[#5A6578]"
+              }`}
           >
             {subtitle}
           </p>
@@ -53,9 +51,8 @@ function ServiceCard({
             {priceMain}
           </p>
           <p
-            className={`text-[8px] font-semibold uppercase tracking-[0.18em] ${
-              emergency ? "text-[#C9A961]" : "text-[#C9A961]"
-            }`}
+            className={`text-[8px] font-semibold uppercase tracking-[0.18em] ${emergency ? "text-[#C9A961]" : "text-[#C9A961]"
+              }`}
           >
             {priceSub}
           </p>
@@ -64,7 +61,7 @@ function ServiceCard({
 
       <p className={`mt-5 text-[13px] leading-[1.6] ${emergency ? "text-[#FFFFFFD9]" : "text-[#1C2333]"}`}>
         {description}
-      </p> 
+      </p>
 
       <ul className={`mt-5 space-y-2.5 text-[12px] leading-[1.55] ${emergency ? "text-[#FFFFFF]" : "text-[#1C2333]"}`}>
         {bullets.map((bullet) => (
@@ -77,12 +74,18 @@ function ServiceCard({
 
       {emergency ? (
         <div className="mt-auto pt-6">
-          <button className="w-full rounded-[12px] bg-[#C9A961] px-4 py-4 text-center">
+          <a
+            href="tel:+18185550100"
+            className="block w-full rounded-[12px] bg-[#C9A961] px-4 py-4 text-center"
+          >
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#FFFFFF]">
               Dental Emergency? Call Now
             </p>
-            <p className="mt-2 font-fraunces font-normal text-[26px] leading-none text-[#FFFFFF] tracking-[-0.03em]">(818) 555-0100</p>
-          </button>
+
+            <p className="mt-2 font-fraunces text-[26px] leading-none tracking-[-0.03em] text-[#FFFFFF]">
+              (818) 555-0100
+            </p>
+          </a>
         </div>
       ) : (
         <div className="mt-auto pt-6">

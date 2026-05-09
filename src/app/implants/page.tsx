@@ -86,7 +86,7 @@ export default function ImplantsPage() {
         footerLabel="Gleam Membership"
         footerPrice="$297/yr"
         ctaLabel="Join Today"
-        ctaHref="#"
+        ctaHref="https://member.clerri.com/enrollment/accounts/create/?slug=DU9M"
       />
       <ImplantsCandidacySection />
       <ImplantsPatientCaseSection />
@@ -111,7 +111,7 @@ export default function ImplantsPage() {
         titleEnd=""
         subtitle="Book a complimentary implant consultation. We'll do a 3D scan, walk through your options, and give you a clear treatment plan with transparent pricing."
         primaryCtaLabel="Book Your Consultation"
-        primaryCtaHref="#"
+        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
         secondaryCtaLabel="Speak With Our Team"
         secondaryCtaHref="tel:+18185550100"
         stats={[

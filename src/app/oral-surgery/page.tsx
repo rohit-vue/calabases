@@ -104,7 +104,7 @@ export default function OralSurgeryPage() {
         titleEnd=""
         subtitle="Book a consultation. We'll review your imaging, walk through your sedation options, and give you transparent pricing before you commit."
         primaryCtaLabel="Book Your Consultation"
-        primaryCtaHref="#"
+        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
         secondaryCtaLabel="Call to Discuss"
         secondaryCtaHref="tel:+18185550100"
         stats={[
@@ -113,7 +113,7 @@ export default function OralSurgeryPage() {
           { value: "4", label: "Sedation Levels" },
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
-        footerText="© 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved"
+        footerText="© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved"
         eyebrowColor="#8FA99F"
         background="linear-gradient(116.24deg, #0A0E1A 0%, #1C2333 100%)"
         headlineColor="#FFFFFF"

@@ -52,7 +52,8 @@ export default function ImplantsHero() {
 
           <div className="mx-auto mt-7 flex w-full max-w-[420px] flex-col items-stretch gap-3 lg:mx-0 lg:max-w-none lg:flex-row lg:flex-wrap lg:items-center">
             <Link
-              href="#"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              target="_blank"
               className="inline-flex h-[44px] w-full items-center justify-center rounded-[100px] bg-[#0A0E1A] border-2 border-[#000000] tracking-[0.28px] px-6 text-[12px] font-semibold text-white transition hover:opacity-90 lg:w-auto"
             >
               Book a Consultation <span className="ml-2">→</span>

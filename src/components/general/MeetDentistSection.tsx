@@ -8,14 +8,14 @@ const dentistStats = [
 
 export default function MeetDentistSection() {
   return (
-    <section className="bg-white px-4 py-14 sm:px-6 md:px-8 lg:px-24">
+    <section className="bg-white px-4 py-14 sm:px-12 lg:px-32">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[920px]">
           <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">
             Meet Your Dentist
           </p>
           <h2 className="font-fraunces text-[30px] leading-[0.95] text-[#0A0E1A] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]">
-            Calabasas&apos; most-reviewed <span className="italic font-light text-[#C9A961]">dental team.</span>
+            Encino&apos; most-reviewed <span className="italic font-light text-[#C9A961]">dental team.</span>
           </h2>
         </div>
 
@@ -66,7 +66,7 @@ export default function MeetDentistSection() {
                   Dr. Kashani founded Advanced Dentistry in 2010 with a simple belief: patients should
                   understand everything that&apos;s happening to their teeth, and never feel rushed or
                   pressured. That philosophy has built one of the most-reviewed dental practices in
-                  Calabasas.
+                  Encino.
                 </p>
                 <p>
                   His approach combines modern technology - digital X-rays, CEREC same-day crowns, 3D

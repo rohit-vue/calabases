@@ -80,13 +80,15 @@ export default function InvisalignHero() {
 
           <div className="mt-5 flex flex-col items-stretch justify-center gap-2 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
             <Link
-              href="#"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              target="_blank"
               className="inline-flex h-[44px] w-full items-center justify-center rounded-full bg-[#0A0E1A] px-3 text-[11px] font-semibold text-white transition hover:opacity-90 sm:w-auto sm:h-[44px] sm:px-6 sm:text-[12px]"
             >
               Book a Free Smile Scan <span className="ml-1.5">→</span>
             </Link>
             <Link
-              href="#"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              target="_blank"
               className="inline-flex h-[44px] w-full items-center justify-center rounded-full border border-[#D4CCBA] bg-[#F8F6EF] px-3 text-[11px] font-semibold text-[#1C2535] transition hover:bg-white sm:w-auto sm:h-[44px] sm:px-6 sm:text-[12px]"
             >
               See Pricing
