@@ -93,7 +93,8 @@ export default function FirstVisitTimelineSection() {
             </div>
 
             <Link
-              href="#"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              target="_blank"
               className="inline-flex h-[48px] shrink-0 items-center rounded-[100px] bg-[#C9A961] px-8 text-[13px] font-medium text-white transition hover:brightness-95"
             >
               Book Your First Visit <span className="ml-2" aria-hidden="true">→</span>

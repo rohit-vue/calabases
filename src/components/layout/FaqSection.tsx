@@ -131,7 +131,7 @@ export default function FaqSection({
   const leadingDashColor = eyebrowLeadingDashColor ?? accentColor;
 
   return (
-    <section className="px-4 py-16 sm:px-6 md:px-8 lg:px-28 xl:px-88" style={{ background }}>
+    <section className="px-4 py-16 sm:px-12 lg:px-32" style={{ background }}>
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[860px]">
           <div className="mb-3 flex items-center gap-3">

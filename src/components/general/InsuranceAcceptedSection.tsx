@@ -13,7 +13,7 @@ const insuranceLogos = [
 
 export default function InsuranceAcceptedSection() {
   return (
-    <section className="bg-[#F5F2EB] px-4 pb-20 pt-10 sm:px-6 md:px-8 lg:px-24">
+    <section className="bg-[#F5F2EB] px-4 pb-20 pt-10 sm:px-12 lg:px-32">
       <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 gap-10 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:items-center lg:gap-14">
         <div className="max-w-[520px]">
           <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">

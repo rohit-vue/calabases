@@ -47,7 +47,7 @@ export default function Header() {
     : isConsultationPage
       ? "Book Consultation"
       : "Book Appointment";
-  const headerCtaHref = isEmergencyPage ? "tel:+18185550100" : "#";
+  const headerCtaHref = isEmergencyPage ? "tel:+18185550100" : "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -140,14 +140,14 @@ export default function Header() {
                 </Link>
               ))}
 
-              <Link href="/" className={NAV_LINK_CLASS}>
+              <Link href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className={NAV_LINK_CLASS}>
                 Gleam Membership
               </Link>
 
               <div className="relative" ref={moreRef}>
                 <button
                   type="button"
-                  className={`${NAV_LINK_CLASS} inline-flex items-center gap-1`}
+                  className={`${NAV_LINK_CLASS} inline-flex items-center gap-1 cursor-pointer`}
                   aria-expanded={moreOpen}
                   aria-haspopup="menu"
                   onClick={() => setMoreOpen((v) => !v)}

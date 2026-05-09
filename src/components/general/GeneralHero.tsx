@@ -58,14 +58,16 @@ export default function GeneralHero() {
 
             <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <Link
-                href="#"
+                href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                target="_blank"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-white transition hover:opacity-90 sm:w-auto sm:justify-start"
               >
                 Book Your Appointment
                 <span aria-hidden="true">→</span>
               </Link>
               <Link
-                href="#"
+                href="https://member.clerri.com/enrollment/accounts/create/?slug=DU9M"
+                target="_blank"
                 className="flex w-full items-center justify-center rounded-full border-2 border-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-[#0A0E1A] transition hover:bg-white sm:w-auto sm:justify-start"
               >
                 See Gleam Membership
@@ -90,7 +92,7 @@ export default function GeneralHero() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#C9A961]">As low as</p>
                 <div className="mt-2.5 flex items-end gap-1.5">
                   <span className="font-fraunces text-[62px] leading-[0.85] text-[#0A0E1A] sm:text-[82px]">$297</span>
-                  <span className="pb-2 text-[13px] leading-none text-[#5A6578] sm:pb-2.5 sm:text-[14px]">/year</span>
+                  <span className="pb-2 text-[13px] leading-none text-[#5A6578] sm:pb-2.5 sm:text-[14px] lg:-ml-4">/year</span>
                 </div>
 
                 <p className="mt-2 inline-block w-fit pt-0.5 text-[12px] text-[#C9A961] line-through">

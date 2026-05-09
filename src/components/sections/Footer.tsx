@@ -66,7 +66,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="max-w-[295px] text-[14px] leading-[1.55] text-[#FFFFFF99]">
-                Trusted by Calabasas, Agoura Hills, and Hidden
+                Trusted by Encino, Agoura Hills, and Hidden
                 Hills families since 2010. Cosmetic, general, and
                 emergency dental care — with a focus on
                 modern techniques and transparent pricing.
@@ -90,12 +90,13 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="#"
+                  <a
+                    href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                    target="_blank"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Book Appointment
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link

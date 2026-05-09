@@ -23,7 +23,7 @@ const reviews = [
 
 export default function PatientReviewsSection() {
   return (
-    <section className="bg-[#0A0E1A] px-4 py-16 sm:px-6 md:px-8 lg:px-24">
+    <section className="bg-[#0A0E1A] px-4 py-16 sm:px-12 lg:px-32">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="max-w-[780px]">
           <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.22em] text-[#C9A961]">
@@ -33,7 +33,7 @@ export default function PatientReviewsSection() {
             Real stories from <span className="italic font-light text-[#C9A961]">real patients.</span>
           </h2>
           <p className="mt-4 max-w-[650px] text-[15px] leading-[1.58] text-[#FFFFFF99]">
-            What Calabasas, Hidden Hills, and Agoura Hills patients are saying about Advanced Dentistry.
+            What Encino, Hidden Hills, and Agoura Hills patients are saying about Advanced Dentistry.
           </p>
         </div>
 

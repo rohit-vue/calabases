@@ -39,7 +39,7 @@ export default function CosmaticMembershipMathSection({
   footerLabel = "Gleam Membership",
   footerPrice = "$297/yr",
   ctaLabel = "Join Today",
-  ctaHref = "#",
+  ctaHref = "https://member.clerri.com/enrollment/accounts/create/?slug=DU9M",
 }: CosmaticMembershipMathSectionProps) {
   return (
     <section className="bg-[linear-gradient(107.63deg,rgba(201,169,97,0)_0%,rgba(201,169,97,0.72)_100%),linear-gradient(106.66deg,#F5EDD8_0%,#EDE2C2_100%)] px-4 py-14 sm:px-8 sm:py-16 lg:px-24 lg:py-20">

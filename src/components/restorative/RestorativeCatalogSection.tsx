@@ -42,7 +42,7 @@ const catalogItems: CatalogItem[] = [
     metrics: [
       { label: "Timeline", value: "1-2 visits", note: "Same-day with CEREC" },
       { label: "Lifespan", value: "15-25 years", note: "5-year warranty" },
-      { label: "Investment", value: "$1,800-$2,500", note: "Glean members save 20%" },
+      { label: "Investment", value: "$1,800-$2,500", note: "Gleam members save 20%" },
       { label: "Material", value: "Zirconia / Emax", note: "Master ceramist lab" },
     ],
   },
@@ -60,7 +60,7 @@ const catalogItems: CatalogItem[] = [
     metrics: [
       { label: "Timeline", value: "2-3 visits", note: "Over 2-5 weeks" },
       { label: "Lifespan", value: "10-15 years", note: "5-year warranty" },
-      { label: "Investment", value: "$3,000-$5,500", note: "Glean members save 20%" },
+      { label: "Investment", value: "$3,000-$5,500", note: "Gleam members save 20%" },
       { label: "Material", value: "Zirconia / PFM", note: "Shade-matched" },
     ],
   },
@@ -78,7 +78,7 @@ const catalogItems: CatalogItem[] = [
     metrics: [
       { label: "Timeline", value: "1-2 visits", note: "Same-day available" },
       { label: "Lifespan", value: "15-20 years", note: "5-year warranty" },
-      { label: "Investment", value: "$900-$1,800", note: "Glean members save 20%" },
+      { label: "Investment", value: "$900-$1,800", note: "Gleam members save 20%" },
       { label: "Preserves", value: "30-40% more", note: "Natural tooth vs crown" },
     ],
   },

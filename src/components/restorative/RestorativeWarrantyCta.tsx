@@ -22,7 +22,7 @@ export default function RestorativeWarrantyCta() {
                   Warranty
                 </span>
               </div>
-              <span className="mt-0.5 hidden font-fraunces text-[11px] uppercase tracking-[0.2em] text-[#c08240] sm:block lg:text-[#B87333]">
+              <span className="mt-0.5 hidden font-fraunces text-[11px] uppercase tracking-[0.2em] text-[#c08240] sm:block lg:text-[#B87333] text-center">
                 Year Warranty
               </span>
             </div>
@@ -44,7 +44,8 @@ export default function RestorativeWarrantyCta() {
         </div>
 
         <Link
-          href="#"
+          href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+          target="_blank"
           className="inline-flex h-[48px] w-full shrink-0 items-center justify-center rounded-[100px] bg-[#c08240] px-8 text-[14px] font-bold text-black transition hover:brightness-95 lg:inline-flex lg:w-auto lg:bg-[#B87333] lg:text-[#0A0E1A]"
         >
           Book Consultation <span className="ml-2">→</span>

@@ -5,23 +5,26 @@ const ctaCards = [
     icon: "📅",
     title: "Book Online",
     subtitle: "See us within the week.",
+    href: "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V",
   },
   {
     icon: "📞",
     title: "Call to Talk",
     subtitle: "Have questions? Call us.",
+    href: "tel:+18185550100",
   },
   {
     icon: "📬",
     title: "Get Our Guide",
     subtitle: "The Real Cost of Skipping the Dentist",
+    href: "#",
   },
 ];
 
 export default function FinalCtaSection() {
   return (
     <section>
-      <div className="bg-[linear-gradient(110.59deg,#C9A961_0%,#795E22_100%)] px-4 pb-14 pt-14 sm:px-6 sm:pb-16 sm:pt-16 md:px-8 lg:px-24 lg:pb-20">
+      <div className="bg-[linear-gradient(110.59deg,#C9A961_0%,#795E22_100%)] px-4 pb-14 pt-14 sm:px-12 lg:px-32 lg:pb-20">
         <div className="mx-auto w-full max-w-[1180px]">
           <div className="mx-auto max-w-[760px] text-center">
             <h2 className="font-fraunces text-[34px] leading-[0.85] tracking-[-0.04em] text-white sm:text-[42px] lg:text-[56px]">
@@ -38,8 +41,9 @@ export default function FinalCtaSection() {
             {ctaCards.map((card) => (
               <Link
                 key={card.title}
-                href="#"
+                href={card.href}
                 className="rounded-[14px] border border-[#FFFFFF33] bg-[#FFFFFF1A] px-5 py-6 text-center backdrop-blur-[10px] transition hover:bg-[#FFFFFF24]"
+                {...(card.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 <p className="text-[23px]" aria-hidden="true">
                   {card.icon}
@@ -52,9 +56,9 @@ export default function FinalCtaSection() {
         </div>
       </div>
 
-      <div className="bg-[#050d22] px-10 py-4 sm:px-12 lg:px-24">
-        <p className="mx-auto max-w-[1180px] text-center text-[10px] text-[#FFFFFF80] font-normal">
-          © 2026 Advanced Dentistry · Calabasas, CA · All Rights Reserved
+      <div className="bg-[#050d22] border-t border-solid px-4 py-5 sm:px-8 sm:py-6 lg:px-24 lg:py-8">
+        <p className="mx-auto w-full max-w-[1180px] text-center text-[11px] text-[#FFFFFF80] leading-snug sm:text-[12px] lg:text-[13px]">
+          © 2026 Lasting Impressions Dental Spa · Calabasas, CA · All Rights Reserved
         </p>
       </div>
     </section>
