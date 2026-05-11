@@ -13,12 +13,6 @@ const ctaCards = [
     subtitle: "Have questions? Call us.",
     href: "tel:+18185550100",
   },
-  {
-    icon: "📬",
-    title: "Get Our Guide",
-    subtitle: "The Real Cost of Skipping the Dentist",
-    href: "#",
-  },
 ];
 
 export default function FinalCtaSection() {
@@ -37,12 +31,14 @@ export default function FinalCtaSection() {
             </p>
           </div>
 
-          <div className="mx-auto mt-8 grid w-full max-w-[760px] grid-cols-1 gap-3 md:grid-cols-3">
+          <div className="mx-auto mt-8 grid w-full max-w-[760px] grid-cols-1 gap-3 md:grid-cols-2">
             {ctaCards.map((card) => (
               <Link
                 key={card.title}
                 href={card.href}
-                className="rounded-[14px] border border-[#FFFFFF33] bg-[#FFFFFF1A] px-5 py-6 text-center backdrop-blur-[10px] transition hover:bg-[#FFFFFF24]"
+                className={`rounded-[14px] border border-[#FFFFFF33] bg-[#FFFFFF1A] px-5 py-6 text-center backdrop-blur-[10px] transition hover:bg-[#FFFFFF24] ${
+                  card.title === "Call to Talk" ? "md:translate-x-3" : ""
+                }`}
                 {...(card.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 <p className="text-[23px]" aria-hidden="true">

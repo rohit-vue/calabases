@@ -166,9 +166,14 @@ function CatalogText({
         </div>
       </div>
 
-      <button className="mt-4 inline-flex w-full items-center justify-center gap-2 font-fraunces text-[16px] font-semibold tracking-[0.03em] text-[#E8D5B7] transition hover:opacity-85 sm:mt-5 sm:text-[18px] md:text-[21px] lg:mt-5 lg:inline-flex lg:w-auto lg:text-[14px]">
+      <a
+        href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 inline-flex w-full items-center justify-center gap-2 font-fraunces text-[16px] font-semibold tracking-[0.03em] text-[#E8D5B7] transition hover:opacity-85 sm:mt-5 sm:text-[18px] md:text-[21px] lg:mt-5 lg:inline-flex lg:w-auto lg:text-[14px]"
+      >
         {cta} <span>→</span>
-      </button>
+      </a>
     </div>
   );
 }

@@ -62,7 +62,7 @@ export default function CosmaticPricingSection() {
           </h2>
 
           <p className="mt-5 max-w-[700px] text-[15px] leading-[1.45] text-[#5A6578] font-light sm:text-[16px] md:text-[18px] lg:text-[17px]">
-            Every cosmetic plan is custom - but here&apos;s what most Calabasas patients invest. All prices
+            Every cosmetic plan is custom - but here&apos;s what most Encino patients invest. All prices
             include consultation, digital smile design, and placement.
           </p>
         </div>
@@ -115,7 +115,8 @@ export default function CosmaticPricingSection() {
               </div>
 
               <Link
-                href="#"
+                href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                target="_blank"
                 className={`mt-7 flex h-[42px] w-full items-center justify-center rounded-full text-[12px] font-semibold transition ${plan.featured ? "bg-[#C9A961] text-[#0A0E1A] hover:brightness-95" : "bg-[#0A0E1A] text-white hover:opacity-90"}`}
               >
                 Book Consultation

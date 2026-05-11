@@ -16,9 +16,13 @@ export default function VisitUsSection() {
           <div className="mt-7 divide-y divide-[#ddd8cc] border-y border-[#ddd8cc]">
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">Address</p>
-              <p className="mt-2 text-[15px] font-medium leading-[1.4] text-[#0A0E1A] sm:text-[16px]">
-                23741 Calabasas Rd, Calabasas, CA 91302
-              </p>
+              <a
+                href="https://www.google.com/maps/place/Lasting+Impressions+Dental+Spa+%7C+Dentist+in+Encino/@34.156681,-118.4859504,17z/data=!3m1!4b1!4m6!3m5!1s0x80c297899002478b:0x564fb02f1c02d0c3!8m2!3d34.156681!4d-118.4833755!16s%2Fg%2F1ty74j83?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                className="mt-2 block text-[15px] font-medium leading-[1.4] text-[#0A0E1A] transition-colors hover:text-[#C9A961] sm:text-[16px]"
+              >
+                16055 Ventura Blvd #510, Encino, CA 91436, United States
+              </a>
             </div>
 
             <div className="py-4">
@@ -41,7 +45,7 @@ export default function VisitUsSection() {
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">We Serve</p>
               <p className="mt-2 text-[15px] font-medium leading-[1.4] text-[#0A0E1A] sm:text-[16px]">
-                Calabasas, Agoura Hills, Hidden Hills, Woodland Hills
+                Encino, Agoura Hills, Hidden Hills, Woodland Hills
               </p>
             </div>
           </div>

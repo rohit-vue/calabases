@@ -34,7 +34,7 @@ export default function EmergencyHero() {
           </h1>
 
           <p className="mt-6 max-w-[700px] text-[15px] leading-[1.35] text-[#283346] sm:text-[22px] lg:text-[22px]">
-            Calabasas&apos; trusted emergency dentist since 2010.
+            Encino&apos;s trusted emergency dentist since 2010.
             <span className="font-semibold"> Same-day appointments </span> for toothaches, broken teeth, and
             dental trauma. Don&apos;t go to the ER — they can only prescribe painkillers. We can actually fix it.
           </p>

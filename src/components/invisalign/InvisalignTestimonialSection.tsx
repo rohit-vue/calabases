@@ -18,7 +18,7 @@ export default function InvisalignTestimonialSection() {
             </span>
             <div className="text-left">
               <p className="text-[12px] font-semibold text-[#0A0E1A] lg:text-[16px]">Melissa T.</p>
-              <p className="text-[10px] text-[#6E788B] lg:text-[13px]">14-month Invisalign • Calabasas</p>
+              <p className="text-[10px] text-[#6E788B] lg:text-[13px]">14-month Invisalign • Encino</p>
             </div>
           </div>
         </div>
