@@ -46,7 +46,7 @@ export default function ImplantsHero() {
           </p>
 
           <p className="mx-auto mt-6 max-w-[500px] font-sans text-[15px] font-normal leading-[1.6] text-[#0A0E1A99] lg:mx-0">
-            95-98% success rate. 20+ year lifespan. 800+ implants placed in Calabasas since 2010. Planned
+            95-98% success rate. 20+ year lifespan. 800+ implants placed in Encino since 2010. Planned
             with 3D CBCT imaging for sub-millimeter precision.
           </p>
 
@@ -59,7 +59,8 @@ export default function ImplantsHero() {
               Book a Consultation <span className="ml-2">→</span>
             </Link>
             <Link
-              href="#"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              target="_blank"
               className="inline-flex h-[44px] w-full items-center justify-center rounded-[100px] px-5 text-[12px] font-semibold text-[#0A0E1A] border border-[#FFFFFF4D] transition hover:text-black lg:w-auto"
             >
               Explore Options

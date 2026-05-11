@@ -71,9 +71,9 @@ export default function OralSurgeryPage() {
         label="Patient Recovery · Calabasas"
         quote="I put off getting my wisdom teeth out until I was 34. I was terrified. I expected a week of pain and a vicodin prescription. I got IV sedation, woke up with no memory of the procedure, and was back at my desk on Tuesday. I wish I'd done it 10 years ago."
         authorName="Nadia K."
-        authorSubtext="Wisdom teeth removal · Calabasas"
+        authorSubtext="Wisdom teeth removal · Encino"
         authorInitials="N"
-        background="#E6EEEA"
+        background="#E6EEEA"  
         accentColor="#5E7267"
         quoteColor="#0A0E1A"
         authorNameColor="#0A0E1A"
@@ -105,8 +105,6 @@ export default function OralSurgeryPage() {
         subtitle="Book a consultation. We'll review your imaging, walk through your sedation options, and give you transparent pricing before you commit."
         primaryCtaLabel="Book Your Consultation"
         primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
-        secondaryCtaLabel="Call to Discuss"
-        secondaryCtaHref="tel:+18185550100"
         stats={[
           { value: "500+", label: "Procedures Yearly" },
           { value: "95%", label: "Comfort Rating" },
@@ -125,8 +123,6 @@ export default function OralSurgeryPage() {
         primaryCtaBackground="#8FA99F"
         primaryCtaTextColor="#0A0E1A"
         primaryCtaBorderColor="#000000"
-        secondaryCtaBorderColor="#FFFFFF40"
-        secondaryCtaTextColor="#FFFFFF"
         footerTextColor="#FFFFFF66"
         footerBarBackground="#0A0E1A"
         footerBarBorderColor="#FFFFFF14"

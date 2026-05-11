@@ -11,7 +11,7 @@ import ClosingCta from "@/components/layout/ClosingCta";
 
 const implantsFaqs = [
   {
-    question: "How much do dental implants cost in Calabasas?",
+    question: "How much do dental implants cost in Encino?",
     answer:
       "Implant pricing depends on complexity, bone condition, and restoration type. Typical ranges are about $3,500-$5,500 for a single tooth implant and $18,000-$30,000 for a full-arch All-on-4 case.",
   },
@@ -86,7 +86,7 @@ export default function ImplantsPage() {
         footerLabel="Gleam Membership"
         footerPrice="$297/yr"
         ctaLabel="Join Today"
-        ctaHref="https://member.clerri.com/enrollment/accounts/create/?slug=DU9M"
+        ctaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
       />
       <ImplantsCandidacySection />
       <ImplantsPatientCaseSection />
@@ -112,8 +112,6 @@ export default function ImplantsPage() {
         subtitle="Book a complimentary implant consultation. We'll do a 3D scan, walk through your options, and give you a clear treatment plan with transparent pricing."
         primaryCtaLabel="Book Your Consultation"
         primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
-        secondaryCtaLabel="Speak With Our Team"
-        secondaryCtaHref="tel:+18185550100"
         stats={[
           { value: "800+", label: "Implants Placed" },
           { value: "97%", label: "Success Rate" },

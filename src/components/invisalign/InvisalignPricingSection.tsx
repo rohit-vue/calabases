@@ -16,7 +16,7 @@ export default function InvisalignPricingSection() {
 
           <div className="mt-6 space-y-4 text-[14px] leading-[1.62] text-[#667081] sm:text-[15px] md:text-[16px]">
             <p>
-              Most Calabasas Invisalign cases run between <span className="font-semibold text-[#111827]">$4,500</span>{" "}
+              Most Encino Invisalign cases run between <span className="font-semibold text-[#111827]">$4,500</span>{" "}
               and <span className="font-semibold text-[#111827]">$6,500</span> depending on complexity. All
               pricing includes your initial iTero scan, every aligner tray, all progress checkups, and your
               first set of retainers.

@@ -1,4 +1,7 @@
+ "use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const accent = "#19B5B0";
 
@@ -22,13 +25,32 @@ const serviceHrefByLabel: Record<(typeof servicesLinks)[number], string> = {
 
 const aboutLinks = [
   "Meet the Dentists",
-  "Our Office",
   "Gleam Membership",
   "Insurance Accepted",
   "Patient Reviews",
 ] as const;
 
+const aboutHrefByLabel: Record<(typeof aboutLinks)[number], string> = {
+  "Meet the Dentists": "/#meet-the-dentists",
+  "Gleam Membership": "https://gleam-black.vercel.app/",
+  "Insurance Accepted": "#",
+  "Patient Reviews": "https://www.google.com/maps/place/Lasting+Impressions+Dental+Spa+%7C+Dentist+in+Encino/@34.156681,-118.4859504,17z/data=!3m1!4b1!4m6!3m5!1s0x80c297899002478b:0x564fb02f1c02d0c3!8m2!3d34.156681!4d-118.4833755!16s%2Fg%2F1ty74j83?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D",
+};
+
 function LinkColumn({ title, links }: { title: string; links: readonly string[] }) {
+  const pathname = usePathname();
+
+  function handleMeetDentistsClick(event: React.MouseEvent<HTMLAnchorElement>) {
+    if (pathname !== "/") return;
+
+    event.preventDefault();
+    const target = document.getElementById("meet-the-dentists");
+    if (!target) return;
+
+    target.scrollIntoView({ behavior: "auto", block: "start" });
+    window.history.replaceState(null, "", "/#meet-the-dentists");
+  }
+
   return (
     <div className="space-y-5">
       <h4 className="text-[11px] font-bold uppercase tracking-[0.28em]" style={{ color: accent }}>
@@ -38,7 +60,13 @@ function LinkColumn({ title, links }: { title: string; links: readonly string[] 
         {links.map((label) => (
           <li key={label}>
             <Link
-              href={title === "SERVICES" ? serviceHrefByLabel[label as (typeof servicesLinks)[number]] : "#"}
+              href={
+                title === "SERVICES"
+                  ? serviceHrefByLabel[label as (typeof servicesLinks)[number]]
+                  : aboutHrefByLabel[label as (typeof aboutLinks)[number]]
+              }
+              target={label === "Patient Reviews" ? "_blank" : undefined}
+              onClick={label === "Meet the Dentists" ? handleMeetDentistsClick : undefined}
               className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
             >
               {label}
@@ -59,7 +87,7 @@ export default function Footer() {
             <div className="col-span-2 space-y-5 lg:col-span-1 lg:pr-4">
               <div className="flex flex-col gap-6">
                 <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#FFFFFF80]">
-                  CALABASAS
+                  Encino
                 </span>
                 <span className="font-fraunces text-[2.2rem] font-semibold leading-none tracking-[-0.03em] text-white sm:text-[24px]">
                   Smiles
@@ -100,7 +128,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="tel:+18185550100"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Dental Emergency
@@ -119,10 +147,10 @@ export default function Footer() {
       <div className="border-t border-[#FFFFFF1A]">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-4 py-6 text-center text-[#FFFFFF66] sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left md:px-8 lg:px-24">
           <p className="text-[13px] leading-relaxed">
-            © 2026 Calabasas Smiles · Advanced Dentistry · All Rights Reserved
+            © 2026 Encino Smiles · Advanced Dentistry · All Rights Reserved
           </p>
           <p className="text-[13px] leading-relaxed sm:text-right">
-            Calabasas, CA · Agoura Hills · Hidden Hills
+            Encino, CA · Agoura Hills · Hidden Hills
           </p>
         </div>
       </div>

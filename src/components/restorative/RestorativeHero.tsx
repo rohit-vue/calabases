@@ -17,7 +17,7 @@ export default function RestorativeHero() {
         <div className="mt-4 flex items-center justify-center gap-3 sm:gap-4 lg:justify-start">
           <span className="h-px w-8 bg-[#C9A961] sm:w-10" />
           <p className="font-fraunces text-[10px] font-medium uppercase tracking-[0.26em] text-[#C9A961] sm:text-[11px] sm:tracking-[0.3em]">
-            Est. 2010 - Calabasas&apos; Restorative Specialists
+            Est. 2010 - Encino&apos;s Restorative Specialists
           </p>
           <span className="h-px w-8 bg-[#C9A961] sm:w-10" />
         </div>

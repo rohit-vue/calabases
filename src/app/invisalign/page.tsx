@@ -11,7 +11,7 @@ import FaqSection from "@/components/layout/FaqSection";
 
 const invisalignFaqs = [
   {
-    question: "How much does Invisalign cost in Calabasas?",
+    question: "How much does Invisalign cost in Encino?",
     answer:
       "Most Invisalign cases in our office run between $4,500 and $6,500 depending on complexity. Pricing includes your digital scan, aligners, progress checkups, and initial retainers.",
   },
@@ -90,8 +90,6 @@ export default function InvisalignPage() {
         subtitle="See your new smile in 3D before you commit. Book a complimentary iTero scan and we'll show you exactly what Invisalign can do for you."
         primaryCtaLabel="Book Your Free Scan"
         primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
-        secondaryCtaLabel="Call to Learn More"
-        secondaryCtaHref="tel:+18185550100"
         stats={[
           { value: "400+", label: "Cases Completed" },
           { value: "12-18mo", label: "Average Treatment" },
@@ -107,8 +105,6 @@ export default function InvisalignPage() {
         primaryCtaBackground="#C9A961"
         primaryCtaTextColor="#0A0E1A"
         primaryCtaBorderColor="#000000"
-        secondaryCtaBorderColor="#FFFFFF40"
-        secondaryCtaTextColor="#FFFFFF"
         footerTextColor="#FFFFFF66"
       />
     </main>

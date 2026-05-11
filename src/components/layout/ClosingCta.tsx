@@ -18,8 +18,6 @@ export type ClosingCtaProps = {
   subtitle?: string;
   primaryCtaLabel?: string;
   primaryCtaHref?: string;
-  secondaryCtaLabel?: string;
-  secondaryCtaHref?: string;
   stats?: ClosingCtaStat[];
   footerText?: string;
   /** Override padding on the main inner wrapper; default matches cosmetic spacing. */
@@ -39,8 +37,6 @@ export type ClosingCtaProps = {
   primaryCtaBackground?: string;
   primaryCtaTextColor?: string;
   primaryCtaBorderColor?: string;
-  secondaryCtaBorderColor?: string;
-  secondaryCtaTextColor?: string;
   statsValueColor?: string;
   statsLabelColor?: string;
   statsLabelFontSize?: number;
@@ -68,8 +64,6 @@ export default function ClosingCta({
   subtitle = "Book a complimentary smile consultation. See your digital preview. Decide if it's the right year.",
   primaryCtaLabel = "Book Your Consultation",
   primaryCtaHref = "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V",
-  secondaryCtaLabel = "Call Us Directly",
-  secondaryCtaHref = "tel:+18185550100",
   stats = defaultStats,
   footerText = "© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved",
   mainWrapperClassName = CLOSING_CTA_MAIN_WRAPPER_CLASSES,
@@ -85,8 +79,6 @@ export default function ClosingCta({
   primaryCtaBackground = "#C9A961",
   primaryCtaTextColor = "#0A0E1A",
   primaryCtaBorderColor = "#000000",
-  secondaryCtaBorderColor = "#FFFFFF4D",
-  secondaryCtaTextColor = "#E4E9F2",
   statsValueColor = "#C9A961",
   statsLabelColor = "#ffffff80",
   statsLabelFontSize = 12,
@@ -153,7 +145,7 @@ export default function ClosingCta({
               {subtitle}
             </p>
 
-            <div className="mt-6 flex w-full flex-col items-stretch gap-2.5 sm:mt-7 sm:gap-3 lg:mt-8 lg:flex-row lg:flex-wrap lg:items-center lg:justify-center">
+            <div className="mt-6 flex w-full items-center justify-center sm:mt-7 lg:mt-8">
               <Link
                 href={primaryCtaHref}
                 className="flex h-[44px] w-full items-center justify-center rounded-[100px] border-2 px-5 text-[13px] font-semibold tracking-[0.023em] transition hover:brightness-95 sm:px-6 sm:text-[14px] lg:inline-flex lg:w-auto"
@@ -172,16 +164,6 @@ export default function ClosingCta({
                   height={11}
                   className="ml-2 h-[11px] w-[11px] shrink-0"
                 />
-              </Link>
-              <Link
-                href={secondaryCtaHref}
-                className="flex h-[44px] w-full items-center justify-center rounded-[100px] border px-5 text-[13px] font-semibold tracking-[0.023em] transition hover:bg-white/5 sm:px-6 sm:text-[14px] lg:inline-flex lg:w-auto"
-                style={{
-                  borderColor: secondaryCtaBorderColor,
-                  color: secondaryCtaTextColor,
-                }}
-              >
-                {secondaryCtaLabel}
               </Link>
             </div>
 

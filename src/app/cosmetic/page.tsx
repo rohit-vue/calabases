@@ -12,7 +12,7 @@ import TestimonialSection from "@/components/layout/TestimonialSection";
 
 const cosmeticFaqs = [
   {
-    question: "How much do veneers cost in Calabasas?",
+    question: "How much do veneers cost in Encino?",
     answer:
       "Veneer pricing depends on case complexity, number of teeth, and materials. Most complete smile cases range from about $14,400 to $20,000, and single veneers are typically around $2,000 with membership pricing.",
   },
@@ -67,7 +67,7 @@ export default function CosmeticPage() {
       <TestimonialSection
         quote="&quot;I'd been thinking about veneers for ten years. I was terrified of looking fake. Dr. Kashani's digital preview sold me - I could see exactly what my smile would look like before we started. The result is so natural that my own mother didn't notice at first. She just said I looked rested.&quot;"
         authorName="Rachel K"
-        authorSubtext="8 Veneers • Calabasas"
+        authorSubtext="8 Veneers • Encino"
         authorInitials="R"
         background="linear-gradient(116.24deg, #0A0E1A 0%, #1C2333 100%)"
         accentColor="#C9A961"

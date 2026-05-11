@@ -73,7 +73,7 @@ export default function RestorativePage() {
         label="PATIENT PORTFOLIO · CALABASAS"
         quote="I had a 20-year-old crown that finally failed. Dr. Kashani replaced it with zirconia — and honestly, it looks better than the real teeth next to it. Three years later, it still feels exactly the same as the day he put it in. He genuinely cares about the craftsmanship. It shows."
         authorName="Thomas R."
-        authorSubtext="Zirconia crown replacement · Calabasas"
+        authorSubtext="Zirconia crown replacement · Encino"
         authorInitials="T"
         background="#EFE7D3"
         accentColor="#8B5A2B"
@@ -108,8 +108,6 @@ export default function RestorativePage() {
         subtitle="Book a consultation. See your teeth on screen, understand your options, and get transparent pricing before you commit to anything."
         primaryCtaLabel="Book Your Consultation"
         primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
-        secondaryCtaLabel="Call to Learn More"
-        secondaryCtaHref="tel:+18185550100"
         stats={[
           { value: "3,000+", label: "Restorations Placed" },
           { value: "<2%", label: "5-Year Failure Rate" },
@@ -125,8 +123,6 @@ export default function RestorativePage() {
         primaryCtaBackground="#B87333"
         primaryCtaTextColor="#0A0E1A"
         primaryCtaBorderColor="#000000"
-        secondaryCtaBorderColor="#FFFFFF40"
-        secondaryCtaTextColor="#FFFFFF"
         footerTextColor="#FFFFFF66"
         heroOverlayGradient="radial-gradient(56% 70% at 50% 52%, rgba(184, 115, 51, 0.22) 0%, rgba(2, 9, 24, 0) 100%)"
       />

@@ -125,10 +125,10 @@ export default function Header() {
         <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between">
           <Link href="/" className="flex flex-col  leading-none">
             <span className="mb-1 text-center  text-[9px] font-inter uppercase tracking-[0.24em] text-[#5A6578] sm:text-[10px]">
-              {isGeneralPage ? "Advanced" : "Lasting"}
+              Lasting
             </span>
             <span className="font-fraunces text-[20px] uppercase font-semibold tracking-[-0.01em] text-[#0A0E1A] sm:text-[22px]">
-              {isGeneralPage ? "Dentistry" : "Impressions"}
+              Impressions
             </span>
           </Link>
 
@@ -140,7 +140,7 @@ export default function Header() {
                 </Link>
               ))}
 
-              <Link href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className={NAV_LINK_CLASS}>
+              <Link href="https://gleam-black.vercel.app/" target="_blank" className={NAV_LINK_CLASS}>
                 Gleam Membership
               </Link>
 
