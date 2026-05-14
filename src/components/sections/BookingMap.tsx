@@ -1,5 +1,7 @@
 // components/sections/BookingMap.tsx
-import Image from "next/image";
+
+const MAP_EMBED_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.595830622224!2d-118.48337549999998!3d34.156681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c297899002478b%3A0x564fb02f1c02d0c3!2sLasting%20Impressions%20Dental%20Spa%20%7C%20Dentist%20in%20Encino!5e0!3m2!1sen!2sin!4v1778742186882!5m2!1sen!2sin";
 
 export default function BookingMap() {
   return (
@@ -16,13 +18,15 @@ export default function BookingMap() {
           </a>
         </div>
 
-        {/* Right Map Image */}
-        <div className="relative aspect-[1.3/1] min-h-[260px] sm:min-h-0">
-          <Image
-            src="/images/google-map-placeholder.png"
-            alt="Map showing the practice location"
-            fill
-            className="rounded-[20px] object-cover"
+        {/* Right Map */}
+        <div className="relative aspect-[1.3/1] min-h-[260px] overflow-hidden rounded-[20px] sm:min-h-0">
+          <iframe
+            src={MAP_EMBED_SRC}
+            className="absolute inset-0 h-full w-full border-0"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Map showing Lasting Impressions Dental Spa in Encino"
           />
         </div>
       </div>
