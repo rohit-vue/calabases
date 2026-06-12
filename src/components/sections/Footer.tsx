@@ -87,14 +87,14 @@ export default function Footer() {
             <div className="col-span-2 space-y-5 lg:col-span-1 lg:pr-4">
               <div className="flex flex-col gap-6">
                 <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#FFFFFF80]">
-                  Encino
+                  Corona
                 </span>
                 <span className="font-fraunces text-[2.2rem] font-semibold leading-none tracking-[-0.03em] text-white sm:text-[24px]">
                   Smiles
                 </span>
               </div>
               <p className="max-w-[295px] text-[14px] leading-[1.55] text-[#FFFFFF99]">
-                Trusted by Encino, Agoura Hills, and Hidden
+                Trusted by Corona, Agoura Hills, and Hidden
                 Hills families since 2010. Cosmetic, general, and
                 emergency dental care — with a focus on
                 modern techniques and transparent pricing.
@@ -147,10 +147,10 @@ export default function Footer() {
       <div className="border-t border-[#FFFFFF1A]">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-4 py-6 text-center text-[#FFFFFF66] sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left md:px-8 lg:px-24">
           <p className="text-[13px] leading-relaxed">
-            © 2026 Encino Smiles · Advanced Dentistry · All Rights Reserved
+            © 2026 Corona Smiles · Advanced Dentistry · All Rights Reserved
           </p>
           <p className="text-[13px] leading-relaxed sm:text-right">
-            Encino, CA · Agoura Hills · Hidden Hills
+            Corona, CA · Agoura Hills · Hidden Hills
           </p>
         </div>
       </div>

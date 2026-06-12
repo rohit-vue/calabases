@@ -33,7 +33,7 @@ export default function PatientReviewsSection() {
             Real stories from <span className="italic font-light text-[#C9A961]">real patients.</span>
           </h2>
           <p className="mt-4 max-w-[650px] text-[15px] leading-[1.58] text-[#FFFFFF99]">
-            What Encino, Hidden Hills, and Agoura Hills patients are saying about Advanced Dentistry.
+            What Corona, Hidden Hills, and Agoura Hills patients are saying about Advanced Dentistry.
           </p>
         </div>
 

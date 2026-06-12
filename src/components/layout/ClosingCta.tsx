@@ -52,7 +52,7 @@ export type ClosingCtaProps = {
 
 const defaultStats: ClosingCtaStat[] = [
   { value: "1,200+", label: "Cosmetic Procedures" },
-  { value: "15+", label: "Years in Encino" },
+  { value: "15+", label: "Years in Corona" },
   { value: "4.9 ★", label: "564 Reviews" },
 ];
 
@@ -65,7 +65,7 @@ export default function ClosingCta({
   primaryCtaLabel = "Book Your Consultation",
   primaryCtaHref = "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V",
   stats = defaultStats,
-  footerText = "© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved",
+  footerText = "© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved",
   mainWrapperClassName = CLOSING_CTA_MAIN_WRAPPER_CLASSES,
   hideEyebrow = false,
   contentWrapperClassName = "",

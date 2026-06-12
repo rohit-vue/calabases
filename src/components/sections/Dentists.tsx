@@ -1,10 +1,18 @@
 // components/sections/Dentists.tsx
+import Image from "next/image";
+
+type Dentist = {
+  name: string;
+  image?: string;
+  icon?: string;
+};
+
 export default function Dentists() {
-  const dentists = [
-    { name: "Dr. Isaac Kashani", icon: "👨‍⚕️" },
-    { name: "Dr. First Last", icon: "👨‍⚕️" },
-    { name: "Dr. First Last", icon: "👩‍⚕️" },
-    { name: "Dr. First Last", icon: "👩‍⚕️" },
+  const dentists: Dentist[] = [
+    { name: "Dr. Isaac Kashani", image: "/images/Dentist 1.JPG" },
+    { name: "Dr. First Last", image: "/images/Dentist 2.JPG" },
+    { name: "Dr. First Last", image: "/images/Dentist 4.JPG" },
+    { name: "Dr. First Last", image: "/images/Dentist 7.JPG" },
   ];
 
   return (
@@ -27,17 +35,31 @@ export default function Dentists() {
              
               <div
                 className="relative h-[260px] w-full overflow-hidden rounded-[12px] sm:h-[268px]"
-                style={{
-                  background:
-                    "linear-gradient(143.7deg, #F5F2EB 0%, #E4E0D6 100%)",
-                }}
+                style={
+                  dentist.image
+                    ? undefined
+                    : {
+                        background:
+                          "linear-gradient(143.7deg, #F5F2EB 0%, #E4E0D6 100%)",
+                      }
+                }
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-[clamp(4rem,18vw,7rem)] leading-none sm:text-[clamp(4.5rem,12vw,6.5rem)]" aria-hidden="true">
-                    {dentist.icon}
-                  </span>
-                  <span className="sr-only">Photo placeholder</span>
-                </div>
+                {dentist.image ? (
+                  <Image
+                    src={dentist.image}
+                    alt={dentist.name}
+                    fill
+                    className="object-cover object-center"
+                    sizes="(min-width: 1024px) 280px, (min-width: 640px) 45vw, 90vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <span className="text-[clamp(4rem,18vw,7rem)] leading-none sm:text-[clamp(4.5rem,12vw,6.5rem)]" aria-hidden="true">
+                      {dentist.icon}
+                    </span>
+                    <span className="sr-only">Photo placeholder</span>
+                  </div>
+                )}
               </div>
             </article>
           ))}

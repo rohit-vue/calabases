@@ -11,7 +11,7 @@ import FaqSection from "@/components/layout/FaqSection";
 
 const invisalignFaqs = [
   {
-    question: "How much does Invisalign cost in Encino?",
+    question: "How much does Invisalign cost in Corona?",
     answer:
       "Most Invisalign cases in our office run between $4,500 and $6,500 depending on complexity. Pricing includes your digital scan, aligners, progress checkups, and initial retainers.",
   },
@@ -96,7 +96,7 @@ export default function InvisalignPage() {
           { value: "15+", label: "Years Experience" },
           { value: "4.9 ★", label: "584 Reviews" },
         ]}
-        footerText="© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved"
+        footerText="© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved"
         headlineColor="#FFFFFF"
         subtitleColor="#FFFFFF"
         titleEmphasisColor="#C9A961"

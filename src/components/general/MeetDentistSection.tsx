@@ -15,7 +15,7 @@ export default function MeetDentistSection() {
             Meet Your Dentist
           </p>
           <h2 className="font-fraunces text-[30px] leading-[0.95] text-[#0A0E1A] tracking-[-0.03em] sm:text-[34px] lg:text-[50px]">
-            Encino&apos; most-reviewed <span className="italic font-light text-[#C9A961]">dental team.</span>
+            Corona&apos;s most-reviewed <span className="italic font-light text-[#C9A961]">dental team.</span>
           </h2>
         </div>
 
@@ -66,7 +66,7 @@ export default function MeetDentistSection() {
                   Dr. Kashani founded Advanced Dentistry in 2010 with a simple belief: patients should
                   understand everything that&apos;s happening to their teeth, and never feel rushed or
                   pressured. That philosophy has built one of the most-reviewed dental practices in
-                  Encino.
+                  Corona.
                 </p>
                 <p>
                   His approach combines modern technology - digital X-rays, CEREC same-day crowns, 3D
