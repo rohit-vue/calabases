@@ -71,7 +71,7 @@ export default function OralSurgeryPage() {
         label="Patient Recovery · Calabasas"
         quote="I put off getting my wisdom teeth out until I was 34. I was terrified. I expected a week of pain and a vicodin prescription. I got IV sedation, woke up with no memory of the procedure, and was back at my desk on Tuesday. I wish I'd done it 10 years ago."
         authorName="Nadia K."
-        authorSubtext="Wisdom teeth removal · Encino"
+        authorSubtext="Wisdom teeth removal · Corona"
         authorInitials="N"
         background="#E6EEEA"  
         accentColor="#5E7267"
@@ -111,7 +111,7 @@ export default function OralSurgeryPage() {
           { value: "4", label: "Sedation Levels" },
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
-        footerText="© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved"
+        footerText="© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved"
         eyebrowColor="#8FA99F"
         background="linear-gradient(116.24deg, #0A0E1A 0%, #1C2333 100%)"
         headlineColor="#FFFFFF"

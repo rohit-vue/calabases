@@ -46,7 +46,7 @@ export default function ImplantsHero() {
           </p>
 
           <p className="mx-auto mt-6 max-w-[500px] font-sans text-[15px] font-normal leading-[1.6] text-[#0A0E1A99] lg:mx-0">
-            95-98% success rate. 20+ year lifespan. 800+ implants placed in Encino since 2010. Planned
+            95-98% success rate. 20+ year lifespan. 800+ implants placed in Corona since 2010. Planned
             with 3D CBCT imaging for sub-millimeter precision.
           </p>
 

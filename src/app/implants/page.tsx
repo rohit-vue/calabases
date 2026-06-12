@@ -11,7 +11,7 @@ import ClosingCta from "@/components/layout/ClosingCta";
 
 const implantsFaqs = [
   {
-    question: "How much do dental implants cost in Encino?",
+    question: "How much do dental implants cost in Corona?",
     answer:
       "Implant pricing depends on complexity, bone condition, and restoration type. Typical ranges are about $3,500-$5,500 for a single tooth implant and $18,000-$30,000 for a full-arch All-on-4 case.",
   },

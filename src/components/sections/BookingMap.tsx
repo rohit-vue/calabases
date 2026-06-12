@@ -26,7 +26,7 @@ export default function BookingMap() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Map showing Lasting Impressions Dental Spa in Encino"
+            title="Map showing Lasting Impressions Dental Spa in Corona"
           />
         </div>
       </div>

@@ -62,7 +62,7 @@ export default function CosmaticPricingSection() {
           </h2>
 
           <p className="mt-5 max-w-[700px] text-[15px] leading-[1.45] text-[#5A6578] font-light sm:text-[16px] md:text-[18px] lg:text-[17px]">
-            Every cosmetic plan is custom - but here&apos;s what most Encino patients invest. All prices
+            Every cosmetic plan is custom - but here&apos;s what most Corona patients invest. All prices
             include consultation, digital smile design, and placement.
           </p>
         </div>

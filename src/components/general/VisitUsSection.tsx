@@ -10,7 +10,7 @@ export default function VisitUsSection() {
             Visit Us
           </p>
           <h2 className="font-fraunces text-[30px] leading-[0.95] text-[#0A0E1A] tracking-[-0.03em] sm:text-[34px] lg:text-[40px]">
-            Find us in <span className="italic font-light text-[#C9A961]">Encino.</span>
+            Find us in <span className="italic font-light text-[#C9A961]">Corona.</span>
           </h2>
 
           <div className="mt-7 divide-y divide-[#ddd8cc] border-y border-[#ddd8cc]">
@@ -45,7 +45,7 @@ export default function VisitUsSection() {
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">We Serve</p>
               <p className="mt-2 text-[15px] font-medium leading-[1.4] text-[#0A0E1A] sm:text-[16px]">
-                Encino, Agoura Hills, Hidden Hills, Woodland Hills
+                Corona, Agoura Hills, Hidden Hills, Woodland Hills
               </p>
             </div>
           </div>

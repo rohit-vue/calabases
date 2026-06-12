@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const stats = [
   { value: "1,200+", label: "Cosmetic Cases" },
-  { value: "15+", label: "Years in Encino" },
+  { value: "15+", label: "Years in Corona" },
   { value: "4.9 ★", label: "564 Reviews" },
 ];
 
@@ -36,7 +36,7 @@ export default function CosmaticHero() {
           </p>
 
           <p className="mx-auto mt-6 max-w-[470px] text-[12px] leading-[1.55] text-[#FFFFFF99] sm:text-[13px] lg:mx-0 lg:text-[13px]">
-            Veneers. Whitening. Smile design. Over 1,200 cosmetic procedures completed in Encino
+            Veneers. Whitening. Smile design. Over 1,200 cosmetic procedures completed in Corona
             since 2010 - with a digital preview of your final smile before we ever begin.
           </p>
 

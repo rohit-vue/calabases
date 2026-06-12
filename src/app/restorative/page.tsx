@@ -73,7 +73,7 @@ export default function RestorativePage() {
         label="PATIENT PORTFOLIO · CALABASAS"
         quote="I had a 20-year-old crown that finally failed. Dr. Kashani replaced it with zirconia — and honestly, it looks better than the real teeth next to it. Three years later, it still feels exactly the same as the day he put it in. He genuinely cares about the craftsmanship. It shows."
         authorName="Thomas R."
-        authorSubtext="Zirconia crown replacement · Encino"
+        authorSubtext="Zirconia crown replacement · Corona"
         authorInitials="T"
         background="#EFE7D3"
         accentColor="#8B5A2B"
@@ -114,7 +114,7 @@ export default function RestorativePage() {
           { value: "5-yr", label: "Warranty Standard" },
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
-        footerText="© 2026 Lasting Impressions Dental Spa · Encino, CA · All Rights Reserved"
+        footerText="© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved"
         eyebrowColor="#B87333"
         headlineColor="#ffffff"
         subtitleColor="#FFFFFF"
