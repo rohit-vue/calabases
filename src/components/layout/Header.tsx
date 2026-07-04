@@ -47,7 +47,7 @@ export default function Header() {
     : isConsultationPage
       ? "Book Consultation"
       : "Book Appointment";
-  const headerCtaHref = isEmergencyPage ? "tel:+18185550100" : "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V";
+  const headerCtaHref = isEmergencyPage ? "tel:+18185550100" : "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D";
 
   useEffect(() => {
     if (typeof window === "undefined") return;

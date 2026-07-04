@@ -42,14 +42,14 @@ export default function RestorativeHero() {
 
             <div className="mt-6 flex w-full flex-col gap-2.5 sm:mt-8 sm:gap-3 lg:flex-row lg:flex-wrap lg:items-center">
               <Link
-                href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
                 target="_blank"
                 className="flex h-[46px] w-full items-center justify-center rounded-[100px] border-2 border-[#000000] bg-[#0A0E1A] px-6 text-[13px] font-semibold tracking-[0.02em] text-white transition hover:opacity-90 sm:px-7 sm:text-[14px] lg:inline-flex lg:w-auto"
               >
                 Book a Consultation <span className="ml-2">→</span>
               </Link>
               <Link
-                href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
                 target="_blank"
                 className="flex h-[46px] w-full items-center justify-center rounded-[100px] border border-[#0A0E1A] bg-transparent px-6 text-[13px] font-semibold tracking-[0.02em] text-[#0A0E1A] transition hover:bg-[#F6F2E6] sm:px-7 lg:inline-flex lg:w-auto"
               >

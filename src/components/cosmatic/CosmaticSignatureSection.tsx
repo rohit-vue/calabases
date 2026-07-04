@@ -132,7 +132,7 @@ export default function CosmaticSignatureSection() {
 
                 <div className="mt-6 flex justify-center lg:justify-start">
                   <Link
-                    href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                    href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
                     target="_blank"
                     className="inline-flex items-center gap-2 text-[14px] font-semibold tracking-[0.05em] text-[#C9A961] transition hover:text-[#dfc28b]"
                   >

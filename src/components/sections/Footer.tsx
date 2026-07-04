@@ -119,7 +119,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                    href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
                     target="_blank"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >

@@ -42,14 +42,14 @@ export default function CosmaticHero() {
 
           <div className="mt-8 flex w-full flex-col gap-3 lg:flex-row lg:flex-wrap">
             <Link
-              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
               target="_blank"
               className="flex h-[42px] w-full items-center justify-center rounded-[100px] border-2 border-black bg-[#C9A961] px-6 text-[14px] font-semibold tracking-[0.02em] text-[#0A0E1A] transition hover:brightness-95 lg:inline-flex lg:w-auto"
             >
               Book a Smile Consultation <span className="ml-2">→</span>
             </Link>
             <Link
-              href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+              href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
               target="_blank"
               className="flex h-[42px] w-full items-center justify-center rounded-[100px] border border-[#FFFFFF4D] px-6 text-[14px] font-semibold tracking-[0.02em] text-[#DEE3EC] transition hover:bg-white/5 lg:inline-flex lg:w-auto"
             >

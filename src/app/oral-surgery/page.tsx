@@ -104,7 +104,7 @@ export default function OralSurgeryPage() {
         titleEnd=""
         subtitle="Book a consultation. We'll review your imaging, walk through your sedation options, and give you transparent pricing before you commit."
         primaryCtaLabel="Book Your Consultation"
-        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
         stats={[
           { value: "500+", label: "Procedures Yearly" },
           { value: "95%", label: "Comfort Rating" },

@@ -13,7 +13,7 @@ export default function BookingMap() {
             Book Online
             <br /> Now
           </h2>
-          <a href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className="rounded-full border border-gray-200 bg-brand-white px-8 py-3 text-[14px] font-semibold text-[#0A0E1A] shadow-sm transition hover:border-gray-300">
+          <a href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D" target="_blank" className="rounded-full border border-gray-200 bg-brand-white px-8 py-3 text-[14px] font-semibold text-[#0A0E1A] shadow-sm transition hover:border-gray-300">
             Book Appointment
           </a>
         </div>
