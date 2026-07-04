@@ -50,7 +50,7 @@ export default function Hero() {
                 Same-week appointments. Modern care. No pressure.
               </p>
             </div>
-            <a href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className="whitespace-nowrap rounded-full bg-white px-7 py-3 text-[14px] font-semibold text-[#0A0E1A]  transition hover:bg-white/90">
+            <a href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D" target="_blank" className="whitespace-nowrap rounded-full bg-white px-7 py-3 text-[14px] font-semibold text-[#0A0E1A]  transition hover:bg-white/90">
               Book Appointment
             </a>
           </div>
@@ -98,7 +98,7 @@ export default function Hero() {
                   <li>Unlimited X-Rays</li>
                   <li>Unlimited Exams</li>
                 </ul>
-                <a href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V" target="_blank" className="shrink-0 rounded-[100px] bg-white px-3 mb-4 mr-3.5 py-1.5 text-[10px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 md:px-3.5 md:py-2 md:text-[11px]">
+                <a href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D" target="_blank" className="shrink-0 rounded-[100px] bg-white px-3 mb-4 mr-3.5 py-1.5 text-[10px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 md:px-3.5 md:py-2 md:text-[11px]">
                   Join Now
                 </a>
               </div>

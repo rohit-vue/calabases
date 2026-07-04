@@ -5,7 +5,7 @@ const ctaCards = [
     icon: "📅",
     title: "Book Online",
     subtitle: "See us within the week.",
-    href: "https://member.clerri.com/enrollment/accounts/create/?slug=TE3V",
+    href: "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D",
   },
   {
     icon: "📞",

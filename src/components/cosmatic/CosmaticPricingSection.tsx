@@ -115,7 +115,7 @@ export default function CosmaticPricingSection() {
               </div>
 
               <Link
-                href="https://member.clerri.com/enrollment/accounts/create/?slug=TE3V"
+                href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
                 target="_blank"
                 className={`mt-7 flex h-[42px] w-full items-center justify-center rounded-full text-[12px] font-semibold transition ${plan.featured ? "bg-[#C9A961] text-[#0A0E1A] hover:brightness-95" : "bg-[#0A0E1A] text-white hover:opacity-90"}`}
               >
