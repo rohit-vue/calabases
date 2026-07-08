@@ -1,5 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+const MAP_PLACE_URL =
+  "https://www.google.com/maps/place/800+Magnolia+Ave+%23103,+Corona,+CA+92879/@33.85904,-117.55247,17z";
+const MAP_EMBED_SRC =
+  "https://www.google.com/maps?q=800+Magnolia+Ave+%23103,+Corona,+CA+92879&hl=en&z=16&output=embed";
 
 export default function VisitUsSection() {
   return (
@@ -17,11 +19,11 @@ export default function VisitUsSection() {
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">Address</p>
               <a
-                href="https://www.google.com/maps/place/Lasting+Impressions+Dental+Spa+%7C+Dentist+in+Encino/@34.156681,-118.4859504,17z/data=!3m1!4b1!4m6!3m5!1s0x80c297899002478b:0x564fb02f1c02d0c3!8m2!3d34.156681!4d-118.4833755!16s%2Fg%2F1ty74j83?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D"
+                href={MAP_PLACE_URL}
                 target="_blank"
                 className="mt-2 block text-[15px] font-medium leading-[1.4] text-[#0A0E1A] transition-colors hover:text-[#C9A961] sm:text-[16px]"
               >
-                16055 Ventura Blvd #510, Encino, CA 91436, United States
+                800 Magnolia Ave #103, Corona, CA 92879
               </a>
             </div>
 
@@ -31,7 +33,7 @@ export default function VisitUsSection() {
                 href="tel:+18185550100"
                 className="mt-2 block text-[15px] font-medium leading-[1.4] text-[#0A0E1A] transition-colors hover:text-[#C9A961] sm:text-[16px]"
               >
-                (818) 555-0100
+                (951) 736-1822
               </a>
             </div>
 
@@ -61,12 +63,13 @@ export default function VisitUsSection() {
 
         <div className="relative h-full min-h-[260px] overflow-hidden rounded-[16px] border border-[#E4E0D6] bg-[linear-gradient(126.84deg,#E8F7F6_0%,#D4F0EE_100%)] shadow-[0px_4px_65.3px_0px_#00000040] sm:min-h-[320px] lg:min-h-0">
           <div className="relative aspect-[1.32] w-full lg:h-full lg:aspect-auto">
-            <Image
-              src="/images/map.png"
-              alt="Map showing Calabasas Smiles location"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 48vw, 100vw"
+            <iframe
+              src={MAP_EMBED_SRC}
+              className="absolute inset-0 h-full w-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Map showing Corona Advanced Dentistry at 800 Magnolia Ave, Corona, CA"
             />
           </div>
         </div>

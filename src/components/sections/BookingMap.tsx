@@ -1,7 +1,7 @@
 // components/sections/BookingMap.tsx
 
 const MAP_EMBED_SRC =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.595830622224!2d-118.48337549999998!3d34.156681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c297899002478b%3A0x564fb02f1c02d0c3!2sLasting%20Impressions%20Dental%20Spa%20%7C%20Dentist%20in%20Encino!5e0!3m2!1sen!2sin!4v1778742186882!5m2!1sen!2sin";
+  "https://www.google.com/maps?q=800+Magnolia+Ave+%23103,+Corona,+CA+92879&hl=en&z=16&output=embed";
 
 export default function BookingMap() {
   return (
@@ -26,7 +26,7 @@ export default function BookingMap() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Map showing Lasting Impressions Dental Spa in Corona"
+            title="Map showing Corona Advanced Dentistry at 800 Magnolia Ave, Corona, CA"
           />
         </div>
       </div>

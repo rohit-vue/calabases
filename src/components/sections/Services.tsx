@@ -6,14 +6,14 @@ export default function Services() {
   const services = [
     {
       title: "General Dentistry",
-      desc: "Deep Cleaning, Fillings etc",
+      desc: "Deep Cleaning, Fillings, etc.",
       image: "/images/general-dentistry.png",
       href: "/general",
       variant: "large" as const,
     },
     {
       title: "Cosmetic Dentistry",
-      desc: "Veneers, Teeth Whitening etc.",
+      desc: "Veneers, Tooth Whitening, etc.",
       image: "/images/cosmetic-dentistry.png",
       href: "/cosmetic",
       variant: "large" as const,
@@ -27,14 +27,13 @@ export default function Services() {
     },
     { title: "Dental Implants", image: "/images/dental-implants.jpg", href: "/implants", variant: "small" as const },
     { title: "Invisalign", image: "/images/invisalign-aligner.jpg", href: "/invisalign", variant: "small" as const },
-    { title: "TMJ & Specialty", image: "/images/tmj-dentistry.png", href: "/general", variant: "small" as const },
-    { title: "Pediatric Dentistry", image: "/images/pediatric-dentistry.png", href: "/general", variant: "small" as const },
+    { title: "Pediatric Dentistry", image: "/images/pediatric-dentistry.png", href: "/general", variant: "large" as const },
     {
-      title: "Oral Surgery",
-      desc: "Extractions, Root Canals",
+      title: "Wisdom Teeth Extractions",
+      desc: "Extractions, Sedation",
       image: "/images/oral-surgery.png",
       href: "/oral-surgery",
-      variant: "small" as const,
+      variant: "large" as const,
     },
   ];
 
@@ -63,9 +62,7 @@ export default function Services() {
                 ? "object-contain object-right-bottom scale-[0.86]"
                 : service.title === "Restorative"
                   ? "object-cover object-right-bottom scale-[1.02] translate-y-[18%]"
-                  : service.title === "TMJ & Specialty"
-                    ? "object-contain object-right-bottom scale-[0.95]"
-                    : service.title === "Dental Implants" || service.title === "Oral Surgery"
+                  : service.title === "Dental Implants" || service.title === "Oral Surgery"
                       ? "object-contain object-right-bottom scale-[0.96]"
                       : "object-contain object-bottom object-right scale-[0.94]";
             const textWidth = isLarge ? "max-w-[56%] sm:max-w-[54%]" : "max-w-[58%] sm:max-w-[56%]";
@@ -87,7 +84,7 @@ export default function Services() {
                   </h3>
                   {service.desc ? (
                     <p className={`leading-relaxed text-[#5A6578] ${descSize}`}>
-                      ({service.desc})
+                      {service.desc}
                     </p>
                   ) : null}
                 </div>

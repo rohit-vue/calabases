@@ -34,7 +34,7 @@ const aboutHrefByLabel: Record<(typeof aboutLinks)[number], string> = {
   "Meet the Dentists": "/#meet-the-dentists",
   "Gleam Membership": "https://gleam-black.vercel.app/",
   "Insurance Accepted": "#",
-  "Patient Reviews": "https://www.google.com/maps/place/Lasting+Impressions+Dental+Spa+%7C+Dentist+in+Encino/@34.156681,-118.4859504,17z/data=!3m1!4b1!4m6!3m5!1s0x80c297899002478b:0x564fb02f1c02d0c3!8m2!3d34.156681!4d-118.4833755!16s%2Fg%2F1ty74j83?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D",
+  "Patient Reviews": "https://www.google.com/maps/place/800+Magnolia+Ave+%23103,+Corona,+CA+92879/@33.85904,-117.55247,17z",
 };
 
 function LinkColumn({ title, links }: { title: string; links: readonly string[] }) {
@@ -90,14 +90,13 @@ export default function Footer() {
                   Corona
                 </span>
                 <span className="font-fraunces text-[2.2rem] font-semibold leading-none tracking-[-0.03em] text-white sm:text-[24px]">
-                  Smiles
+                Advanced Dentistry
                 </span>
               </div>
               <p className="max-w-[295px] text-[14px] leading-[1.55] text-[#FFFFFF99]">
-                Trusted by Corona, Agoura Hills, and Hidden
-                Hills families since 2010. Cosmetic, general, and
-                emergency dental care — with a focus on
-                modern techniques and transparent pricing.
+              Trusted by Corona families with their general, cosmetic and
+              emergency dental care – with a focus on modern technology, 
+              techniques, and transparent pricing.
               </p>
             </div>
 
@@ -114,7 +113,7 @@ export default function Footer() {
                     href="tel:+18185550100"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
-                    (818) 555-0100
+                    (951) 736-1822
                   </Link>
                 </li>
                 <li>
@@ -134,7 +133,6 @@ export default function Footer() {
                     Dental Emergency
                   </Link>
                 </li>
-                <li className="h-1" aria-hidden="true" />
                 <li>
                   <span className="text-[14px] leading-snug text-[#FFFFFFB2]">Mon-Fri 8am-6pm <br />Sat 9am-3pm</span>
                 </li>
@@ -147,7 +145,7 @@ export default function Footer() {
       <div className="border-t border-[#FFFFFF1A]">
         <div className="mx-auto flex max-w-[1180px] flex-col items-center gap-4 px-4 py-6 text-center text-[#FFFFFF66] sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left md:px-8 lg:px-24">
           <p className="text-[13px] leading-relaxed">
-            © 2026 Corona Smiles · Advanced Dentistry · All Rights Reserved
+            © 2026 Corona Advanced Dentistry · All Rights Reserved
           </p>
           <p className="text-[13px] leading-relaxed sm:text-right">
             Corona, CA · Agoura Hills · Hidden Hills

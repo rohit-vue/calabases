@@ -3,13 +3,8 @@ import DentistsCarousel from "./DentistsCarousel";
 
 export default function Dentists() {
   const dentists = [
-    { name: "Dr. Isaac Kashani", image: "/images/Dentist 1.JPG" },
-    { name: "Dr. First Last", image: "/images/Dentist 2.JPG" },
-    { name: "Dr. First Last", image: "/images/Dentist 3.JPG" },
-    { name: "Dr. First Last", image: "/images/Dentist 4.JPG" },
-    { name: "Dr. First Last", image: "/images/Dentist 5.JPG" },
-    { name: "Dr. First Last", image: "/images/Dentist 6.JPG" },
-    { name: "Dr. First Last", image: "/images/Dentist 7.JPG" },
+    { name: "Dr. Isaac Kashani", image: "/images/Dentist 1.JPG", imageClass: "object-center" },
+    { name: "Dr. Chase Warner", image: "/images/Dentist 3.JPG", imageClass: "object-center" },
   ];
 
   return (
