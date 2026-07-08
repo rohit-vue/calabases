@@ -61,7 +61,7 @@ export default function EmergencyHero() {
                 <p className="min-w-0 flex-1 font-fraunces leading-[1.05] tracking-tight text-white max-sm:text-[12px] sm:text-[26px] lg:text-[30px]">
                   <span className="block sm:hidden">(818) 555-</span>
                   <span className="block sm:hidden">0100</span>
-                  <span className="hidden sm:inline">(818) 555-0100</span>
+                  <span className="hidden sm:inline">(951) 736-1822</span>
                 </p>
               </div>
             </Link>

@@ -1,6 +1,7 @@
 // components/layout/Header.tsx
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -116,20 +117,22 @@ export default function Header() {
               href="tel:+18185550100"
               className="inline-flex h-8 items-center rounded-[100px] bg-white px-4 text-[12px] font-bold text-[#E63946] transition hover:opacity-90"
             >
-              <span className="mr-1.5">📞</span> Call (818) 555-0100
+              <span className="mr-1.5">📞</span> Call (951) 736-1822
             </Link>
           </div>
         </div>
       ) : null}
-      <div className="px-4 py-4 sm:px-6 sm:py-5 md:px-8 lg:px-24 lg:py-6">
+      <div className="px-4 py-2 sm:px-6 sm:py-5 md:px-8 lg:px-24 lg:py-2">
         <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between">
-          <Link href="/" className="flex flex-col  leading-none">
-            <span className="mb-1 text-center  text-[9px] font-inter uppercase tracking-[0.24em] text-[#5A6578] sm:text-[10px]">
-              Lasting
-            </span>
-            <span className="font-fraunces text-[20px] uppercase font-semibold tracking-[-0.01em] text-[#0A0E1A] sm:text-[22px]">
-              Impressions
-            </span>
+          <Link href="/" className="shrink-0">
+            <Image
+              src="/images/corona-logo.png"
+              alt="Corona Advanced Dentistry"
+              width={280}
+              height={82}
+              className="h-11 w-auto sm:h-14 md:h-14 lg:h-[82px]"
+              priority
+            />
           </Link>
 
           <div className="hidden items-center justify-end gap-2 lg:flex xl:gap-4">

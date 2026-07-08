@@ -83,7 +83,7 @@ function ServiceCard({
             </p>
 
             <p className="mt-2 font-fraunces text-[26px] leading-none tracking-[-0.03em] text-[#FFFFFF]">
-              (818) 555-0100
+              (951) 736-1822
             </p>
           </a>
         </div>
