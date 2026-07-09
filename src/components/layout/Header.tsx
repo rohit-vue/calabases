@@ -48,7 +48,7 @@ export default function Header() {
     : isConsultationPage
       ? "Book Consultation"
       : "Book Appointment";
-  const headerCtaHref = isEmergencyPage ? "tel:+18185550100" : "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D";
+  const headerCtaHref = isEmergencyPage ? "tel:951-736-1822" : "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -114,7 +114,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="tel:+18185550100"
+              href="tel:951-736-1822"
               className="inline-flex h-8 items-center rounded-[100px] bg-white px-4 text-[12px] font-bold text-[#E63946] transition hover:opacity-90"
             >
               <span className="mr-1.5">📞</span> Call (951) 736-1822

@@ -75,7 +75,7 @@ function ServiceCard({
       {emergency ? (
         <div className="mt-auto pt-6">
           <a
-            href="tel:+18185550100"
+            href="tel:951-736-1822"
             className="block w-full rounded-[12px] bg-[#C9A961] px-4 py-4 text-center"
           >
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#FFFFFF]">

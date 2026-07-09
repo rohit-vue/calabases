@@ -35,7 +35,7 @@ export default function EmergencyErWarningSection() {
           </div>
 
           <Link
-            href="tel:+18185550100"
+            href="tel:951-736-1822"
             className="inline-flex h-[52px] w-full shrink-0 items-center justify-center rounded-full bg-[#E63D4A] px-8 text-[16px] font-semibold text-white transition hover:opacity-90 lg:w-auto"
           >
             <Image

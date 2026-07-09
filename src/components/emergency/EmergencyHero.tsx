@@ -42,7 +42,7 @@ export default function EmergencyHero() {
           {/* Mobile: two CTAs side-by-side; each card = label + row (icon left, text right). sm+/lg: unchanged. */}
           <div className="mt-8 flex w-full min-w-0 flex-row items-stretch gap-2 sm:max-w-[620px] sm:gap-3">
             <Link
-              href="tel:+18185550100"
+              href="tel:951-736-1822"
               className="flex min-h-0 min-w-0 flex-1 flex-col gap-2 rounded-[24px] bg-[#E73D4A] px-3 py-4 text-left text-white transition hover:opacity-95 sm:gap-3 sm:px-6 sm:py-5"
             >
               <p className="max-sm:text-[9px] max-sm:leading-snug text-[11px] font-semibold uppercase tracking-[0.18em] text-white/90">
@@ -122,7 +122,7 @@ export default function EmergencyHero() {
           </ul>
 
           <Link
-            href="tel:+18185550100"
+            href="tel:951-736-1822"
             className="mt-5 inline-flex h-[52px] w-full items-center justify-center rounded-full bg-[#E73D4A] font-semibold text-white transition hover:opacity-90"
           >
             Call Us Now <span className="ml-2 lg:text-[10px]">→</span>

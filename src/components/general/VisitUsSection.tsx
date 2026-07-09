@@ -30,7 +30,7 @@ export default function VisitUsSection() {
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">Phone</p>
               <a
-                href="tel:+18185550100"
+                href="tel:951-736-1822"
                 className="mt-2 block text-[15px] font-medium leading-[1.4] text-[#0A0E1A] transition-colors hover:text-[#C9A961] sm:text-[16px]"
               >
                 (951) 736-1822

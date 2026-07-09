@@ -110,7 +110,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="tel:+18185550100"
+                    href="tel:951-736-1822"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     (951) 736-1822
@@ -127,7 +127,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="tel:+18185550100"
+                    href="tel:951-736-1822"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >
                     Dental Emergency
