@@ -22,7 +22,7 @@ export default function EmergencyFinalCtaSection() {
           </p>
 
           <Link
-            href="tel:+18185550100"
+            href="tel:951-736-1822"
             className="mt-8 inline-flex h-[52px] items-center rounded-full bg-white px-6 font-fraunces text-[22px] text-[#E0354A] transition hover:opacity-95 sm:h-[62px] sm:px-8 sm:text-[30px] lg:h-[72px] lg:px-12 lg:text-[36px]"
           >
             <span className="mr-3 text-[26px] text-[#6D7480]">📞</span>
