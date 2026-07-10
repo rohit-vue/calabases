@@ -134,7 +134,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <span className="text-[14px] leading-snug text-[#FFFFFFB2]">Mon-Fri 8am-6pm <br />Sat 9am-3pm</span>
+                  <span className="text-[14px] leading-snug text-[#FFFFFFB2]">Mon-Fri 8am - 5pm <br />Sat 8am - 3pm</span>
                 </li>
               </ul>
             </div>
@@ -148,7 +148,7 @@ export default function Footer() {
             © 2026 Corona Advanced Dentistry · All Rights Reserved
           </p>
           <p className="text-[13px] leading-relaxed sm:text-right">
-            Corona, CA · Agoura Hills · Hidden Hills
+            Corona, CA
           </p>
         </div>
       </div>

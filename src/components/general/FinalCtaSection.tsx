@@ -54,7 +54,7 @@ export default function FinalCtaSection() {
 
       <div className="bg-[#050d22] border-t border-solid px-4 py-5 sm:px-8 sm:py-6 lg:px-24 lg:py-8">
         <p className="mx-auto w-full max-w-[1180px] text-center text-[11px] text-[#FFFFFF80] leading-snug sm:text-[12px] lg:text-[13px]">
-          © 2026 Lasting Impressions Dental Spa · Calabasas, CA · All Rights Reserved
+          © 2026 Corona Advanced Dentistry · All Rights Reserved
         </p>
       </div>
     </section>

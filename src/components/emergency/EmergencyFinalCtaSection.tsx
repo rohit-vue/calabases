@@ -29,13 +29,13 @@ export default function EmergencyFinalCtaSection() {
             (951) 736-1822
           </Link>
 
-          <p className="mt-5 text-[14px] text-[#FFD2D8]">Mon-Fri 8am-6pm · Sat 9am-3pm · After-hours emergency line available</p>
+          <p className="mt-5 text-[14px] text-[#FFD2D8]">Mon-Fri 8am-5pm · Sat 8am-3pm · After-hours emergency line available</p>
         </div>
       </div>
 
       <div className="border-t border-[#102036] bg-[#030A1B] px-4 py-4 sm:px-8 lg:px-20">
         <p className="mx-auto w-full max-w-[1240px] text-center text-[11px] text-[#6B7588]">
-          © 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved
+          © 2026 Corona Advanced Dentistry · All Rights Reserved
         </p>
       </div>
     </section>

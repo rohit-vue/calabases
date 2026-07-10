@@ -114,7 +114,7 @@ export default function RestorativePage() {
           { value: "5-yr", label: "Warranty Standard" },
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
-        footerText="© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved"
+        footerText="© 2026 Corona Advanced Dentistry · All Rights Reserved"
         eyebrowColor="#B87333"
         headlineColor="#ffffff"
         subtitleColor="#FFFFFF"

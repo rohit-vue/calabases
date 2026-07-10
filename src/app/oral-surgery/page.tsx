@@ -111,7 +111,7 @@ export default function OralSurgeryPage() {
           { value: "4", label: "Sedation Levels" },
           { value: "4.9 ★", label: "564 Reviews" },
         ]}
-        footerText="© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved"
+        footerText="© 2026 Corona Advanced Dentistry · All Rights Reserved"
         eyebrowColor="#8FA99F"
         background="linear-gradient(116.24deg, #0A0E1A 0%, #1C2333 100%)"
         headlineColor="#FFFFFF"
