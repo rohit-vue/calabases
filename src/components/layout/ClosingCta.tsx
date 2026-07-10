@@ -65,7 +65,7 @@ export default function ClosingCta({
   primaryCtaLabel = "Book Your Consultation",
   primaryCtaHref = "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D",
   stats = defaultStats,
-  footerText = "© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved",
+  footerText = "© 2026 Corona Advanced Dentistry · All Rights Reserved",
   mainWrapperClassName = CLOSING_CTA_MAIN_WRAPPER_CLASSES,
   hideEyebrow = false,
   contentWrapperClassName = "",

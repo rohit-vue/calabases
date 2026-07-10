@@ -96,7 +96,7 @@ export default function InvisalignPage() {
           { value: "15+", label: "Years Experience" },
           { value: "4.9 ★", label: "584 Reviews" },
         ]}
-        footerText="© 2026 Lasting Impressions Dental Spa · Corona, CA · All Rights Reserved"
+        footerText="© 2026 Corona Advanced Dentistry · All Rights Reserved"
         headlineColor="#FFFFFF"
         subtitleColor="#FFFFFF"
         titleEmphasisColor="#C9A961"

@@ -40,14 +40,14 @@ export default function VisitUsSection() {
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">Hours</p>
               <p className="mt-2 text-[15px] font-medium leading-[1.4] text-[#0A0E1A] sm:text-[16px]">
-                Mon-Fri 8am-6pm · Sat 9am-3pm
+                Mon-Fri 8am - 5pm · Sat 8am - 3pm
               </p>
             </div>
 
             <div className="py-4">
               <p className="text-[9px] font-normal uppercase tracking-[0.22em] text-[#5A6578]">We Serve</p>
               <p className="mt-2 text-[15px] font-medium leading-[1.4] text-[#0A0E1A] sm:text-[16px]">
-                Corona, Agoura Hills, Hidden Hills, Woodland Hills
+                Corona, CA
               </p>
             </div>
           </div>
