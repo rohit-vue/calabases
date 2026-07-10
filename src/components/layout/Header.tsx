@@ -143,7 +143,7 @@ export default function Header() {
                 </Link>
               ))}
 
-              <Link href="https://gleam-black.vercel.app/" target="_blank" className={NAV_LINK_CLASS}>
+              <Link href="https://www.gleam-health.com/" target="_blank" className={NAV_LINK_CLASS}>
                 Gleam Membership
               </Link>
 

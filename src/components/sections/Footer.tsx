@@ -32,7 +32,7 @@ const aboutLinks = [
 
 const aboutHrefByLabel: Record<(typeof aboutLinks)[number], string> = {
   "Meet the Dentists": "/#meet-the-dentists",
-  "Gleam Membership": "https://gleam-black.vercel.app/",
+  "Gleam Membership": "https://www.gleam-health.com/",
   "Insurance Accepted": "#",
   "Patient Reviews": "https://www.google.com/maps/place/800+Magnolia+Ave+%23103,+Corona,+CA+92879/@33.85904,-117.55247,17z",
 };
