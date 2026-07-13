@@ -63,7 +63,7 @@ export default function ClosingCta({
   titleEnd = "not accidental.",
   subtitle = "Book a complimentary smile consultation. See your digital preview. Decide if it's the right year.",
   primaryCtaLabel = "Book Your Consultation",
-  primaryCtaHref = "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D",
+  primaryCtaHref = "https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035",
   stats = defaultStats,
   footerText = "© 2026 Corona Advanced Dentistry · All Rights Reserved",
   mainWrapperClassName = CLOSING_CTA_MAIN_WRAPPER_CLASSES,

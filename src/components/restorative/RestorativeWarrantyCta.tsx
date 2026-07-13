@@ -44,7 +44,7 @@ export default function RestorativeWarrantyCta() {
         </div>
 
         <Link
-          href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+          href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
           target="_blank"
           className="inline-flex h-[48px] w-full shrink-0 items-center justify-center rounded-[100px] bg-[#c08240] px-8 text-[14px] font-bold text-black transition hover:brightness-95 lg:inline-flex lg:w-auto lg:bg-[#B87333] lg:text-[#0A0E1A]"
         >

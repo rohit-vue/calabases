@@ -53,7 +53,7 @@ export default function VisitUsSection() {
           </div>
 
           <a
-            href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+            href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
             target="_blank"
             className="mt-6 inline-flex h-[48px] items-center rounded-full bg-[#070f26] px-8 text-[14px] font-medium text-white transition hover:opacity-90"
           >

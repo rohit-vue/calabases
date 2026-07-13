@@ -107,7 +107,7 @@ export default function RestorativePage() {
         titleEnd=""
         subtitle="Book a consultation. See your teeth on screen, understand your options, and get transparent pricing before you commit to anything."
         primaryCtaLabel="Book Your Consultation"
-        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+        primaryCtaHref="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
         stats={[
           { value: "3,000+", label: "Restorations Placed" },
           { value: "<2%", label: "5-Year Failure Rate" },

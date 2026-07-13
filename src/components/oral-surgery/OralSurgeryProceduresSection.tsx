@@ -272,7 +272,7 @@ function ProcedureText({ item }: { item: ProcedureItem }) {
         </div>
       </div>
 
-      <Link href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+      <Link href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
             target="_blank" className="mt-6 inline-flex items-center gap-2 text-[13px] font-semibold tracking-[0.7px] text-[#0A0E1A] sm:text-[14px]">
         {item.cta} <span className="font-bold">→</span>
       </Link>

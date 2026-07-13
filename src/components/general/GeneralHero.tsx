@@ -58,7 +58,7 @@ export default function GeneralHero() {
 
             <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <Link
-                href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+                href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
                 target="_blank"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-[#0A0E1A] px-6 py-3 text-[12px] font-semibold text-white transition hover:opacity-90 sm:w-auto sm:justify-start"
               >

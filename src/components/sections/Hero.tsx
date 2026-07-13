@@ -60,7 +60,7 @@ export default function Hero() {
               </p>
             </div>
             <a
-              href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+              href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
               target="_blank"
               className="inline-flex w-full items-center justify-center whitespace-nowrap rounded-full bg-white px-7 py-3 text-center text-[13px] font-semibold text-[#0A0E1A] transition hover:bg-white/90 sm:w-auto sm:text-[14px]"
             >
@@ -111,7 +111,7 @@ export default function Hero() {
                   <li>Unlimited Exams</li>
                 </ul>
                 <a
-                  href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+                  href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
                   target="_blank"
                   className="mb-1 mr-1 shrink-0 rounded-[100px] bg-white px-2.5 py-1 text-[9px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 sm:mb-4 sm:mr-3.5 sm:px-3 sm:py-1.5 sm:text-[10px] md:px-3.5 md:py-2 md:text-[11px]"
                 >
