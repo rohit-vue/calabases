@@ -194,6 +194,9 @@ export default function Header() {
 
             <Link
               href={headerCtaHref}
+              {...(!isEmergencyPage
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
               className={`flex h-[40px] items-center justify-center rounded-[100px] px-6 transition hover:opacity-90 xl:min-w-[186px] xl:px-4 ${
                 isEmergencyPage
                   ? "bg-[#E63946] font-inter text-[13px] font-bold text-white"
@@ -274,6 +277,9 @@ export default function Header() {
             </nav>
             <Link
               href={headerCtaHref}
+              {...(!isEmergencyPage
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
               className={`mt-5 flex h-[44px] w-full items-center justify-center rounded-[100px] px-6 transition hover:opacity-90 ${
                 isEmergencyPage
                   ? "bg-[#E63946] font-inter text-[13px] font-bold text-white"
