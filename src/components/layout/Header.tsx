@@ -48,7 +48,7 @@ export default function Header() {
     : isConsultationPage
       ? "Book Consultation"
       : "Book Appointment";
-  const headerCtaHref = isEmergencyPage ? "tel:951-736-1822" : "https://member.clerri.com/enrollment/accounts/create/?slug=QN5D";
+  const headerCtaHref = isEmergencyPage ? "tel:951-736-1822" : "https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035";
 
   useEffect(() => {
     if (typeof window === "undefined") return;

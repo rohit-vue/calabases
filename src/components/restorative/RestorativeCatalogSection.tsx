@@ -167,7 +167,7 @@ function CatalogText({
       </div>
 
       <a
-        href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+        href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 inline-flex w-full items-center justify-center gap-2 font-fraunces text-[16px] font-semibold tracking-[0.03em] text-[#E8D5B7] transition hover:opacity-85 sm:mt-5 sm:text-[18px] md:text-[21px] lg:mt-5 lg:inline-flex lg:w-auto lg:text-[14px]"

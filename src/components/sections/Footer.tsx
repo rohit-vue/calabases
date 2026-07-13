@@ -118,7 +118,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+                    href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
                     target="_blank"
                     className="text-[14px] leading-snug text-[#FFFFFFB2] transition-colors duration-200 hover:text-white"
                   >

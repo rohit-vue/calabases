@@ -58,7 +58,7 @@ export default function CostOfWaitingSection() {
         </div>
 
         <Link
-          href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+          href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
           target="_blank"
           className="mt-8 inline-flex h-[46px] items-center rounded-[100px] bg-[#C9A961] px-8 text-[12px] font-semibold text-white transition hover:brightness-95"
         >

@@ -93,7 +93,7 @@ export default function FirstVisitTimelineSection() {
             </div>
 
             <Link
-              href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+              href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
               target="_blank"
               className="inline-flex h-[48px] shrink-0 items-center rounded-[100px] bg-[#C9A961] px-8 text-[13px] font-medium text-white transition hover:brightness-95"
             >

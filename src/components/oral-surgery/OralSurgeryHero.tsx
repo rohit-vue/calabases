@@ -144,14 +144,14 @@ export default function OralSurgeryHero() {
 
             <div className="mt-9 flex w-full flex-col gap-3 sm:gap-4 lg:flex-row lg:flex-wrap lg:items-center">
               <Link
-                href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+                href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
                 target="_blank"
                 className="flex h-[52px] w-full items-center justify-center rounded-[100px] border-2 border-[#000000] bg-[#0A0E1A] px-6 text-[13px] font-semibold tracking-[-0.28px] text-white transition hover:opacity-95 lg:inline-flex lg:h-[46px] lg:w-auto lg:px-[30px] lg:text-[14px]"
               >
                 Book a Consultation <span className="ml-2 font-bold">→</span>
               </Link>
               <Link
-                href="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+                href="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
                 target="_blank"
                 className="flex h-[52px] w-full items-center justify-center rounded-[100px] border border-[#E4E0D6] bg-white px-6 text-[13px] font-semibold tracking-[-0.28px] text-[#0A0E1A] transition hover:bg-[#fafafa] lg:inline-flex lg:h-[46px] lg:w-auto lg:px-[29px] lg:text-[14px]"
               >

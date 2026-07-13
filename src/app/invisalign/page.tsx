@@ -89,7 +89,7 @@ export default function InvisalignPage() {
         titleEnd=""
         subtitle="See your new smile in 3D before you commit. Book a complimentary iTero scan and we'll show you exactly what Invisalign can do for you."
         primaryCtaLabel="Book Your Free Scan"
-        primaryCtaHref="https://member.clerri.com/enrollment/accounts/create/?slug=QN5D"
+        primaryCtaHref="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
         stats={[
           { value: "400+", label: "Cases Completed" },
           { value: "12-18mo", label: "Average Treatment" },
