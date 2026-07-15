@@ -10,6 +10,7 @@ const fraunces = Fraunces({ subsets: ["latin"], display: "swap" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://coronaadvanceddentistry.com"),
   title: "Corona Advanced Dentistry | Cosmetic, General & Emergency Care",
   description: "Trusted family dentist in Corona.",
   openGraph: {
