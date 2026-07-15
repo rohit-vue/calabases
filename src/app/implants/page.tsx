@@ -86,7 +86,7 @@ export default function ImplantsPage() {
         footerLabel="Gleam Membership"
         footerPrice="$297/yr"
         ctaLabel="Join Today"
-        ctaHref="https://app.nexhealth.com/appts/advanced-dentists-group/appt-type?lid=354035"
+        ctaHref="https://member.clerri.com/enrollment/accounts/create?slug=DU9M"
       />
       <ImplantsCandidacySection />
       <ImplantsPatientCaseSection />

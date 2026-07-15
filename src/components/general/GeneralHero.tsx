@@ -119,7 +119,7 @@ export default function GeneralHero() {
                 </ul>
 
                 <Link
-                  href="#"
+                  href="https://member.clerri.com/enrollment/accounts/create?slug=DU9M"
                   className="mt-auto flex h-[40px] w-full items-center justify-center rounded-full bg-[#C9A961] text-[11px] font-semibold text-white transition hover:brightness-95"
                 >
                   <span className="inline-flex items-center">
