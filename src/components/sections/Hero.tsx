@@ -111,7 +111,7 @@ export default function Hero() {
                   <li>Unlimited Exams</li>
                 </ul>
                 <a
-                  href="https://member.clerri.com/enrollment/accounts/create?slug=DU9M"
+                  href="https://www.gleam-health.com/"
                   target="_blank"
                   className="mb-1 mr-1 shrink-0 rounded-[100px] bg-white px-2.5 py-1 text-[9px] font-semibold text-[#0A0E1A] shadow-sm transition hover:bg-white/90 sm:mb-4 sm:mr-3.5 sm:px-3 sm:py-1.5 sm:text-[10px] md:px-3.5 md:py-2 md:text-[11px]"
                 >
